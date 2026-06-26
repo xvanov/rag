@@ -80,7 +80,8 @@ Avoidable *only by staying off them*: Brownfields (decline), Floodplain (build o
 - USACE Wilmington District, Raleigh Reg. Field Office — 404 jurisdiction
 - NC DWR 401 & Buffer Permitting — central coord. 919-707-3631
 - NCDOT Division 5 — ONLY if Clermont is state-maintained (check Durham Maps maintenance layer)
-- **Real estate attorney — title search** (SW DPS boundary, creek line, plat-vs-GIS) — *recommended by County GIS* [T-18]
+- **Real estate attorney — title/boundary + brownfields** — top pick **William J. (Bill) Brian, Jr., Morningstar Law Group, Durham** — bbrian@morningstarlawgroup.com · 919-590-0372 · 700 W Main St (boundary disputes + brownfields redevelopment; Chambers Band 1 land use). Alts: Ward & Smith PA (environmental/brownfields); Kendall Page / AW Morris / Tolin & Tolin (transactional title search). *(County GIS recommended a title search, T-18.)*
+- **Civil/site engineer — road + water feasibility** — top pick **Brandon Johnson, PE, Summit Design & Engineering (Raleigh)** — brandon.johnson@summitde.com · 919-322-0115 (does feasibility studies, road improvement, utility, stormwater). Alts: Qunity; BNK Inc; JRH Engineering & Environmental.
 
 ## 9. Document index (`sources/`)
 - `docs/1621-clermont-rd-durham__1621-CLERMONT-CLOSURE-NOTICE.pdf` — recorded Closure Notice DB 1710/761-763 [T-08]
