@@ -3,6 +3,10 @@
     "docrag": {
       "command": "C:\\repos\\docrag\\.venv\\Scripts\\python.exe",
       "args": ["-m", "docrag.mcp_server"]
+    },
+    "propkb": {
+      "command": "C:\\repos\\docrag\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "propkb.mcp_server"]
     }
   }
 }

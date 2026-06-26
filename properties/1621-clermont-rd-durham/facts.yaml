@@ -1,0 +1,123 @@
+# Structured facts for 1621 Clermont Rd, Durham NC.
+# Canonical, queryable layer. Every non-obvious fact carries a `src` pointing to
+# a timeline.md entry (T-NN) so the provenance chain stays auditable.
+# Maintained by /intake. Last updated: 2026-06-25.
+
+property:
+  slug: prop-1621-clermont-rd-durham
+  address: 1621 Clermont Rd, Durham, NC 27713
+  pin: "0728808242"
+  reid: "153775"
+  deeded_acres: 9.4
+  township: Triangle (historically Cedar Fork)
+  tax_district: Durham
+  current_owner: LEIGHS LAND LLC
+  owner_address: 2920 Starmount Farms Dr, Greensboro, NC 27408
+  tax_value_land: 174134
+  tax_value_total: 174134
+  status: under evaluation (no contract; pennies-on-the-dollar asking)
+
+prospective_developer:
+  entity: IVANOVSTROY LLC
+  principal: Kalin Ivanov (CEO, 100% sole member, member-managed)
+  address: 3323 Ridge Rd, Durham, NC 27713
+  email: kalin@ivanovstroy.com
+  phone: 213-293-2712
+
+zoning:
+  district: RS-10 (Residential Suburban)
+  tier: Suburban
+  by_right_uses: [single-family detached, zero-lot-line, traditional house, attached house, duplex]
+  cluster_only_uses: [townhouse, detached rowhouse]
+  not_permitted: [multiplex, apartment]
+  min_lot_conventional: {area_sf: 10000, width_ft: 75, area_with_averaging_sf: 8500}
+  min_lot_cluster: {area_sf: 5000, width_ft: 40}
+  src: [T-02, T-03]
+
+constraints:
+  landfill:
+    type: pre-regulatory unpermitted solid waste disposal site (open dump)
+    closed_by_state: 1991
+    original_responsible_party: Key Homes, Inc. / Equitable Construction Co.
+    closure_notice_recorded: Durham County Deed Book 1710, Pages 761-763 (recorded 1991-09-30)
+    closure_notice_nature: disclosure/notice only — NOT a restrictive covenant; bars improper DISTURBANCE of waste, not construction per se
+    waste_footprint_map: Map Book 127, Page 25 (the "boundary survey")
+    landfill_area_acres: 4.982
+    encroaching_landfill_south_acres: 0.118
+    regulatory_basis: 15A NCAC 13B .0502 (closure of non-conforming sites/open dumps)
+    deed_language_required_on_conveyance: true
+    src: [T-08, T-10, T-11]
+  flood:
+    fema_zone: AE
+    flood_area_acres: 4.499
+    floodway_present: true   # CONFIRMED by Durham Floodplain — eastern ~2/3
+    floodway_construction: PROHIBITED — "we do NOT permit construction in the floodway" (T-17)
+    floodway_fill: PROHIBITED — no fill allowed/permitted in floodway (T-17)
+    floodplain_fill: discouraged (scour + downstream impact) even in AE fringe (T-17)
+    ae_fringe_build: allowed only if meets ALL conditions in UDO 8.4.3 (T-17)
+    fema_floodway_path: No-Rise Certification + possibly CLOMR/LOMR map revision (T-17)
+    firm_panel: 370605 0070 (per boundary survey)
+    src: [T-05, T-09, T-15, T-17]
+  boundary_title:
+    current_config_since: 1992 (deed DB 1794-855)
+    eastern_boundary: shifts over time due to CREEK MOVEMENT — acreage not fixed
+    sw_boundary_neighbor: Durham Public Schools (deeds "hard to track")
+    plat_vs_gis_mismatch: SW portion on GIS not in recorded plat — UNRESOLVED; needs title search
+    impervious_cap_governing_date: likely 1992 / DB 1794-855 (confirm which density cap, UDO 8.7.3B)
+    recommendation: engage real estate attorney for full title search
+    src: [T-15, T-18]
+  liens_taxes:
+    back_taxes: none (T-19)
+    tax_liens: none (T-19)
+    special_assessments: none (T-19)
+    note: tax office only — does NOT cover non-tax liens, judgments, easements, title defects (title search needed)
+    src: [T-19]
+  wetland:
+    nwi_class: PFO1C
+    nwi_acres: 3.062
+    survey_wetland_acres: 4.435   # per Map Book 127/25 (parent tract)
+    src: [T-01, T-09]
+  watershed:
+    overlay: Falls/Jordan Lake Protected Area (F/J-B)
+    basin: Jordan Lake
+    impervious_limit_low_density_pct: 24
+    impervious_limit_high_density_pct: 70
+    impervious_limit_basis: UDO 8.7.3B (limit set by plat/deed recordation date — MUST look up)
+    nutrient_target_jordan_n_lb_ac_yr: 3.6
+    src: [T-03, T-04]
+  riparian_buffer:
+    streams: perennial (confirmed by Durham Planning)
+    buffer_ft: 100   # undisturbed vegetative, top of each bank
+    extra_no_build_no_grade_ft: 10   # total effective ~110 ft
+    basis: UDO 8.5; 15A NCAC 02B .0267 (Jordan buffer floor 50 ft)
+    src: [T-05, T-09]
+  soils:
+    Ch_pct: 42
+    PfE_pct: 40
+    WsC_pct: 18
+
+utilities_access:
+  right_of_way: unmaintained (per PWEng) — pink-dot ROW; NOT a built/maintained street
+  sewer: available via easement crossing the property (green line) — usable
+  water: NOT available — main dead-ends at Euclid/Clermont; private extension required
+  road: must build out road for building permit (private cost) OR resolve access via driveway (TBD with Planning)
+  utility_cost_bearer: property owner / out-of-pocket; consult private civil engineer
+  src: [T-12]
+  water_alternatives:
+    private_well: code-legal where public water "not available/feasible" (NC Res. Code P2602.1; Plumbing 602.3) BUT landfill groundwater contamination + Durham County Environmental Health permitting is the gate
+    rainwater: NOT allowed as sole potable source (NC Res. Code P2901.1 — only toilets/urinals/trap primers); nonpotable supplement only
+    src: [T-13]
+
+brownfields:
+  program: NC DEQ Brownfields Redevelopment Section
+  eligibility: prospective developer NEED NOT own property; must not have caused contamination (Ivanov = clean PD)
+  fee_letter_of_eligibility: 2000   # due only on LOE, after free eligibility ruling
+  fee_second: 6000                  # before agreement executes
+  optional: true                    # liability cap tool, not a build requirement
+  src: [T-10, T-11]
+
+development_target:
+  primary: 2 single-family homes (or duplex) on the upland nub fronting Clermont Rd (SW corner), outside waste footprint + outside floodway/buffer
+  open_space: eastern ~2/3 (flood/floodway/wetland/buffer) = forced open space
+  tentative: nature-based recreation / short-term-lodging ideas in lower areas — LIKELY BLOCKED by floodway; treat as aspirational
+  src: [T-09, T-11, T-14]
