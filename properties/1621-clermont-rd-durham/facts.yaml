@@ -60,12 +60,19 @@ constraints:
     src: [T-05, T-09, T-15, T-17]
   boundary_title:
     current_config_since: 1992 (deed DB 1794-855)
+    current_owner_deed: DB 9937/913 (LEIGHS LAND LLC acquired 2023-06-21)
+    deeded_area_acres: 9.40   # GIS shows 9.67 (creek-driven)
+    legal_description: Exhibit A of DB 1794/856 (see sources/docs/DEED-DB1794-855.ocr.md)
+    plat_reference: PB 30/144 (McAdoo 1955); also references Parkwood Sub Sec 3 PB 34/16
+    stream_name: Northeast Creek — its meandering centerline IS the eastern boundary
+    north_west_neighbor: Parkwood Subdivision, Section 3 (Plat Book 34/16)
+    south_sw_neighbor: "School Property" = Durham Public Schools boundary (deeds "hard to track")
     eastern_boundary: shifts over time due to CREEK MOVEMENT — acreage not fixed
-    sw_boundary_neighbor: Durham Public Schools (deeds "hard to track")
+    clermont_row_terminus: eastern terminus ~257.70 ft east of Euclid Rd (unmaintained)
     plat_vs_gis_mismatch: SW portion on GIS not in recorded plat — UNRESOLVED; needs title search
     impervious_cap_governing_date: likely 1992 / DB 1794-855 (confirm which density cap, UDO 8.7.3B)
     recommendation: engage real estate attorney for full title search
-    src: [T-15, T-18]
+    src: [T-15, T-18, T-20, T-21]
   liens_taxes:
     back_taxes: none (T-19)
     tax_liens: none (T-19)

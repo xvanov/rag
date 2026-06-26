@@ -142,3 +142,14 @@ names. Retrieved + read the two previously-missing items:
   Nov 1991), references the Closure Notice as Exhibit A = the 1992 reconfiguration Margaret
   cited (T-18). Also captured: PB 127/25 survey, PB 1710/761 closure notice, stream/flood/
   wetland map PDFs (now in the store, not Downloads).
+
+**T-21 · 2026-06-26 · All attachments parsed (vision OCR → sidecars)**
+Read every email attachment; text captured in `sources/emails/attachments/ATTACHMENTS-INDEX.ocr.md`
+and the deed in `sources/docs/DEED-DB1794-855.ocr.md`. New monuments from the deed's
+Exhibit A (DB 1794/856): **stream = Northeast Creek** (its meandering centerline = the
+eastern boundary, explaining the moving line); **N/W neighbor = Parkwood Subdivision Sec 3
+(PB 34/16)**; **S/SW neighbor = "School Property"** (the Durham Public Schools boundary);
+Clermont Rd ROW eastern terminus **~257.70 ft east of Euclid**; deeded **9.40 ac** (GIS 9.67).
+Map attachments confirm floodway covers most of the parcel (SW nub is the only non-floodway
+ground) and the sewer-via-easement / unmaintained-ROW utility picture. Small images = DEQ /
+CEAA signature logos (no substantive text).
