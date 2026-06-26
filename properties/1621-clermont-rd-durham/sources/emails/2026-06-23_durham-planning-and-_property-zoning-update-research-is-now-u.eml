@@ -1,0 +1,126 @@
+Delivered-To: ivanovkalin7@gmail.com
+Received: by 2002:a05:6a10:3149:b0:72d:62be:821f with SMTP id m9csp313405pxc;
+        Tue, 23 Jun 2026 10:36:22 -0700 (PDT)
+X-Received: by 2002:a05:6a00:94f7:b0:845:4f20:3834 with SMTP id d2e1a72fcca58-845a2a9666dmr13887b3a.5.1782236181811;
+        Tue, 23 Jun 2026 10:36:21 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1782236181; cv=none;
+        d=google.com; s=arc-20260327;
+        b=ozQXYYcCGa1toykMtGrOLBQ1P9qgTsdGuDAKgpQqIW4XqXWF+4lb7HoztYCLMcB/1L
+         27KE6pRDqWK4pCAJfUlnn5GYvD5jN+YQO7XXTEooFtFOH9i+roZeL8yYf9LzEjvqZors
+         mRkOu6BeAlunOy6zjIYmFtQ7RmLnOem6vT1SxIKr9nYPbUMumcbMJgBd3XhPSh9H1Fwd
+         e/M/V9EBDy9pf7AWu//JF1Qwq6xK5gHhNCCOJIEBqKM6NSSSeH3ZpYk0/5XL04Sq4K+w
+         FJXiEhdPnlxP8ozna8DskHH1G1dJqFfwey/7s1MxDIz8Bn3aBMulMGpLs8OUryHb2Y63
+         X3WA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=list-unsubscribe:precedence:auto-submitted
+         :content-transfer-encoding:mime-version:subject:message-id:to
+         :reply-to:from:dkim-signature:date;
+        bh=oLPb5mi6QXwhA3pBDM+oXNMASn3f27MJwMPLBmUF0v8=;
+        fh=nTHuAk94MxOpIr8GHlbYA+2SzhP2e9XLaY6e4JoCG/k=;
+        b=AfRMKSU38mqRXckPpV9W/PwQbMV5/sl4ZfgBkUwsn0jd5WSBIv1Pl8dNDGOxSSgfqC
+         XeOUfC18NIFAbWVy8+HC0e2+YJMMKsNjDpqFQjPZa5ftoqqDk8KOqUA6F0rv1406G8Ps
+         ATPEKGaNSB/8Gec22v7gRGehu6/my8QCN/14dAyoVhQ8HLUsNhACN+WA0Nxvwea8+D71
+         OgfyBchM7iSwe5+RU5UsAuUPYYn8LSRCMW5Qrg4xodHkFHAa/2rwNJCTZA0q75EA3D+G
+         0E9F8X/Flx7S+9hSNihmQ8SPrTiTQuzHj8CQ3XslXiwwIvDBIFvaS8J+/o4oiiVcf5IL
+         IYkA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mojohelpdesk.com header.s=mail header.b=FA6005Fl;
+       spf=pass (google.com: domain of mojo-bounces+a=26263@dsc.mojohelpdesk.com designates 54.149.252.182 as permitted sender) smtp.mailfrom="mojo-bounces+a=26263@dsc.mojohelpdesk.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mojohelpdesk.com
+Return-Path: <mojo-bounces+a=26263@dsc.mojohelpdesk.com>
+Received: from mail.mojohelpdesk.com (mail.mojohelpdesk.com. [54.149.252.182])
+        by mx.google.com with ESMTPS id 41be03b00d2f7-c8bc5a1ddc0si18803511a12.145.2026.06.23.10.36.21
+        for <ivanovkalin7@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Tue, 23 Jun 2026 10:36:21 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mojo-bounces+a=26263@dsc.mojohelpdesk.com designates 54.149.252.182 as permitted sender) client-ip=54.149.252.182;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mojohelpdesk.com header.s=mail header.b=FA6005Fl;
+       spf=pass (google.com: domain of mojo-bounces+a=26263@dsc.mojohelpdesk.com designates 54.149.252.182 as permitted sender) smtp.mailfrom="mojo-bounces+a=26263@dsc.mojohelpdesk.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mojohelpdesk.com
+Date: Tue, 23 Jun 2026 17:36:21 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=mojohelpdesk.com;
+	s=mail; t=1782236181;
+	bh=qM5a6pDPi3SCWlWpbC2/MtKo49TJRoHSgooOBZL21Pg=;
+	h=From:Reply-To:To:Subject;
+	b=FA6005FlbW4A1efI8+0eP8INX3sz0zLXNac10QfiFqjuhTJqcSG3SVUHqnuO3/0on
+	 70K44IBYStzQhKC3hfCt0eTzVPTEPl79RYjXi+k2rXpP8baF1d5Lbfj935TtE27I5/
+	 WGF5vli8V/fC93GMUysS/wB/u40qqh+UWQftZ+TU=
+From: Durham Planning and Development Department <26263.56710393@dsc.mojohelpdesk.com>
+Reply-To: Durham Planning and Development Department <26263.56710393@dsc.mojohelpdesk.com>
+To: ivanovkalin7@gmail.com
+Message-ID: <26263-56710393-public-1782236181@dsc.mojohelpdesk.com>
+Subject: Property/zoning update: Research is now underway [ticket ID
+ #56710393]
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6a3ac4155b3c2_1ae93a088686376";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-Mojo-Email: true
+X-Auto-Response-Suppress: All
+Auto-Submitted: auto-generated
+Precedence: bulk
+List-Unsubscribe: <mailto:no-reply@dsc.mojohelpdesk.com?subject=unsubscribe>
+
+
+----==_mimepart_6a3ac4155b3c2_1ae93a088686376
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hello again! 
+
+Your inquiry has been assigned to Emma Howrilla and work is underway to answer to your question. Please know it may take up to five business days to receive a response due to the research effort needed to investigate most property and zoning inquiries. When Emma Howrilla responds, you will see a new email with the subject line, "Response to DSC inquiry." You will be able to reply directly to that message should you have follow up questions, or in the event that further information is needed to answer your question.  
+
+Now that your inquiry is assigned and actively under investigation, if you need to follow up further, please reply directly to the response from Emma Howrilla. Please do not call or email separately with the same question as this will duplicate effort and slow down our response times.  
+
+Out of fairness to other customers all inquiries need to be processed in the order received - we appreciate your patience. 
+
+It is our pleasure to provide great customer service and we look forward to working with you. 
+
+Durham Planning &amp; Development Department
+DurhamNC.gov/Planning
+---
+Planning & Development Service
+----------
+Reply above this line. Don't delete below line.
+MHD#: 56710393-26263-public
+
+
+
+----==_mimepart_6a3ac4155b3c2_1ae93a088686376
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body style='font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";line-height: 1.15;-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0); margin: 0;font-size: 0.9rem;font-weight: 400;line-height: 1.5;color: #212529;text-align: left;background-color: #f8f9fa !important;padding: 10px 0 88px 0;'>
+    <div style='padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;width: 700px;'>
+      <div style='position: relative;display: -ms-flexbox;min-width: 0;word-wrap: break-word;background-color: #fff;background-clip: border-box;border: 1px solid rgba(0, 0, 0, 0.125);border-radius: 0.25rem;box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;width: 100%;border-top: 5px solid #c1d72e;'>
+        <div style='x-ms-flex: 1 1 auto;xflex: 1 1 auto;padding: 1.25rem;background-color:#fff;'>
+          Hello again!   <br>
+  <br>
+Your inquiry has been assigned to Emma Howrilla and work is underway to answer to your question. Please know it may take up to five business days to receive a response due to the research effort needed to investigate most property and zoning inquiries. When Emma Howrilla responds, you will see a new email with the subject line, "Response to DSC inquiry." You will be able to reply directly to that message should you have follow up questions, or in the event that further information is needed to answer your question.    <br>
+  <br>
+Now that your inquiry is assigned and actively under investigation, if you need to follow up further, please reply directly to the response from Emma Howrilla. Please do not call or email separately with the same question as this will duplicate effort and slow down our response times.    <br>
+  <br>
+Out of fairness to other customers all inquiries need to be processed in the order received - we appreciate your patience.   <br>
+  <br>
+It is our pleasure to provide great customer service and we look forward to working with you.   <br>
+  <br>
+Durham Planning &amp; Development Department  <br>
+DurhamNC.gov/Planning
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<div>---<br>This is an automated message from help desk: <a href='https://dsc.mojohelpdesk.com'>Planning & Development Service</a>.</div><span style='display:none'>MHD#: 56710393-26263-public</span>
+
+----==_mimepart_6a3ac4155b3c2_1ae93a088686376--

@@ -1,0 +1,246 @@
+Delivered-To: ivanovkalin7@gmail.com
+Received: by 2002:a05:6a11:af0e:b0:72d:3b16:d310 with SMTP id kh14csp457068pxc;
+        Wed, 24 Jun 2026 14:13:23 -0700 (PDT)
+X-Received: by 2002:a05:690e:4397:b0:660:6f06:ae83 with SMTP id 956f58d0204a3-66312df1966mr15142322d50.23.1782335602722;
+        Wed, 24 Jun 2026 14:13:22 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1782335602; cv=pass;
+        d=google.com; s=arc-20260327;
+        b=kBY87iST2WICZJSU8tFrSfedbP2ip+DkBo0l8Yg1DaPMhHUqSOr6eVMfh1gfjF2ncR
+         fcfKeaGcZh/B9GS/1y/VgJOlZvOiLd8N7Owad0/Dx8hX2nSfntRpCxUOAV1AgIWPfmfd
+         fuzbb8jzna1AKIRmyFhh9zRwa2yBKKFSx0oNTIVcVQRTmmD1aNxge3ps1jsATrR/GZ0Z
+         nSRgjt9U161MKW6hFeu7grnMNsUmdW0xlYe7Ge645E3F7bdFkO4nvvE17hZJLbyCcYpJ
+         MkzGJsqJRYgjvEdKpnuZtnRqiIe6ERpOiNh3eyrlgCSXPexOENKGy8rpJCJwdTce2res
+         EVeQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=mime-version:auto-submitted:in-reply-to:references:message-id:date
+         :thread-index:thread-topic:subject:to:from:dkim-signature;
+        bh=lR/iaj5CVAtutIjbigxpS5Hv0OOOKFqGyx1cnPMNQjk=;
+        fh=3BS8Q0bG4vjSQuuSoGzQ0LuCEXJsQmRwcnR706t/aFM=;
+        b=q9E9LgVc2A7MCdAP9RwNAyPSmXOyY9MDUbxwcCZglCE5vLCkDlrt2aXfQtAm1RheBC
+         QMj4eTFEe9VtapVi8VoMq1zfvorKxvZ2Bn57mNoOc98jFNL2lkIRmTBaD0VEX/0//CEw
+         O1XfVNB+ygziC5Z8STDFzS7VTYtHr46M3OHcwpL2Qo79/U/uKbsEp5BrJyq0SDWm4uXs
+         /zNXJwRmRk99iUQ8Ww+iXucuD1Q0xTY2+5VikKafVFNxlehoM3c2kgkaHPe9n1hcXcDj
+         Gw5JfBeBucpI3kJv2Xy8p1ksXYlJMJoPnH9HZQPvF+BRNNiOBDqMG5B0/6KxBENcMVk9
+         I89g==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@durhamnc.gov header.s=selector1 header.b=xHQ1fU+c;
+       arc=pass (i=1 dkim=pass dkdomain=durhamnc.gov dmarc=pass fromdomain=durhamnc.gov);
+       spf=pass (google.com: domain of postmaster@by5pr09cu001.outbound.protection.outlook.com designates 2a01:111:f403:d801:: as permitted sender) smtp.helo=BY5PR09CU001.outbound.protection.outlook.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=durhamnc.gov
+Return-Path: <>
+Received: from BY5PR09CU001.outbound.protection.outlook.com (mail-westusazhn150110000.outbound.protection.outlook.com. [2a01:111:f403:d801::])
+        by mx.google.com with ESMTPS id 956f58d0204a3-6647f74adcesi841373d50.41.2026.06.24.14.13.22
+        for <ivanovkalin7@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 24 Jun 2026 14:13:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of postmaster@by5pr09cu001.outbound.protection.outlook.com designates 2a01:111:f403:d801:: as permitted sender) client-ip=2a01:111:f403:d801::;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@durhamnc.gov header.s=selector1 header.b=xHQ1fU+c;
+       arc=pass (i=1 dkim=pass dkdomain=durhamnc.gov dmarc=pass fromdomain=durhamnc.gov);
+       spf=pass (google.com: domain of postmaster@by5pr09cu001.outbound.protection.outlook.com designates 2a01:111:f403:d801:: as permitted sender) smtp.helo=BY5PR09CU001.outbound.protection.outlook.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=durhamnc.gov
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=ZmJJJen1PEqUiyF74OrA/r5q9sxrdaHKf/IUbmXHVKqBbq6yRXl0oowDpOuleSh8EiEogdynC7cJSI/epj4nqrgh2wrMKHYKZ3wiopnrNxThPokD2IiirejdCYX2Xz3UuZPFOr/HmvVcUyxbqNfQbzjokxlY/eYltZdgUOwiLPcyRLAlBB4H+G47lZTEQRuhXQJatx4Uz7jAja+Q0nOUayr9jqw2SDlWql1rM7UOOe/Cf5RriXFrqTvfCgeZxEFRmVVRp2CZhQfx0ZPcNQcf/3NHOed5qZrPSotFZArNuPY90eteRnF7GiXrKsTZWrmmGcHzIPMtWpnIYn50muPUbw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=lR/iaj5CVAtutIjbigxpS5Hv0OOOKFqGyx1cnPMNQjk=;
+ b=Iro3npaNcvRo/XRHlTsmZyjdtru1WA62ZnASaTnVwc6e7qG6AS0/0LH8S4BlJsxImK4GDJnnRWa0DZ+9AQnrmXP1IbQWV0XwSWt/5Hg0ckGb2k3JaPvXv6dw3yQn+0V+MWMIMmdmuwI5AyuvxVO8KiWdfqNWdK+B4L5/0tG101QORWtaCFUCyil30guwaHN4oY6mY4mKYe4KkQb95AK0CBdefDxHnt9rJMtZhb8V9lZf7VXPTnJyQy0XcCtiHCG7pcDpTs3vqY8wPaEtB/h50X6E0lJs5iWqz1k6uTed3W2xkg5RMRW7JJjc6BbxbtZHRUQyDVJKVOoZaZCRsUHRgQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=pass
+ action=none header.from=durhamnc.gov; dkim=pass header.d=durhamnc.gov;
+ arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=durhamnc.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=lR/iaj5CVAtutIjbigxpS5Hv0OOOKFqGyx1cnPMNQjk=;
+ b=xHQ1fU+c/QzmMzx8Ls3EMHTWtkVtoCKAsdZTR3b07As9m/Yv1kThvYupE0WwRv3DUng8nnlyq9BrRNh2atBVc/5C4Co+8GWA1JeUUXUYT44UaKuIn/BnflB0H2JZQIWHtXYKkc5OWxPlPzpdvd78x3ELfcd4t19WIlrSoIvtYtw=
+Received: from PH0PR09MB11568.namprd09.prod.outlook.com
+ (2603:10b6:510:2c2::19) by SA1PR09MB11242.namprd09.prod.outlook.com
+ (2603:10b6:806:360::11) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.159.14; Wed, 24 Jun
+ 2026 21:13:20 +0000
+Received: from PH0PR09MB11568.namprd09.prod.outlook.com ([::1]) by
+ PH0PR09MB11568.namprd09.prod.outlook.com ([fe80::8320:5301:4214:31b1%5]) with
+ Microsoft SMTP Server id 15.21.0159.015; Wed, 24 Jun 2026 21:13:20 +0000
+From: PermitTechnicians <PermitTechnicians@durhamnc.gov>
+To: Kalin Ivanov <ivanovkalin7@gmail.com>
+Subject: Automatic reply: 1621 Clermont Rd
+Thread-Topic: 1621 Clermont Rd
+Thread-Index: AQHdBB5IA05pyFUUAUSHEiJLqeVpe7ZONFTM
+Date: Wed, 24 Jun 2026 21:13:20 +0000
+Message-ID:
+ <42f053a2e78c48268a5aca7e46958d33@PH0PR09MB11568.namprd09.prod.outlook.com>
+References:
+ <CAE3DOw+-rjoXi2ysZLhVwEJUrPW10HhOuhv8DTVcmMhm6wJh5w@mail.gmail.com>
+In-Reply-To:
+ <CAE3DOw+-rjoXi2ysZLhVwEJUrPW10HhOuhv8DTVcmMhm6wJh5w@mail.gmail.com>
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: All
+X-MS-Exchange-Inbox-Rules-Loop: permittechnicians@durhamnc.gov
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=durhamnc.gov;
+x-ms-exchange-parent-message-id:
+ <CAE3DOw+-rjoXi2ysZLhVwEJUrPW10HhOuhv8DTVcmMhm6wJh5w@mail.gmail.com>
+auto-submitted: auto-generated
+x-ms-exchange-generated-message-source: Mailbox Rules Agent
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: PH0PR09MB11568:EE_|SA1PR09MB11242:EE_
+x-ms-office365-filtering-correlation-id: c4e06098-efc5-4664-1d66-08ded2356b43
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|50650200027|10070799003|1800799024|366016|41320700013|13003099007|22082099003|18002099003|12063799003|5133699003|8096899003|6133799003|56012099006|80100003;
+x-microsoft-antispam-message-info:
+ l90hXZG3IstRq7I09BKzhzpD0QI1KFq1kfp0AWshwGoBwh9CxeSz/A8Iu2+SpxD/C3av45eOPwQalNM1XHP2GBv1kLZaY2F4rMTsmR3jUZaYpNDIVttd111tkvUA5iQsug/GQNblaKlsF3nGunr9EG7DpnwJrntIRLizrnlVx1OFk+odANkUdbclCNuabmJ9xOuy2Cvxgbmv/UdgkynzAFWy0dvHjl7sE3rKSbCwFV8AymEyLJCI8RP1uMXUUGpBKOsBVttKc/ZbV1kE6H0MWMORfJzEK0S8SNGlDIeUZ0UZkhMadNzbv+AReVXPsMTgsGVxFXragaIqWUdnZiKMQakte3y82gwtdQcodVYbMibVkwgC3l28Eul7eEFrqb7n+8IAqHw4nfC50O3ZbbCVM2LW97j1MaTnU3soZA20DxTLEWnlkFLirem14ZjdmD/xb9o/UA7PB1UMf05FlLUhsdxLdFBRr7kIqT4012EBICZghJIKttP+LMQUfSrjWb2hiO5vRxKUVM7qrTAMjhwQZaEMq19WmFFntSyfx25zhpL8lR04+qZJZ4XNZyzs0u/FBb/0/3JAnruB8PPttWl1MaZh+bhWAqeT3p6UpELrvUlyVIF47mmSfVsFbWV2QJxSHgm8A8wCzm0it7aJu5QgiO+RneOd8sDtMqAtxM9TJPg=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:PH0PR09MB11568.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(50650200027)(10070799003)(1800799024)(366016)(41320700013)(13003099007)(22082099003)(18002099003)(12063799003)(5133699003)(8096899003)(6133799003)(56012099006)(80100003);DIR:OUT;SFP:1501;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ CY+tVJ9rdjYLEIl9bzVIcMuRM52eKN+H3AZ9VK2v5FQgv802ijUxEb49zHtjbzPARgv1yGmbfPONNskv6QhBfoEI6OQ/RRTkFwdTfOq1exa1NmIg07nFBINlaCLk1V9o2LfcghatQWTy8B8aJBSCUGfwd3Sh6ronZ7jAAyCnY5/ra/gQPjBHY+govyFjmM24pTA2xslENhme7lk7hmbl+yee/akVD6IANuua5ou7VcPcx7veIGMR8sVzWqRJij8SbVR1VK+4jAoWBFoic/WJ3erQAKanf+m7olN40YGYQLp34GPYFIJwZkZcGlKr7ZD4Fajh42bkMzK4ahXJ4tDyV2iC3ITDFGDhT/W6Vp2N3Ift+s5FE9Sd2EPlDRTcqKNAuDX2+FhOjp2VitkPsEmNGiCEZ0xh/FzvaNFWYFWOuSsdjWXeCKfIQLMNxUQ32blO
+Content-Type: multipart/alternative;
+	boundary="_000_42f053a2e78c48268a5aca7e46958d33PH0PR09MB11568namprd09p_"
+MIME-Version: 1.0
+X-OriginatorOrg: durhamnc.gov
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: PH0PR09MB11568.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: c4e06098-efc5-4664-1d66-08ded2356b43
+X-MS-Exchange-CrossTenant-originalarrivaltime: 24 Jun 2026 21:13:20.7277
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 297def82-9439-4388-a808-3548a4ecf47d
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1PR09MB11242
+
+--_000_42f053a2e78c48268a5aca7e46958d33PH0PR09MB11568namprd09p_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Greetings,
+
+Thank you for contacting City-County Building & Safety Permit Technician Di=
+vision. This is an automatic reply to confirm that we have received your me=
+ssage. All email and voicemail requests are processed in the order that the=
+y are received. A member of our team will review your email and respond as =
+soon as possible. We look forward to assisting you soon.
+
+Upcoming Closures:
+Fri. Jun. 19, 2026 in observance of Juneteenth
+Fri. Jul.3, 2026 in observance of Independence Day on the 4th
+
+For our list of recognized holidays to confirm office closures, please go t=
+o:  https://www.durhamnc.gov/DocumentCenter/View/51737/City-Holiday-Schedul=
+e-2025-2029
+
+
+Sincerely,
+
+
+Administrative Staff
+
+Durham City-County Building & Safety Department
+
+
+The Building & Safety Department is hiring!
+
+See more info at - https://www.durhamnc.gov/3774/City-Jobs-Careers [X] [X]
+
+--_000_42f053a2e78c48268a5aca7e46958d33PH0PR09MB11568namprd09p_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+</head>
+<body>
+<p style=3D"background-color:rgb(255,255,255); margin:0in; font-size:12px">=
+<span style=3D"font-family:&quot;Times New Roman&quot;,Times,serif; font-si=
+ze:12pt; background-color:rgb(255,255,255)">Greetings,</span></p>
+<div style=3D"background-color:rgb(255,255,255); margin:0px; font-family:&q=
+uot;Times New Roman&quot;,Times,serif; font-size:12pt">
+<span style=3D"background-color:rgb(255,255,255)"><br>
+</span></div>
+<div style=3D"background-color:rgb(255,255,255); margin:0px; font-family:&q=
+uot;Times New Roman&quot;,Times,serif; font-size:12pt">
+<span style=3D"color:rgb(0,0,0); background-color:rgb(255,255,255)">Thank y=
+ou for contacting City-County Building &amp; Safety Permit Technician Divis=
+ion. This is an automatic reply to confirm that we have received your messa=
+ge. All email and voicemail requests are
+ processed in the order that they are received. A member of our team will r=
+eview your email and respond as soon as possible. We look forward to assist=
+ing you soon.</span><span style=3D"color:rgb(134,17,6)"><b><br>
+</b></span></div>
+<div style=3D"background-color:rgb(255,255,255); margin:0px; font-family:&q=
+uot;Times New Roman&quot;,Times,serif; font-size:12pt; color:rgb(0,0,0)">
+<span style=3D"background-color:rgb(255,255,255)"><br>
+</span></div>
+<div style=3D"background-color:rgb(255,255,255); margin:0px; font-family:&q=
+uot;Times New Roman&quot;,Times,serif; font-size:12pt; color:rgb(0,0,0)">
+<span style=3D"background-color:rgb(255,255,0)">Upcoming Closures:</span></=
+div>
+<div style=3D"background-color:rgb(255,255,255); margin:0px; font-family:&q=
+uot;Times New Roman&quot;,Times,serif; font-size:12pt; color:rgb(87,6,6)">
+<span style=3D"background-color:rgb(255,255,255)">Fri. Jun. 19, 2026 in obs=
+ervance of Juneteenth&nbsp;</span></div>
+<div style=3D"background-color:rgb(255,255,255); margin:0px; font-family:&q=
+uot;Times New Roman&quot;,Times,serif; font-size:12pt; color:rgb(87,6,6)">
+<span style=3D"background-color:rgb(255,255,255)">Fri. Jul.3, 2026 in obser=
+vance of Independence Day on the 4th</span></div>
+<div style=3D"background-color:rgb(255,255,255); margin:0px; font-family:&q=
+uot;Times New Roman&quot;,Times,serif; font-size:12pt; color:rgb(0,0,0)">
+<span style=3D"background-color:rgb(255,255,255)"><br>
+</span></div>
+<div style=3D"background-color:rgb(255,255,255); margin:0px; font-family:&q=
+uot;Times New Roman&quot;,Times,serif; font-size:12pt; color:rgb(0,0,0)">
+<span style=3D"background-color:rgb(255,255,255)">For our list of recognize=
+d holidays to confirm office closures, please go to:&nbsp;
+<a href=3D"https://www.durhamnc.gov/DocumentCenter/View/51737/City-Holiday-=
+Schedule-2025-2029">
+https://www.durhamnc.gov/DocumentCenter/View/51737/City-Holiday-Schedule-20=
+25-2029</a>&nbsp;&nbsp;</span></div>
+<p style=3D"background-color:rgb(255,255,255); margin:0in 0px 0.0001pt; fon=
+t-size:12px">
+<span style=3D"font-family:&quot;Times New Roman&quot;,serif; font-size:12p=
+t"><br>
+</span></p>
+<p style=3D"background-color:rgb(255,255,255); margin:0in 0px 0.0001pt; fon=
+t-size:12px">
+<span style=3D"font-family:&quot;Times New Roman&quot;,Times,serif; font-si=
+ze:12pt">Sincerely,</span></p>
+<p style=3D"background-color:rgb(255,255,255); margin:0in 0px 0.0001pt; fon=
+t-size:12px">
+<span style=3D"font-family:&quot;Times New Roman&quot;,serif; font-size:12p=
+t"><br>
+</span></p>
+<p style=3D"background-color:rgb(255,255,255); margin:0in 0px 0.0001pt; fon=
+t-size:12px">
+<span style=3D"font-family:&quot;Times New Roman&quot;,Times,serif; font-si=
+ze:12pt">Administrative Staff</span></p>
+<p style=3D"background-color:rgb(255,255,255); margin:0in 0px 0.0001pt; fon=
+t-size:12px">
+<span style=3D"font-family:&quot;Times New Roman&quot;,Times,serif; font-si=
+ze:12pt">Durham City-County Building &amp; Safety Department</span></p>
+<p style=3D"background-color:rgb(255,255,255); margin:0in 0px 0.0001pt; fon=
+t-size:12px">
+<span style=3D"font-family:&quot;Times New Roman&quot;,Times,serif; font-si=
+ze:12pt"><br>
+</span></p>
+<p style=3D"text-align:left; text-indent:0px; background-color:rgb(255,255,=
+255); margin:0in; font-size:12px">
+<span style=3D"font-family:&quot;Times New Roman&quot;,Times,serif; font-si=
+ze:12pt; color:rgb(0,0,0)"><b>The Building &amp; Safety Department is hirin=
+g!</b></span></p>
+<div style=3D"text-align:left; text-indent:0px; margin:0in; font-family:&qu=
+ot;Times New Roman&quot;,Times,serif; font-size:12pt; color:rgb(0,0,0)">
+<b>See more info at - </b><span style=3D"color:rgb(70,120,134)"><a href=3D"=
+https://www.durhamnc.gov/3774/City-Jobs-Careers" target=3D"_blank" title=3D=
+"https://www.durhamnc.gov/3774/City-Jobs-Careers" rel=3D"noopener noreferre=
+r" style=3D"color:rgb(70,120,134); margin:0px"><b><u>https://www.durhamnc.g=
+ov/3774/City-Jobs-Careers</u></b></a></span><b>&nbsp;</b><img src=3D"" styl=
+e=3D"max-width:760px"><img src=3D"" style=3D"max-width:760px"></div>
+</body>
+</html>
+
+--_000_42f053a2e78c48268a5aca7e46958d33PH0PR09MB11568namprd09p_--
