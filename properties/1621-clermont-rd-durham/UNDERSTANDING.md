@@ -69,7 +69,7 @@ Avoidable *only by staying off them*: Brownfields (decline), Floodplain (build o
 - Stormwater — StormwaterBMPs@durhamnc.gov (wetland/NWI)
 - Infrastructure Svcs / PWEng — **Amber, Development Infrastructure Div., 919-560-4326** / PWEngServ@durhamnc.gov [T-16]
 - Environmental & Street Svcs — Michelle.Woolfolk@durhamnc.gov
-- **Durham County Environmental Health** — private well permitting *(TODO: get direct contact)*
+- **Durham County Environmental Health — On-Site Water Protection** (private well permitting) — **healthinspector@dconc.gov · 919-560-7800** (alt 919-560-7830); Director James Salter, jsalter@dconc.gov; 414 E Main St, Durham 27701
 - County Tax Land Records / GIS — **Margaret Vanderford, GIS Cartographer** / Tax-MappingGIS@dconc.gov [T-18]
 - County Tax collections — **Emma Pelfrey, Revenue Agent** / epelfrey@dconc.gov [T-19]
 - County Register of Deeds — current deed (DB 1794-855), recorded plats
