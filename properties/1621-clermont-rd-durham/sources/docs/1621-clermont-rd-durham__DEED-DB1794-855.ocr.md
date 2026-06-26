@@ -1,6 +1,6 @@
 # OCR (vision) — Deed, Durham County Deed Book 1794, Pages 855–856
 
-> Vision transcription (in-session) of `sources/emails/attachments/2026-06-25_durham-county-tax-co_re-1621-clermont-rd__d1794-855.pdf`,
+> Vision transcription (in-session) of `sources/emails/attachments/1621-clermont-rd-durham__2026-06-25_durham-county-tax-co_re-1621-clermont-rd__d1794-855.pdf`,
 > the 1992 deed the County GIS cartographer sent (T-18). For search/indexing — the
 > recorded instrument governs; **verify bearings against the recorded deed before
 > relying on the legal description.**

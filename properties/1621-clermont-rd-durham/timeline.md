@@ -7,7 +7,7 @@ at the bottom via `/intake`. This is the auditable "legal chain of answers."
 ---
 
 **T-01 · 2026-06-23 · Parcel record (Durham GIS / county)**
-Source: Durham Maps GIS parcel card (`sources/docs/1621-CLERMONT-PARCEL-INFO.pdf`).
+Source: Durham Maps GIS parcel card (`sources/docs/1621-clermont-rd-durham__1621-CLERMONT-PARCEL-INFO.pdf`).
 PIN 0728808242, REID 153775, 9.4 deeded ac, owner LEIGHS LAND LLC. Zoning RS-10,
 Suburban tier. NWI PFO1C 3.062 ac. Flood AE 4.499 ac. Watershed: Falls/Neuse–Jordan
 Protected Area. Stormwater basin Jordan Lake. Soils Ch 42% / PfE 40% / WsC 18%.
@@ -52,7 +52,7 @@ Recorded 1991-09-30, signed Terry F. Dover, Eastern Area Supervisor, NC Solid Wa
 Section. Original dumper: Key Homes, Inc. / Equitable Construction Co. KEY: notice's
 sole purpose is to give purchasers notice + reduce risk from "improper disturbance of
 the waste" — it is NOT a permit and NOT a build-ban; deed language required on conveyance.
-Basis 15A NCAC 13B .0502. (`sources/docs/1621-CLERMONT-CLOSURE-NOTICE.pdf`)
+Basis 15A NCAC 13B .0502. (`sources/docs/1621-clermont-rd-durham__1621-CLERMONT-CLOSURE-NOTICE.pdf`)
 
 **T-09 · 2026-06-24 · Doc read: Boundary survey (Map Book 127/25) + flood/wetland maps**
 Survey titled "Property of KEY HOMES INC", parent tract 19.61 ac (covers more than the
@@ -67,18 +67,18 @@ PD need NOT own property (§I.H/I — "under contract" or "intend to purchase" a
 Core gate = §III.A affidavit: did not cause/contribute to contamination (Ivanov passes).
 Fees: $2,000 due ONLY on Letter of Eligibility (submission + eligibility ruling are free);
 $6,000 before execution. Brownfields = optional liability cap, not a build permit; the
-agreement IMPOSES land use restrictions. (`sources/docs/Brownfields Property Application_rev7.pdf`)
+agreement IMPOSES land use restrictions. (`sources/docs/1621-clermont-rd-durham__Brownfields Property Application_rev7.pdf`)
 
 **T-11 · 2026-06-25 · Brownfields application DRAFT prepared**
 Full fill-in answers drafted for IVANOVSTROY LLC as PD.
-(`sources/docs/Brownfields-Application-DRAFT-1621-Clermont.md`)
+(`sources/docs/1621-clermont-rd-durham__Brownfields-Application-DRAFT-1621-Clermont.md`)
 
 **T-12 · 2026-06-25 · PWEng (Infrastructure Svcs) email**
 Property lies on an UNMAINTAINED right-of-way (pink dots). To get a building permit, owner
 must EXTEND water/sewer main AND BUILD A ROAD to the property — private, all out-of-pocket;
 consult a private civil engineer for cost/timeframe. SEWER available via easement on property
 (green line). WATER not available until road/water situation resolved. Dev questions →
-planning@durhamnc.gov. (`sources/gis/1621-CLERMONT-SEWER-WATER.png`)
+planning@durhamnc.gov. (`sources/gis/1621-clermont-rd-durham__1621-CLERMONT-SEWER-WATER.png`)
 
 **T-13 · 2026-06-25 · Docrag: water-source options**
 Public water NOT categorically required — private well allowed where public water "not
@@ -101,12 +101,12 @@ hazard AND a floodway present; only FEMA approval grants floodway development (8
 wetland portion. On subdivision: must not cut off Clermont Rd access to the rear. Plat does
 NOT include the SW portion shown on GIS → referred to Tax-MappingGIS@dconc.gov. New contacts:
 Emma Howrilla (Planning); Sharon Eckard PG, Eastern Branch Head Brownfields 919-707-8379 /
-919-609-2617. (`sources/emails/2026-06-24_durham-planning-and-_response-to-dsc-inquiry.md`)
+919-609-2617. (`sources/emails/1621-clermont-rd-durham__2026-06-24_durham-planning-and-_response-to-dsc-inquiry.md`)
 
 **T-16 · 2026-06-25 · PWEng — Amber, Development Infrastructure Division (919-560-4326)**
 Same substance as T-12, now with named contact. Unmaintained ROW; must extend water/sewer
 main AND build road, private/out-of-pocket; sewer available via on-site easement; hire a
-private licensed civil engineer. (`sources/emails/2026-06-25_pwengserv-pwengserv-_re-1621-clermont-rd.md`)
+private licensed civil engineer. (`sources/emails/1621-clermont-rd-durham__2026-06-25_pwengserv-pwengserv-_re-1621-clermont-rd.md`)
 
 **T-17 · 2026-06-26 · Floodplain team (DSCFloodplain) — AUTHORITATIVE**
 Reply to our flood questions: **"We do NOT permit construction in the floodway."** Do NOT
@@ -114,7 +114,7 @@ recommend fill in the floodplain (scour + downstream impact) and **do NOT allow/
 in the floodway.** AE-fringe construction must meet all conditions in UDO 8.4.3. A floodway
 FEMA path would require a **No-Rise Certification** and potentially **CLOMR/LOMR** map
 revision. Map snip of floodway location attached (NOT captured — parser took text only).
-(`sources/emails/2026-06-26_dscfloodplain-dscflo_re-1621-clermont-rd.md`)
+(`sources/emails/1621-clermont-rd-durham__2026-06-26_dscfloodplain-dscflo_re-1621-clermont-rd.md`)
 
 **T-18 · 2026-06-25 · Tax/GIS — Margaret Vanderford, GIS Cartographer (boundary history)**
 Parcel "roughly in its current configuration since **1992**," established by deed
@@ -122,13 +122,13 @@ Parcel "roughly in its current configuration since **1992**," established by dee
 MOVEMENT** (acreage not fixed). Prior owner = Key Homes/Equitable Construction. **SW boundary
 shared with Durham Public Schools**, whose deeds are "hard to track." Recommends a **real
 estate attorney title search.** Did NOT resolve the SW/SE plat-vs-GIS mismatch or send the
-full division/recombination history. (`sources/emails/2026-06-25_durham-county-tax-co_re-1621-clermont-rd.md`)
+full division/recombination history. (`sources/emails/1621-clermont-rd-durham__2026-06-25_durham-county-tax-co_re-1621-clermont-rd.md`)
 
 **T-19 · 2026-06-26 · Tax collections — Emma Pelfrey, Revenue Agent — AUTHORITATIVE**
 Parcel 153775: **NO back taxes owed, NO tax-office liens, NO special assessments.** Clean on
 the tax/assessment front. (Does NOT cover non-tax liens, judgments, easements, or title
 defects — those need the title search.)
-(`sources/emails/2026-06-26_pelfrey-emma-g-epelf_re-1621-clermont-rd-durham-nc-27713.md`)
+(`sources/emails/1621-clermont-rd-durham__2026-06-26_pelfrey-emma-g-epelf_re-1621-clermont-rd-durham-nc-27713.md`)
 
 **T-20 · 2026-06-26 · Email attachments captured + read (parser upgrade)**
 Email intake now saves attachments to `sources/emails/attachments/` with standard slug
@@ -144,8 +144,8 @@ names. Retrieved + read the two previously-missing items:
   wetland map PDFs (now in the store, not Downloads).
 
 **T-21 · 2026-06-26 · All attachments parsed (vision OCR → sidecars)**
-Read every email attachment; text captured in `sources/emails/attachments/ATTACHMENTS-INDEX.ocr.md`
-and the deed in `sources/docs/DEED-DB1794-855.ocr.md`. New monuments from the deed's
+Read every email attachment; text captured in `sources/emails/attachments/1621-clermont-rd-durham__ATTACHMENTS-INDEX.ocr.md`
+and the deed in `sources/docs/1621-clermont-rd-durham__DEED-DB1794-855.ocr.md`. New monuments from the deed's
 Exhibit A (DB 1794/856): **stream = Northeast Creek** (its meandering centerline = the
 eastern boundary, explaining the moving line); **N/W neighbor = Parkwood Subdivision Sec 3
 (PB 34/16)**; **S/SW neighbor = "School Property"** (the Durham Public Schools boundary);

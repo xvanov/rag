@@ -1,6 +1,6 @@
 # OCR (vision) — Boundary Survey, Map Book 127, Page 25
 
-> Transcribed in-session by Claude vision from `1621-CLERMONT-BOUNDARY-SURVEY.pdf`
+> Transcribed in-session by Claude vision from `1621-clermont-rd-durham__1621-CLERMONT-BOUNDARY-SURVEY.pdf`
 > (a scan; algorithmic OCR extracted no text). This is the **waste-footprint map**
 > referenced by the Closure Notice (DB 1710/761). For search/indexing; the recorded
 > plat governs.

@@ -83,12 +83,12 @@ Avoidable *only by staying off them*: Brownfields (decline), Floodplain (build o
 - **Real estate attorney — title search** (SW DPS boundary, creek line, plat-vs-GIS) — *recommended by County GIS* [T-18]
 
 ## 9. Document index (`sources/`)
-- `docs/1621-CLERMONT-CLOSURE-NOTICE.pdf` — recorded Closure Notice DB 1710/761-763 [T-08]
-- `docs/1621-CLERMONT-BOUNDARY-SURVEY.pdf` — Map Book 127/25, waste footprint [T-09]
-- `docs/1621-CLERMONT-PARCEL-INFO.pdf` — county parcel card [T-01]
-- `docs/Brownfields Property Application_rev7.pdf` + `Brownfields-Application-DRAFT-...md` [T-10,T-11]
+- `docs/1621-clermont-rd-durham__1621-CLERMONT-CLOSURE-NOTICE.pdf` — recorded Closure Notice DB 1710/761-763 [T-08]
+- `docs/1621-clermont-rd-durham__1621-CLERMONT-BOUNDARY-SURVEY.pdf` — Map Book 127/25, waste footprint [T-09]
+- `docs/1621-clermont-rd-durham__1621-CLERMONT-PARCEL-INFO.pdf` — county parcel card [T-01]
+- `docs/1621-clermont-rd-durham__Brownfields Property Application_rev7.pdf` + `Brownfields-Application-DRAFT-...md` [T-10,T-11]
 - `gis/...stream + flood.pdf`, `...wetland.pdf`, `GIS-MAP.png`, `SE-SECTION.png`, `SEWER-WATER.png`, Google Maps [T-09,T-12]
-- `photos/1621-CLERMONT-RD-PHOTO1.png`, `PHOTO2.png`
+- `photos/1621-clermont-rd-durham__1621-CLERMONT-RD-PHOTO1.png`, `PHOTO2.png`
 
 > **Disclaimer:** Research, not legal/engineering advice. Confirm with a NC land-use
 > attorney, a licensed surveyor, a geotech/environmental engineer, and a civil engineer

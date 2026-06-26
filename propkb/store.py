@@ -23,6 +23,14 @@ def prop_dir(slug: str) -> str:
     return os.path.join(settings.properties_root(), slug.strip().lower())
 
 
+def namespace(slug: str, name: str) -> str:
+    """Ensure a source-file name is prefixed with the property slug so files are
+    unambiguous side-by-side across properties. Idempotent."""
+    slug = slug.strip().lower()
+    prefix = slug + "__"
+    return name if name.startswith(prefix) else prefix + name
+
+
 def paths(slug: str) -> dict:
     base = prop_dir(slug)
     return {
@@ -172,7 +180,7 @@ def ingest(slug: str, file: str, kind: str = "docs", rename: str | None = None) 
         raise FileNotFoundError(src)
     dest_dir = paths(slug)[kind]
     os.makedirs(dest_dir, exist_ok=True)
-    dest = os.path.join(dest_dir, rename or os.path.basename(src))
+    dest = os.path.join(dest_dir, namespace(slug, rename or os.path.basename(src)))
     shutil.copy2(src, dest)
     return dest
 
@@ -188,6 +196,50 @@ def write_text(slug: str, text: str, name: str, kind: str = "docs") -> str:
     with open(dest, "w", encoding="utf-8") as f:
         f.write(text)
     return dest
+
+
+# ---------- reslug (namespace existing source files) ----------
+
+def reslug(slug: str) -> dict:
+    """Rename every file under sources/ to be slug-prefixed (so files are
+    unambiguous across properties), and rewrite references to the old basenames
+    in the property's .md/.yaml files. Idempotent. Returns {old: new}."""
+    p = paths(slug)
+    base, srcroot = p["dir"], p["sources"]
+    rename_map: dict[str, str] = {}
+    for root, _dirs, files in os.walk(srcroot):
+        for fn in files:
+            if fn == ".processed.json":
+                continue
+            new = namespace(slug, fn)
+            if new != fn:
+                rename_map[fn] = new
+    if not rename_map:
+        return {}
+    # 1) rewrite references (longest old-name first to avoid partial overlaps)
+    olds = sorted(rename_map, key=len, reverse=True)
+    for root, _dirs, files in os.walk(base):
+        for fn in files:
+            if not fn.lower().endswith((".md", ".yaml", ".yml")):
+                continue
+            fp = os.path.join(root, fn)
+            try:
+                txt = open(fp, "r", encoding="utf-8").read()
+            except (OSError, UnicodeDecodeError):
+                continue
+            new_txt = txt
+            for old in olds:
+                new_txt = new_txt.replace(old, rename_map[old])
+            if new_txt != txt:
+                with open(fp, "w", encoding="utf-8") as f:
+                    f.write(new_txt)
+    # 2) rename the source files
+    for root, _dirs, files in os.walk(srcroot):
+        for fn in list(files):
+            if fn in rename_map:
+                os.rename(os.path.join(root, fn),
+                          os.path.join(root, rename_map[fn]))
+    return rename_map
 
 
 # ---------- index ----------

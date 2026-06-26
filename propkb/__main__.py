@@ -47,6 +47,8 @@ def main(argv: list | None = None) -> int:
     a.add_argument("--file", required=True); a.add_argument("--kind", default="docs", choices=store.KINDS)
     a.add_argument("--rename", default=None)
     a = sub.add_parser("index"); a.add_argument("--slug", required=True); a.add_argument("--full", action="store_true")
+    a = sub.add_parser("reslug", help="prefix all source files with the property slug + fix references")
+    a.add_argument("--slug", required=True)
     a = sub.add_parser("ocr-render"); a.add_argument("--file", required=True)
     a.add_argument("--out", required=True); a.add_argument("--scale", type=int, default=3)
     a.add_argument("--max-pages", type=int, default=0)
@@ -65,6 +67,12 @@ def main(argv: list | None = None) -> int:
         print("Filed -> %s" % store.ingest(args.slug, args.file, args.kind, args.rename)); return 0
     if args.cmd == "index":
         return store.reindex(args.slug, full=args.full)
+    if args.cmd == "reslug":
+        m = store.reslug(args.slug)
+        print("Renamed %d file(s):" % len(m))
+        for old, new in sorted(m.items()):
+            print("  %s\n   -> %s" % (old, new))
+        return 0
     if args.cmd == "ocr-render":
         from . import ocr
         pngs = ocr.render_pdf(args.file, args.out, dpi_scale=args.scale, max_pages=args.max_pages)

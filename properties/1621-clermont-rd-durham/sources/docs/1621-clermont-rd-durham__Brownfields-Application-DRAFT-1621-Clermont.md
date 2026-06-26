@@ -93,8 +93,8 @@ Intent: **PD intends to purchase after the project is determined eligible for th
 | A | Responsibility & Compliance Affidavit (signed + **notarized**) | **You sign** — certifies you did not cause/contribute to contamination (TRUE: you never owned/operated it). |
 | B | Preliminary Proposed Brownfields Agreement (**initialed**) | **You initial** the NCBP model form. |
 | C | USGS topo location map (1:24,000, 8½×11, property plotted) | Pull from apps.nationalmap.gov/viewer — SE Durham quad. |
-| D | Preliminary survey plat (boundaries + metes & bounds) | **Use Map Book 127, Pg 25** (your 1621-CLERMONT-BOUNDARY-SURVEY.pdf) — an existing conveyance plat is acceptable at this stage. |
-| E | Site photographs (≥1, electronic preferred) | **Have:** 1621-CLERMONT-RD-PHOTO1.png, PHOTO2.png → email to Shirley.Liggins@ncdenr.gov. |
+| D | Preliminary survey plat (boundaries + metes & bounds) | **Use Map Book 127, Pg 25** (your 1621-clermont-rd-durham__1621-CLERMONT-BOUNDARY-SURVEY.pdf) — an existing conveyance plat is acceptable at this stage. |
+| E | Site photographs (≥1, electronic preferred) | **Have:** 1621-clermont-rd-durham__1621-CLERMONT-RD-PHOTO1.png, PHOTO2.png → email to Shirley.Liggins@ncdenr.gov. |
 
 **Submit originals to:** NC Brownfields Program, Attn: Shirley Liggins, NC DEQ Division of Waste Management, Mail Service Center 1646, Raleigh NC 27699-1646. Questions: (919) 707-8200 / (919) 707-8383.
 

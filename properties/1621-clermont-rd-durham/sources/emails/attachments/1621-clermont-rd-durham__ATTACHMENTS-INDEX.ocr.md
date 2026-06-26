@@ -2,7 +2,7 @@
 
 > In-session vision parse of every email attachment so all text is captured + indexed.
 > Binaries live alongside this file; the deed has its own full sidecar
-> (`sources/docs/DEED-DB1794-855.ocr.md`). **Last parsed: 2026-06-26.**
+> (`sources/docs/1621-clermont-rd-durham__DEED-DB1794-855.ocr.md`). **Last parsed: 2026-06-26.**
 
 ## Maps (GIS / FEMA)
 - **`...dscfloodplain..._annotation-2026-06-26-083051.jpg`** — Durham Floodplain official
@@ -31,7 +31,7 @@
   Confirms T-16 (build road + extend water; sewer available).
 - **`...zoning-question-tic__image-1.png`** — Durham GIS parcel map with a hand-drawn red
   circle on the **SW nub** (the buildable area of interest). Same view as
-  `sources/gis/1621-CLERMONT-SE-SECTION.png`.
+  `sources/gis/1621-clermont-rd-durham__1621-CLERMONT-SE-SECTION.png`.
 - **`...zoning-question-tic__image-4.png`** — Google Maps snip: labels **Euclid Rd**,
   **Clermont Rd**, **Northeast Cr[eek]**, Emerald Cir; a house pin centered on the parcel.
 
@@ -43,10 +43,10 @@
 
 ## Plats / deeds (duplicates of indexed docs — see their own OCR sidecars)
 - **`...__pb-127-25.pdf`** = boundary survey, Map Book 127/25 → see
-  `sources/docs/1621-CLERMONT-BOUNDARY-SURVEY.ocr.md`.
+  `sources/docs/1621-clermont-rd-durham__1621-CLERMONT-BOUNDARY-SURVEY.ocr.md`.
 - **`...__pb-1710-761.pdf`** and **`...__pb-1710-761-1.pdf`** = Closure Notice, DB 1710/761
-  → see `sources/docs/1621-CLERMONT-CLOSURE-NOTICE.ocr.md`.
-- **`...__d1794-855.pdf`** = deed DB 1794/855 → see `sources/docs/DEED-DB1794-855.ocr.md`.
+  → see `sources/docs/1621-clermont-rd-durham__1621-CLERMONT-CLOSURE-NOTICE.ocr.md`.
+- **`...__d1794-855.pdf`** = deed DB 1794/855 → see `sources/docs/1621-clermont-rd-durham__DEED-DB1794-855.ocr.md`.
 
 ## Signature / logo images (no substantive content)
 - `...eckard..._image001.png` — NC DEQ logo + disclaimer: "Email correspondence to and

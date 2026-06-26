@@ -62,7 +62,7 @@ constraints:
     current_config_since: 1992 (deed DB 1794-855)
     current_owner_deed: DB 9937/913 (LEIGHS LAND LLC acquired 2023-06-21)
     deeded_area_acres: 9.40   # GIS shows 9.67 (creek-driven)
-    legal_description: Exhibit A of DB 1794/856 (see sources/docs/DEED-DB1794-855.ocr.md)
+    legal_description: Exhibit A of DB 1794/856 (see sources/docs/1621-clermont-rd-durham__DEED-DB1794-855.ocr.md)
     plat_reference: PB 30/144 (McAdoo 1955); also references Parkwood Sub Sec 3 PB 34/16
     stream_name: Northeast Creek — its meandering centerline IS the eastern boundary
     north_west_neighbor: Parkwood Subdivision, Section 3 (Plat Book 34/16)

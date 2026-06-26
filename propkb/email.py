@@ -194,7 +194,7 @@ def sync(slug: str, days: int = 7, max_msgs: int = 50) -> list[dict]:
                 dt = email.utils.parsedate_to_datetime(date_hdr).date().isoformat()
             except Exception:  # noqa: BLE001
                 dt = datetime.utcnow().date().isoformat()
-            stem = f"{dt}_{_slug_text(sender,20)}_{_slug_text(subject)}"
+            stem = f"{slug}__{dt}_{_slug_text(sender,20)}_{_slug_text(subject)}"
             store.write_text(slug, raw[0][1].decode("utf-8", "replace"),
                              stem + ".eml", kind="emails")
             attachments = _save_attachments(msg, slug, stem)

@@ -1,7 +1,7 @@
 # OCR (vision) — Closure Notice, Deed Book 1710, Pages 761–763
 
 > Transcribed in-session by Claude vision from the scanned PDF
-> `1621-CLERMONT-CLOSURE-NOTICE.pdf` (algorithmic OCR extracted no text). Source of
+> `1621-clermont-rd-durham__1621-CLERMONT-CLOSURE-NOTICE.pdf` (algorithmic OCR extracted no text). Source of
 > truth is the recorded instrument; this transcription is for search/indexing.
 
 ## Page 761 — CLOSURE NOTICE
