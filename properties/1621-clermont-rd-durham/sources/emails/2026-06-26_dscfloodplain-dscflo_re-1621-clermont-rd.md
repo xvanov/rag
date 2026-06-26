@@ -4,6 +4,9 @@
 - **Date:** Fri, 26 Jun 2026 12:32:44 +0000
 - **Message-ID:** <SJ0PR09MB97210975EF037C0278C17DCEC0EB2@SJ0PR09MB9721.namprd09.prod.outlook.com>
 
+## Attachments
+- `sources/emails/attachments/2026-06-26_dscfloodplain-dscflo_re-1621-clermont-rd__annotation-2026-06-26-083051.jpg`
+
 ---
 
 Good morning,

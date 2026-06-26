@@ -23,7 +23,9 @@ The user's request: `$ARGUMENTS` — a property name/address, a question, or emp
 3. **Status request** → use `property_status` (returns UNDERSTANDING + PLAN) and
    summarize: snapshot, buildable-zone map, top blockers, decision gates, next actions.
 
-4. **Always surface open questions / next actions** so the live edges are clear.
+4. **Always surface the CURRENT BOTTLENECK** (`BOTTLENECK.md`) — the one thing blocking
+   forward progress and the do-now actions to clear it — plus open questions / next
+   actions, so the live edge is unmistakable.
 
 5. Offer to `/intake` new info or **draft** outreach (drafts only — never send).
 

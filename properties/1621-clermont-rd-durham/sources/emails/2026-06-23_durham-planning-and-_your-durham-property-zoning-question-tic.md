@@ -4,6 +4,13 @@
 - **Date:** Tue, 23 Jun 2026 17:18:40 +0000
 - **Message-ID:** <26263-56710393-public-1782235120@dsc.mojohelpdesk.com>
 
+## Attachments
+- `sources/emails/attachments/2026-06-23_durham-planning-and-_your-durham-property-zoning-question-tic__image-4.png`
+- `sources/emails/attachments/2026-06-23_durham-planning-and-_your-durham-property-zoning-question-tic__image-3.png`
+- `sources/emails/attachments/2026-06-23_durham-planning-and-_your-durham-property-zoning-question-tic__image-2.png`
+- `sources/emails/attachments/2026-06-23_durham-planning-and-_your-durham-property-zoning-question-tic__image-1.png`
+- `sources/emails/attachments/2026-06-23_durham-planning-and-_your-durham-property-zoning-question-tic__pb-1710-761-1.pdf`
+
 ---
 
 We hear you!  

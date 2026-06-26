@@ -129,3 +129,16 @@ Parcel 153775: **NO back taxes owed, NO tax-office liens, NO special assessments
 the tax/assessment front. (Does NOT cover non-tax liens, judgments, easements, or title
 defects — those need the title search.)
 (`sources/emails/2026-06-26_pelfrey-emma-g-epelf_re-1621-clermont-rd-durham-nc-27713.md`)
+
+**T-20 · 2026-06-26 · Email attachments captured + read (parser upgrade)**
+Email intake now saves attachments to `sources/emails/attachments/` with standard slug
+names. Retrieved + read the two previously-missing items:
+- **Floodway map** (DSCFloodplain annotation) — official map confirms the **blue-hatched
+  floodway covers nearly the whole parcel; the SW tongue at Clermont/Euclid (the "1621"
+  label) is the ONLY ground outside the floodway/floodplain** → buildable nub confirmed
+  outside the floodway. GIS acreage **9.67**; plat ref **PB 30/144** (McAdoo 1955); current
+  owner **LEIGHS LAND acquired 6/21/2023, deed DB 9937/913**.
+- **Deed DB 1794-855 (filed 1992-11-23)** — conveyance from **Key Homes, Inc.** (dissolved
+  Nov 1991), references the Closure Notice as Exhibit A = the 1992 reconfiguration Margaret
+  cited (T-18). Also captured: PB 127/25 survey, PB 1710/761 closure notice, stream/flood/
+  wetland map PDFs (now in the store, not Downloads).

@@ -39,6 +39,14 @@ The user is handing you new info: `$ARGUMENTS` (a file path, pasted text, a URL,
    open questions, contacts, doc index; bump date + confidence). **Update PLAN.md** if a
    decision gate, cost line, or concept moved.
 
+6b. **Re-run the bottleneck analysis (Theory of Constraints).** Rewrite `BOTTLENECK.md`
+   to name the ONE current constraint blocking forward progress and the precise actions
+   to clear it (do-now vs. WAITING-on-others vs. proactive long-lead items to start while
+   waiting), plus kill criteria. If the bottleneck CHANGED from the prior state, append a
+   dated entry to `BOTTLENECK-LOG.md` (append-only; one per day / per change). The whole
+   project is a pipeline — we focus on the current bottleneck until it clears, the project
+   completes, or it's killed (won't buy — not profitable).
+
 7. **Re-index:** `python -m propkb index --slug <slug>` (incremental; needs Azure embed
    creds — if unavailable, say so and skip).
 

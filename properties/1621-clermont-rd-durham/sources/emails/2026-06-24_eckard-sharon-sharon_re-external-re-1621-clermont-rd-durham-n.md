@@ -5,6 +5,9 @@
 - **Date:** Wed, 24 Jun 2026 21:07:47 +0000
 - **Message-ID:** <BLAPR09MB62102785E2C5994EE81D6120C4ED2@BLAPR09MB6210.namprd09.prod.outlook.com>
 
+## Attachments
+- `sources/emails/attachments/2026-06-24_eckard-sharon-sharon_re-external-re-1621-clermont-rd-durham-n__image001.png`
+
 ---
 
 Thank you for your inquiry, but these are questions we cannot answer without submittal of an actual Brownfields Property Application and a finding that the applicant and the property are eligible for the Brownfields Program.

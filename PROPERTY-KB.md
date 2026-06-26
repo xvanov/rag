@@ -17,8 +17,11 @@ corpora/prop-<slug>/
   timeline.md         # dated, append-only provenance chain (the "legal chain")
   UNDERSTANDING.md    # living synthesis: what IS + what can be built where
   PLAN.md             # dev concept + business projection + decision gates
+  BOTTLENECK.md       # the ONE current constraint + do-now actions (focus engine)
+  BOTTLENECK-LOG.md   # append-only daily/changed bottleneck history
   sources/
     docs/  emails/  gis/  web/  photos/   # raw artifacts, all indexed
+    emails/attachments/   # email attachments auto-saved with standard slug names
 ```
 
 Three layers, three jobs:
@@ -62,8 +65,10 @@ drafts; sending is always a human action.
 - Fetch recent messages; **flag property-relevant** ones (match address / PIN /
   party domains / subject keywords per property).
 - For each relevant message: save raw `.eml` + a parsed `.md` into
-  `sources/emails/`, then run the normal `/intake` loop (timeline → facts →
-  UNDERSTANDING → PLAN → reindex). Report what landed.
+  `sources/emails/`, **and auto-extract every attachment (PDFs, images) to
+  `sources/emails/attachments/` with standard slug names** (`<email-stem>__<file-slug>.<ext>`)
+  — never to Downloads. Then run the normal `/intake` loop (timeline → facts →
+  UNDERSTANDING → PLAN → **BOTTLENECK** → reindex). Report what landed.
 
 ### 2b. Manual artifact intake (`/intake <file>`)
 - Already covered by the skill: any document you obtain elsewhere — drop the path,

@@ -4,6 +4,9 @@
 - **Date:** Thu, 25 Jun 2026 13:10:08 +0000
 - **Message-ID:** <PH0PR09MB794638DAA4A47BC84FF51AEFD9EC2@PH0PR09MB7946.namprd09.prod.outlook.com>
 
+## Attachments
+- `sources/emails/attachments/2026-06-25_pwengserv-pwengserv-_re-1621-clermont-rd__image.png`
+
 ---
 
 Good morning,

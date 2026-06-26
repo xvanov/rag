@@ -102,6 +102,37 @@ def _slug_text(s: str, n: int = 40) -> str:
     return re.sub(r"[^a-z0-9]+", "-", (s or "").lower()).strip("-")[:n] or "msg"
 
 
+def _save_attachments(msg, slug: str, stem: str) -> list[str]:
+    """Extract every email attachment (PDFs, images, etc.) and save it into the
+    property store under sources/emails/attachments/ with a standard,
+    provenance-preserving slug name: ``<email-stem>__<filename-slug>.<ext>``.
+    Returns the saved paths. PDFs land in the indexable corpus; images are kept
+    for in-session vision/OCR. Nothing goes to Downloads."""
+    saved: list[str] = []
+    att_dir = os.path.join(store.paths(slug)["emails"], "attachments")
+    os.makedirs(att_dir, exist_ok=True)
+    for part in msg.walk():
+        disp = str(part.get("Content-Disposition", "") or "")
+        filename = part.get_filename()
+        is_attach = "attachment" in disp.lower() or (filename and "inline" in disp.lower())
+        if not (filename and (is_attach or part.get_content_maintype() in ("image", "application"))):
+            continue
+        try:
+            payload = part.get_payload(decode=True)
+        except Exception:  # noqa: BLE001
+            continue
+        if not payload:
+            continue
+        base, ext = os.path.splitext(filename)
+        ext = (ext or "." + (part.get_content_subtype() or "bin")).lower()
+        name = f"{stem}__{_slug_text(base, 50)}{ext}"
+        dest = os.path.join(att_dir, name)
+        with open(dest, "wb") as f:
+            f.write(payload)
+        saved.append(dest)
+    return saved
+
+
 # ---------- dedup state ----------
 
 def _state_path(slug: str) -> str:
@@ -166,13 +197,20 @@ def sync(slug: str, days: int = 7, max_msgs: int = 50) -> list[dict]:
             stem = f"{dt}_{_slug_text(sender,20)}_{_slug_text(subject)}"
             store.write_text(slug, raw[0][1].decode("utf-8", "replace"),
                              stem + ".eml", kind="emails")
+            attachments = _save_attachments(msg, slug, stem)
+            att_md = ""
+            if attachments:
+                att_md = "\n## Attachments\n" + "\n".join(
+                    "- `sources/emails/attachments/%s`" % os.path.basename(a)
+                    for a in attachments) + "\n"
             md = (f"# Email — {subject}\n\n"
                   f"- **From:** {sender}\n- **Date:** {date_hdr}\n"
-                  f"- **Message-ID:** {mid}\n\n---\n\n{body.strip()}\n")
+                  f"- **Message-ID:** {mid}\n{att_md}\n---\n\n{body.strip()}\n")
             store.write_text(slug, md, stem + ".md", kind="emails")
             seen.add(mid)
             hits.append({"date": dt, "from": sender, "subject": subject,
-                         "message_id": mid, "file": stem + ".md"})
+                         "message_id": mid, "file": stem + ".md",
+                         "attachments": [os.path.basename(a) for a in attachments]})
         _save_seen(slug, seen)
     finally:
         try:

@@ -4,6 +4,11 @@
 - **Date:** Thu, 25 Jun 2026 06:34:44 -0700 (PDT)
 - **Message-ID:** <939115543.3160.1782394484785@app129144.hef301.service-now.com>
 
+## Attachments
+- `sources/emails/attachments/2026-06-25_durham-county-tax-co_re-1621-clermont-rd__pasted-image.png`
+- `sources/emails/attachments/2026-06-25_durham-county-tax-co_re-1621-clermont-rd__pasted-image.jpg`
+- `sources/emails/attachments/2026-06-25_durham-county-tax-co_re-1621-clermont-rd__d1794-855.pdf`
+
 ---
 
 Good morning, 

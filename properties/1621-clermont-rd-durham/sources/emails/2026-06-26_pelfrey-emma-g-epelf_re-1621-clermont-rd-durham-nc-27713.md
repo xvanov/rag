@@ -4,6 +4,10 @@
 - **Date:** Fri, 26 Jun 2026 13:22:18 +0000
 - **Message-ID:** <DS3PR09MB1235093070EC2B6B8D409ED20DBEB2@DS3PR09MB12350.namprd09.prod.outlook.com>
 
+## Attachments
+- `sources/emails/attachments/2026-06-26_pelfrey-emma-g-epelf_re-1621-clermont-rd-durham-nc-27713__image001.jpg`
+- `sources/emails/attachments/2026-06-26_pelfrey-emma-g-epelf_re-1621-clermont-rd-durham-nc-27713__image002.png`
+
 ---
 
 Good morning,
