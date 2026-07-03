@@ -302,3 +302,21 @@ residential structure, and the structure is what carries the landfill foundation
   **Cleanest path: build the dwelling first, then parking is lawful accessory use.**
 - **Net:** no low-cost side-door revenue use exists here. Only non-structural upside on the
   landfill/floodplain acreage = a **conservation easement** (tax deduction, not cash).
+
+**T-32 · 2026-07-02 · "Minimal principal + big accessory on the landfill" gambit — RULED OUT (docrag)**
+Tested whether a minimal cheap dwelling on the nub could serve as the principal use, then a LARGE
+accessory structure built "big on the landfill." Fails on two independent grounds:
+1. **Size cap (UDO §5.4.1):** "the square footage of an accessory structure shall not be larger than
+   the primary structure"; accessory must be **"subordinate in size and purpose"** (§17.3). A tiny
+   principal + big accessory is explicitly barred — the accessory can't exceed the primary. Height
+   capped 2 stories/32 ft; an ADU (only habitable accessory) maxes at 1,000 sf / 1,200 heated sf and
+   also can't equal the primary.
+2. **Foundation cost is substrate-driven, not use-label-driven:** any vertical structure (principal
+   OR accessory) on the landfill triggers Blalock's full-depth engineered foundation + no-waste-
+   disturbance + methane. "Accessory" changes zoning class, not physics/cost. Building "big on the
+   landfill" loads the actual waste = the MOST expensive place to found — the opposite of cheap.
+   Inverting (big principal on landfill) just moves the full foundation cost onto the worst substrate.
+**Salvageable parts of the idea:** self-power via **accessory/rooftop solar** (allowed in any district,
+§5.4.14 — kills the power-line extension) + a **well** (self-supply water, pending Env Health). These
+trim UTILITY cost lines but do NOT touch the foundation cost. **Cheapest compliant path stays: smallest
+code dwelling on the clean nub (lightest footing there), solar + well, minimal footprint.**
