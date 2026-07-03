@@ -51,7 +51,7 @@
 Avoidable *only by staying off them*: Brownfields (decline), Floodplain (build outside flood line), Army Corps/DWR (don't touch wetland/buffer).
 
 ## 7. Open questions / what would change the answer
-- [ ] **Who gives the environmental sign-off to build on the closed landfill — NC DHHS or NC DEQ?** Blalock said DHHS; the closure was NC DEQ Solid Waste. Confirm with **NCDEQ Solid Waste Section** whether any state approval is required before building, and reconcile with DHHS. [T-25]
+- [x] ~~Who gives environmental sign-off — DHHS or DEQ?~~ **RESOLVED (web, T-27): NCDEQ Superfund Section, Pre-Regulatory Landfill (PRLF) Unit** — NOT DHHS. Blalock's DHHS claim unsupported; DHHS-delegated Durham County Env Health only covers well/septic. **Remaining ask:** confirm the PRLF *process* (any approval/AUL/no-further-action needed to build) directly with **Ryan Channell, Ryan.Channell@deq.nc.gov, 919-707-8333**.
 - [x] ~~Read the Floodplain map snip + deed DB 1794-855~~ — captured [T-20,T-21]. NCDHHS GIS packet (Blalock 7/2) = re-scan of same closure/survey docs [T-26].
 - [ ] **Title search** (real estate attorney) — SW boundary shared w/ Durham Public Schools, creek-moving eastern line, and the **unresolved SW plat-vs-GIS mismatch**. [T-18] Subsumes "is the nub on the parcel."
 - [ ] Is the nub **clear of waste**? → NCDWM Solid Waste (documented extent) + **geotech borings** (definitive; and now REQUIRED regardless — Blalock mandates full-depth engineered foundation design, T-25).
@@ -68,7 +68,7 @@ Avoidable *only by staying off them*: Brownfields (decline), Floodplain (build o
 - Planning — **Emma Howrilla, Planning Specialist** / planning@durhamnc.gov (zoning, subdivision, buffer, access) [T-15]
 - Building & Safety — **W.C. (Wyatt) Blalock, Building Division Chief** / Wyatt.Blalock@durhamnc.gov · 919-369-9133 — AUTHORITATIVE: landfill not a building-code bar; full-depth engineered foundation required [T-25]. Admin desk: PermitTechnicians@durhamnc.gov · 919-560-4144 opt.1 [T-24]
 - Building & Safety trade inspectors — Building **Michael Altman (Dist 3)**; Electrical **Chris Januzys (Dist 8)**; Mechanical **James Hobby (Dist 4)** [T-26]
-- Infrastructure Review (access / Clermont build-out) — **Justin Weist** (Planning referral, T-23)
+- Infrastructure Review (access / Clermont build-out) — **Justin Weist, PE, Engineering Mgr, Development Review** / Justin.Weist@durhamnc.gov · 919-560-4326 x30278 (Planning referral, T-23; verified T-27) — same line as Amber (T-16)
 - Floodplain — DSCFloodplain@durhamnc.gov (AE/floodway) — *replied 6/26* [T-17]
 - Stormwater — StormwaterBMPs@durhamnc.gov (wetland/NWI)
 - Infrastructure Svcs / PWEng — **Amber, Development Infrastructure Div., 919-560-4326** / PWEngServ@durhamnc.gov [T-16]
@@ -79,7 +79,8 @@ Avoidable *only by staying off them*: Brownfields (decline), Floodplain (build o
 - County Register of Deeds — current deed (DB 1794-855), recorded plats
 
 **State / Federal:**
-- NCDWM Solid Waste Section — Anna Mullen 919-707-8281 · Tim Davis 919-707-8290 · main 919-707-8200
+- **NCDEQ Superfund — Pre-Regulatory Landfill (PRLF) Unit** (THE desk for building on the closed dump) — **Ryan Channell, Unit Supervisor, Ryan.Channell@deq.nc.gov · 919-707-8333** [T-27]
+- NCDWM Solid Waste Section (active-facility compliance; NOT the redevelopment desk) — Anna Mullen 919-707-8281 · Tim Davis 919-707-8290 · main 919-707-8200
 - NC Brownfields — **Sharon Eckard, PG, Eastern Branch Head, 919-707-8379 / 919-609-2617** / sharon.eckard@deq.nc.gov; submit to Shirley Liggins, MSC 1646, Raleigh 27699-1646 [T-15]
 - USACE Wilmington District, Raleigh Reg. Field Office — 404 jurisdiction
 - NC DWR 401 & Buffer Permitting — central coord. 919-707-3631

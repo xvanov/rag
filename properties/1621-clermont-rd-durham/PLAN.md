@@ -74,7 +74,7 @@ water + road are the big unknowns and likely the largest line items. [T-12]
 1. [x] ~~Get the two missing attachments (floodway map + deed DB 1794-855)~~ — captured [T-20,T-21]; NCDHHS GIS packet = re-scan of same [T-26].
 2. [ ] **Email Justin Weist, Infrastructure Review** — does the end of Clermont have to be built out for a single home/duplex, or does a private driveway suffice? (G4 — biggest cost fork.) [T-23]
 3. [ ] **Email Durham County Environmental Health (HealthInspector@dconc.gov)** — private well feasibility on the former-landfill nub (G3). [T-23]
-4. [ ] **Email/call NCDEQ Solid Waste Section** — (a) is any state sign-off required to build on the closed "Parkwood LF"? (b) reconcile Blalock's "NC DHHS" vs. DEQ jurisdiction; (c) documented waste extent vs. the nub (G1b). [T-25]
+4. [ ] **Email NCDEQ Superfund PRLF Unit — Ryan Channell** (Ryan.Channell@deq.nc.gov, 919-707-8333) — is any state approval/AUL/no-further-action needed to build on the closed "Parkwood LF"? + documented waste extent vs. the nub (G1b). Jurisdiction resolved (DEQ PRLF, not DHHS — T-27). [T-25,T-27]
 5. [ ] **Engage a real estate attorney for a title search** — SW boundary shared w/ Durham Public Schools, creek-moving eastern line, unresolved SW plat-vs-GIS mismatch (G1). [T-18]
 6. [ ] **Get a civil/geotech quote for the mandatory full-depth engineered foundation** + road + water — Blalock confirmed engineered foundation is required regardless (T-25). Folds G1b geotech + the new foundation cost line together.
 7. [ ] Confirm impervious cap from the **1992 / DB 1794-855** date (UDO 8.7.3B).

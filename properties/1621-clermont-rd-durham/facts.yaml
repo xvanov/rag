@@ -109,7 +109,7 @@ utilities_access:
   sewer: available via easement crossing the property (green line) — usable
   water: NOT available — main dead-ends at Euclid/Clermont; private extension required
   road: must build out road for building permit (private cost) OR resolve access via driveway (TBD)
-  access_question_owner: Justin Weist, Durham Infrastructure Review team — determines whether end of Clermont must be built out for a SFH (Planning referral, T-23)
+  access_question_owner: "Justin Weist, PE — Engineering Mgr, Durham Development Review (Infrastructure Review); Justin.Weist@durhamnc.gov, 919-560-4326 x30278 (T-23, T-27). Same line as Amber/Dev Infrastructure (T-16)"
   utility_cost_bearer: property owner / out-of-pocket; consult private civil engineer
   src: [T-12, T-23]
   water_alternatives:
@@ -121,7 +121,7 @@ building_permit:
   ahj: Durham City-County Building & Safety Department
   will_permit_on_landfill: true   # AHJ confirmed — landfill is NOT a Durham building-code bar (T-25)
   authoritative_source: W.C. Blalock, Building Division Chief (Wyatt.Blalock@durhamnc.gov, 919-369-9133)
-  environmental_clearance_jurisdiction: NC DHHS per Blalock (T-25) — BUT closure was NC DEQ Solid Waste; DHHS-vs-DEQ signoff ambiguity UNRESOLVED
+  environmental_clearance_jurisdiction: "NCDEQ Superfund Section, Pre-Regulatory Landfill (PRLF) Unit (RESOLVED, T-27) — NOT DHHS. Blalock's DHHS claim (T-25) unsupported; DHHS-delegated Durham County Env Health covers only well/septic. Contact: Ryan Channell, Ryan.Channell@deq.nc.gov, 919-707-8333"
   environmental_not_governed_by_building_code: true   # "not administered or governed by the NC building codes enforced by Durham B&S" (T-25)
   engineered_foundation_required: true   # "disturbed substrate mitigation will require full-depth engineering analysis and design for any construction permits" (T-25)
   code_basis: NC Res. Code R401.2 + R401.4.2; NC Bldg Code §1803.5.8 / §1804.6 (geotech investigation for compacted fill >12 in)

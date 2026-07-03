@@ -34,8 +34,9 @@ permit conditioned on state clearance + engineered foundation [T-25]. Resolved.)
 - [ ] **Civil/geotech engineer** — one quote covering (a) road build-out on the
       unmaintained ROW, (b) water (well vs. main extension), and (c) the now-mandatory
       full-depth engineered foundation on the disturbed substrate. [G3/G4 + T-25]
-- [ ] **NCDEQ Solid Waste** — is any state sign-off required to build on the closed
-      "Parkwood LF," and reconcile Blalock's "NC DHHS" vs. DEQ jurisdiction. [T-25]
+- [ ] **NCDEQ Superfund PRLF Unit — Ryan Channell** (Ryan.Channell@deq.nc.gov, 919-707-8333)
+      — is any state approval/AUL/no-further-action needed to build on the closed "Parkwood LF"?
+      (Jurisdiction resolved: DEQ PRLF, not DHHS — T-27. This is now permit-path cleanup, secondary.)
 
 ## Waiting on (status: WAITING)
 - **Stormwater** (StormwaterBMPs) — wetland delineation. No reply yet.

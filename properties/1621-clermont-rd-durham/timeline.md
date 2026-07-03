@@ -210,3 +210,21 @@ Transcribed in `sources/emails/attachments/1621-clermont-rd-durham__2026-07-02-B
   PfE 40/WsC 18; township Triangle; **assigned trade inspectors — Building: Michael Altman
   (Dist 3); Electrical: Chris Januzys (Dist 8); Mechanical: James Hobby (Dist 4)**.
 - Two JPGs = Durham Building & Safety logo (no text).
+
+**T-27 · 2026-07-02 · Web research — verified agency contacts + DHHS-vs-DEQ resolved (SECONDARY source)**
+Web search (official .gov directories) to verify two contacts and the jurisdiction question:
+- **Justin Weist, PE** — Engineering Manager, Durham **Development Review Group** (public name
+  "Infrastructure Review"), Public Works/Engineering. **Justin.Weist@durhamnc.gov** (high conf.,
+  masked `j***@` + First.Last convention), **919-560-4326 ext. 30278** (confirmed). NB: 919-560-4326
+  = the same line as "Amber, Development Infrastructure" (T-16) → she's in his group.
+- **Anna Mullen** — anna.mullen@deq.nc.gov / 919-707-8281 CONFIRMED, but she is Solid Waste
+  **Field Operations** (active-facility compliance) — the WRONG desk for closed-landfill redevelopment.
+- **CORRECT DEQ desk = NCDEQ Superfund Section, Inactive Hazardous Sites Program, Pre-Regulatory
+  Landfill (PRLF) Unit** → **Ryan Channell, Unit Supervisor, Ryan.Channell@deq.nc.gov, 919-707-8333.**
+  General Waste Mgmt line 919-707-8200.
+- **DHHS-vs-DEQ RESOLVED:** environmental verification/mitigation for CONSTRUCTION on a closed
+  pre-regulatory landfill is a **NCDEQ function (Superfund/PRLF)**, NOT DHHS. Blalock's "function of
+  NC DHHS" (T-25) is **not supported** — DEQ is lead; DHHS-delegated **Durham County Environmental
+  Health** is only for on-site well/septic (a separate matter). Source: DEQ Pre-Regulatory Landfill
+  Program pages (incl. a "Durham Parks Pre-Regulatory Landfill Sites" listing). *(Secondary/web —
+  confirm the PRLF process directly with Channell.)*
