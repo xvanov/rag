@@ -60,7 +60,7 @@ Avoidable *only by staying off them*: Brownfields (decline), Floodplain (build o
 - [ ] **Driveway vs. built road** for access? → **Justin Weist, Infrastructure Review** (Planning referral, T-23) + civil engineer.
 - [ ] **Cost of the mandatory engineered foundation** (full-depth geotech + structural) on the landfill nub — new bounded cost line to quote [T-25].
 - [x] ~~Confirm impervious cap from the 1992 date~~ **RESOLVED (corpus, T-28): 24% low-density / 70% high-density by overlay (UDO §8.7.2), not recordation-date-driven; non-binding for 1–2 homes.**
-- [ ] **Value comps** — pulled (T-29): new SFH ~$430–650K, ~$230–290/sqft, lot ~$90–180K (web estimates). Verify with a Durham MLS pull / agent CMA before the residual model is trusted.
+- [ ] **Value comps** — pulled (T-29, refined T-30): Parkwood-pocket exit ceiling **~$600–650K/home** (~$210–280/sqft), build cost ~$235/sqft, serviced lot ~$100–200K. **Margin-tight pocket** — thin residual before extraordinary road/water/foundation costs (T-30). Verify with a Durham MLS/agent CMA before trusting the residual.
 - [ ] ~~Back taxes / liens~~ → **CLEARED: none** (tax office). Non-tax liens/title still pending the title search. [T-19]
 - [ ] Why is it so cheap — prior failed deals? → seller (tax side is clean).
 

@@ -257,3 +257,20 @@ train needed). De-risks another constraint.
   (Durham Co. land median ~$64K/ac). NOTE the Parkwood/Euclid micro-market likely sits BELOW the
   Southpoint-corridor comps that dominate 27713 new-build data. Fills the VALUE side of PLAN's
   residual model (cost side still pending Brandon's feasibility quote).
+
+**T-30 · 2026-07-02 · Web research — TIGHTER Parkwood micro-market comps + margin warning (SECONDARY)**
+Sharpened the residual inputs to the Parkwood/Euclid pocket specifically (below the 27713-wide
+Southpoint comps):
+- **Exit value (finished detached SFH, this pocket):** ~**$525K–$625K total**, ~$210–$280/sqft;
+  the binding constraint is a **total-dollar ceiling ~$600–650K**, not $/sqft (larger homes don't
+  earn a $/sqft premium here). Recent Tier-B closings: 5408 Newhall $554K (1,994 sf), 107 Monterey
+  $526K (1,925 sf), 1012/1013 Catch Fly $600K/$625K (~2,800–2,960 sf). Older ranch stock ~$335–373K.
+- **Hard build cost (Durham, excl. land + site + soft):** ~$185–$310/sqft production/spec; $300–$500
+  custom. Use ~$200–$275/sqft spec for this ceiling (over-finishing won't be recovered).
+- **Finished serviced lot (0.3–0.5 ac):** ~$100K–$200K (LOW confidence — inferred from listings,
+  not closed sales; the "$425K land median" is raw-acreage noise).
+- **MARGIN WARNING (the decision-relevant finding):** sanity check on 1× ~2,000 sf home — revenue
+  ~$575K − hard cost ~$470K (@$235) − site/soft ~$120–140K = **thin residual BEFORE land and BEFORE
+  the extraordinary road + water + engineered-foundation costs.** The pocket is **margin-tight**; the
+  ~$600–650K exit ceiling governs. Deal only works if land is near-free AND extraordinary costs are
+  contained (or a larger/higher-value home or duplex changes the math). Confirm with an agent CMA.

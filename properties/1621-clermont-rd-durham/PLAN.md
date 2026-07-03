@@ -41,11 +41,16 @@ is now road/water COST (G3/G4) + title (G1) + the engineered-foundation cost.**
 
 ```
 Viable units (1 duplex OR 2 SF lots):        ____  (G1/G2/G4 decide)
-Finished value per unit/lot (comps):       $ 430K-650K per new SFH (mid ~$500-575K) [T-29]
-   new-construction density:                 ~$230-290/sqft [T-29]
-   finished buildable lot (alt):             ~$90K-180K/lot [T-29]
-   (VERIFY via MLS/CMA; Parkwood/Euclid likely BELOW Southpoint comps)
-  ── Gross realizable                       $ ____  (units x value; 2 SF ~ $1.0-1.3M gross, mid case)
+Finished value per SFH (Parkwood pocket):  $ 525K-625K; EXIT CEILING ~$600-650K [T-30]
+   value density:                            ~$210-280/sqft (total-$ ceiling binds, not $/sqft) [T-30]
+   finished serviced lot (alt basis):        ~$100K-200K/lot (LOW conf) [T-30]
+  ── Gross realizable (2 SF, mid case)      $ ~1.1-1.2M   (verify via agent CMA)
+
+>> MARGIN WARNING [T-30]: 1x ~2,000 sqft home = revenue ~$575K - hard cost ~$470K
+>> (@$235/sqft) - site/soft ~$120-140K = THIN residual BEFORE land and BEFORE the
+>> extraordinary road + water + engineered-foundation costs. Pocket is margin-tight;
+>> deal works only if land is near-free AND extraordinary costs are contained (or a
+>> larger/higher-value home or duplex shifts the math).
 
 Costs to unlock:
   Road / access build-out                  -$ ____  (civil eng. quote)

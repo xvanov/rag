@@ -55,8 +55,10 @@ now has comp estimates [T-29].)*
 - **Decide duplex vs. 2 detached** — changes unit count + whether subdivision is needed.
 
 ## Kill criteria (walk away if)
-- Road + water + engineered foundation (+ methane mitigation) all-in exceeds the
-  residual value of ~1–2 lots → not profitable.
+- **Exit ceiling is low (~$600–650K/home in the Parkwood pocket, T-30) and the pocket
+  is margin-tight even before extraordinary costs** — so: road + water + engineered
+  foundation (+ methane) all-in, plus land, plus normal build + soft costs + margin,
+  exceeds the ~$1.1–1.2M gross for 2 homes → not profitable. This is the live risk.
 - Well denied AND city-water main extension uneconomic → no viable water.
 - Title search shows the buildable nub isn't cleanly conveyable (e.g. DPS encroachment,
   the plat-vs-GIS mismatch resolves against us).
