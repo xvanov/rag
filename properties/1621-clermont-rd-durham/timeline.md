@@ -274,3 +274,31 @@ Southpoint comps):
   the extraordinary road + water + engineered-foundation costs.** The pocket is **margin-tight**; the
   ~$600–650K exit ceiling governs. Deal only works if land is near-free AND extraordinary costs are
   contained (or a larger/higher-value home or duplex changes the math). Confirm with an agent CMA.
+
+**T-31 · 2026-07-02 · Alt-use analysis — SOLAR + personal PARKING (docrag + web, SECONDARY)**
+Tested two "cheap revenue / low-cost" uses to dodge the engineered-foundation cost. Both ruled out;
+both collapse to the same wall — **RS-10 permits no revenue/utility use without a principal
+residential structure, and the structure is what carries the landfill foundation cost.**
+- **SOLAR (solar array power station = Major Utility):** RS-10 use-table cell = **"L/m"** → allowed
+  only *subject to* UDO §5.3 limited-use standards **+ a minor Special Use Permit** (Board of
+  Adjustment, quasi-judicial; findings incl. "harmony / not injurious to property values" — real
+  opposition risk given adjacent homes + the school). Technically fine on a capped landfill via
+  **ballasted non-penetrating racking** (NC precedent: Duke 5 MW on the closed Buncombe/Woodfin
+  landfill, 25 ac). Panels generally **not BUA** under NC DEQ rules (E-6) → 24% F/J-B cap not binding
+  (confirm Durham's local treatment); floodway hard-no but the ~5 ac upland cap is outside it.
+  **KILLER = SCALE:** only ~3–5 usable ac → ~0.5–1 MW vs. the ~10 ac / ~5 MW developers require;
+  ground lease ~$750–1,400/ac/yr ≈ ~$3–5.6K/yr total (trivial); dead-end ROW → costly
+  interconnection; fixed soft costs (SUP, decommissioning bond, ~$20K+ interconnection study,
+  cap-safe ballast eng) don't amortize sub-MW. **Verdict: legally possible, economically NOT viable
+  solo** — needs land aggregation to 10+ ac or a subsidized brightfield/ITC-energy-community driver.
+- **PERSONAL VEHICLE PARKING (gravel + park own vehicles, no income):** **NOT allowed on the vacant
+  lot.** UDO §5.2: "no accessory use shall be established on a site without a principal use" — parking
+  is accessory; a lot with no dwelling has nothing to attach it to. Outdoor storage is scoped to
+  non-residential districts (§7.5.1); the only stand-alone parking principal use is *Commercial
+  Parking* (a business use, not RS). Even after a dwelling exists, §10.2.3 governs (surfaced, behind
+  structure / ≥25 ft from ROW, ≤35 ft vehicles) and §5.4.5 bars junk vehicles. Gravel pad = BUA
+  (F/J-B) unless #57-stone-over-fabric; would also need a land-disturbance permit (12,000 sf trigger
+  in the watershed overlay) + likely an NCDOT driveway permit; plus the cap/floodway physical bars.
+  **Cleanest path: build the dwelling first, then parking is lawful accessory use.**
+- **Net:** no low-cost side-door revenue use exists here. Only non-structural upside on the
+  landfill/floodplain acreage = a **conservation easement** (tax deduction, not cash).

@@ -19,6 +19,21 @@
 - **Rest of parcel:** open space (flood/floodway/wetland/buffer) — possibly an asset
   for watershed/impervious math or a conservation/tax angle.
 
+## Alternative uses considered — RULED OUT [T-31]
+Tested whether a cheaper, non-residential use could dodge the engineered-foundation cost:
+- **Self-storage / commercial parking:** not permitted in RS-10 (commercial uses); rezoning won't
+  fly (adjacent SF homes + school, dead-end ROW, watershed). Storage still hits the foundation cost;
+  parking has no market. Dead.
+- **Solar (Major Utility):** RS-10 = "L/m" (limited use + minor SUP). Technically fine on the cap
+  (ballasted racking; Duke/Buncombe precedent), but **economically NOT viable** — only ~3–5 usable
+  ac (~0.5–1 MW) vs. ~10 ac/~5 MW developer minimum; lease ~$3–5.6K/yr; interconnection on a dead-end
+  ROW; soft costs don't amortize sub-MW.
+- **Park own personal vehicles:** NOT allowed on a vacant lot — UDO §5.2 bars an accessory use with
+  no principal use. Needs a dwelling first.
+- **Conclusion:** RS-10 yields no revenue use without a principal residential structure — and that
+  structure carries the landfill foundation cost. No cheap side-door. Only non-structural upside =
+  a **conservation easement** on the landfill/floodplain acreage (tax deduction, not cash).
+
 ## Decision gates (must clear before purchase)
 | # | Gate | Owner | Status |
 |---|---|---|---|
