@@ -304,6 +304,26 @@ residential structure, and the structure is what carries the landfill foundation
   landfill/floodplain acreage = a **conservation easement** (tax deduction, not cash).
 
 **T-32 · 2026-07-02 · "Minimal principal + big accessory on the landfill" gambit — RULED OUT (docrag)**
+Tested: build a minimal/cheap principal dwelling on the nub to satisfy zoning, then put a BIG
+accessory structure on the landfill (self-powered by solar + well). Fails on two independent grounds:
+1. **Zoning caps accessory ≤ principal.** UDO §5.4.1: "the square footage of an accessory structure
+   shall not be larger than the primary structure"; §17.3: accessory must be "subordinate in size and
+   purpose." A minimal principal caps every accessory at that minimal size — the ordinance is written
+   to stop exactly this. ADU (largest accessory dwelling) capped at 1,000 sf/1-story, 1,200 heated sf,
+   cannot equal/exceed primary, only one. Placement on a separate part of the lot (rear of front
+   building line) IS allowed, so the landfill-upland location isn't the barrier — the size cap is.
+2. **"Accessory" is a label; it doesn't change the substrate cost.** The full-depth engineered
+   foundation (Blalock, T-25) is triggered by the disturbed landfill soil, not the use class — ANY
+   vertical structure on the landfill needs it + can't disturb the waste cap + methane. Building on the
+   actual waste body = the MOST expensive foundation, worse than the clean nub.
+**Salvage (the parts that work):** onsite/rooftop **solar is accessory-permitted in any district**
+(§5.4.14) → self-power the dwelling, kill the power-line-extension cost (~$15–30K system); **well**
+(pending Env Health) avoids the water-main extension. Both cut UTILITY cost lines but do NOT touch the
+foundation or access costs. **Legit optimized form of the idea:** modest home + ≤1,200 sf ADU, both on
+the nub, solar + well → two dwellings, no subdivision, minimized utility cost. No way around the
+foundation/access wall; the nub's small size remains the binding constraint.
+
+**T-32 · 2026-07-02 · "Minimal principal + big accessory on the landfill" gambit — RULED OUT (docrag)**
 Tested whether a minimal cheap dwelling on the nub could serve as the principal use, then a LARGE
 accessory structure built "big on the landfill." Fails on two independent grounds:
 1. **Size cap (UDO §5.4.1):** "the square footage of an accessory structure shall not be larger than
