@@ -17,12 +17,14 @@ import email.utils
 import hashlib
 import imaplib
 import json
+import mimetypes
 import os
 import re
 import smtplib
 import ssl
 from datetime import datetime, timedelta
 from email.message import EmailMessage
+from pathlib import Path
 
 from . import settings, store
 
@@ -222,9 +224,18 @@ def sync(slug: str, days: int = 7, max_msgs: int = 50) -> list[dict]:
 
 # ---------- draft (NEVER send to third parties) ----------
 
-def draft(to: str, subject: str, body: str, in_reply_to: str | None = None) -> bool:
+def draft(
+    to: str,
+    subject: str,
+    body: str,
+    in_reply_to: str | None = None,
+    attachments: list[str] | None = None,
+) -> bool:
     """Append a message to Gmail Drafts for human review + manual send. Returns
-    True on success. This does NOT send."""
+    True on success. This does NOT send.
+
+    attachments: optional list of file paths to attach (MIME type guessed from
+    the extension; unknown types fall back to application/octet-stream)."""
     user, pw = settings.gmail_user(), settings.gmail_pass()
     if not user or not pw:
         raise RuntimeError("GMAIL_USER / GMAIL_PASS not set in .env")
@@ -236,11 +247,47 @@ def draft(to: str, subject: str, body: str, in_reply_to: str | None = None) -> b
         em["In-Reply-To"] = in_reply_to
         em["References"] = in_reply_to
     em.set_content(body)
+    for path in attachments or []:
+        p = Path(path)
+        if not p.is_file():
+            raise FileNotFoundError(f"attachment not found: {path}")
+        ctype, _enc = mimetypes.guess_type(p.name)
+        maintype, subtype = (ctype.split("/", 1) if ctype else ("application", "octet-stream"))
+        em.add_attachment(
+            p.read_bytes(), maintype=maintype, subtype=subtype, filename=p.name
+        )
     M = imaplib.IMAP4_SSL(IMAP_HOST)
     try:
         M.login(user, pw)
         typ, _ = M.append(DRAFTS_MAILBOX, "(\\Draft)", None, em.as_bytes())
         return typ == "OK"
+    finally:
+        try:
+            M.logout()
+        except Exception:  # noqa: BLE001
+            pass
+
+
+def delete_draft(subject_contains: str) -> int:
+    """Delete drafts from Gmail Drafts whose Subject contains the given string.
+    Returns the number deleted. Safety: only touches the Drafts mailbox, and only
+    messages already flagged \\Draft (never sent mail)."""
+    user, pw = settings.gmail_user(), settings.gmail_pass()
+    if not user or not pw:
+        raise RuntimeError("GMAIL_USER / GMAIL_PASS not set in .env")
+    M = imaplib.IMAP4_SSL(IMAP_HOST)
+    n = 0
+    try:
+        M.login(user, pw)
+        M.select(DRAFTS_MAILBOX)
+        typ, data = M.search(None, "HEADER", "Subject", f'"{subject_contains}"')
+        if typ == "OK":
+            for num in data[0].split():
+                M.store(num, "+FLAGS", "\\Deleted")
+                n += 1
+            if n:
+                M.expunge()
+        return n
     finally:
         try:
             M.logout()
