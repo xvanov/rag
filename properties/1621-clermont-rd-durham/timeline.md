@@ -153,3 +153,60 @@ Clermont Rd ROW eastern terminus **~257.70 ft east of Euclid**; deeded **9.40 ac
 Map attachments confirm floodway covers most of the parcel (SW nub is the only non-floodway
 ground) and the sewer-via-easement / unmaintained-ROW utility picture. Small images = DEQ /
 CEAA signature logos (no substantive text).
+
+**T-22 · 2026-06-26 · Planning — Emma Howrilla (interim)**
+Acknowledged our access + water follow-ups; "working on pulling some info together." No
+substance. (`sources/emails/1621-clermont-rd-durham__2026-06-26_durham-planning-and-_response-to-dsc-inquiry.md`)
+
+**T-23 · 2026-07-01 · Planning — Emma Howrilla (referral answer to access + water)**
+Did NOT directly answer driveway-vs-built-street or the NCGS 160D-802(c) minor-subdivision
+question. Instead REFERRED each fork out:
+- **Access:** contact **Justin Weist, Infrastructure Review team** — to determine whether the
+  end of Clermont must be built out for a SFH. (Named owner of the access question.)
+- **Building on the old landfill:** "talk to **the State** to ensure you are permitted to build
+  a residence on an old landfill — they may have certain permits or regulations" (NCDEQ contacts
+  in her prior email).
+- **Well:** **Durham County Environmental Health** for well determinations + standards —
+  **HealthInspector@dconc.gov** (confirms the well gate/contact).
+(`sources/emails/1621-clermont-rd-durham__2026-07-01_durham-planning-and-_response-to-dsc-inquiry.md`)
+
+**T-24 · 2026-07-02 · Building & Safety — PermitTechnicians (question routing)**
+Answered our 4 permit questions inline: (1) soil/compaction test → directed to **Planning**;
+(2) foundation / methane-mitigation on a closed landfill → **chief building inspector (Blalock)
+copied to assist**; (3) impact fees → **City Impact Fee Ordinance** (durhamnc.gov/DocumentCenter/View/1007),
+liens → tax office (B&S has no lien info); (4) NCDEQ Solid Waste sign-off before permit →
+chief inspector to advise who answers. Attachment = B&S logo only.
+(`sources/emails/1621-clermont-rd-durham__2026-07-02_permittechnicians-pe_re-1621-clermont-rd.md`)
+
+**T-25 · 2026-07-02 · Building & Safety — W.C. Blalock, Building Division Chief — AUTHORITATIVE (permit path)**
+The AHJ's building official on record. Three key statements:
+1. **"We have no permitting records for the subject location"** beyond NCDHHS GIS + local Tax
+   GIS (both attached).
+2. **"Environmental mitigation verification is a function of NC DHHS. It is NOT administered or
+   otherwise governed by the NC building codes enforced by Durham Building & Safety."** → the
+   landfill/environmental clearance is a STATE matter, NOT a Durham building-code bar. *(He names
+   NC DHHS; the closure was under NC DEQ Solid Waste — DHHS-vs-DEQ ambiguity on who signs off;
+   see open question. Practically: confirm with NCDEQ Solid Waste.)*
+3. **"Disturbed substrate mitigation will require full-depth engineering analysis and design for
+   any construction permits."** → an engineered geotechnical investigation + engineered
+   foundation design is MANDATORY here (the landfill = non-engineered fill). Grounded: NC Res.
+   Code R401.2 (fill supporting footings "shall be designed, installed and tested in accordance
+   with accepted engineering practice") + R401.4.2 (compressible soil removed/engineered); NC
+   Bldg Code §1803.5.8 / §1804.6 (geotech investigation required for compacted fill >12 in).
+**Net unlock:** Durham WILL issue a construction permit on the closed landfill, conditioned on
+(a) State/DHHS-or-DEQ environmental clearance and (b) full-depth engineered foundation design —
+converting the "will they even permit a house on a dump?" unknown into a bounded cost line.
+(`sources/emails/1621-clermont-rd-durham__2026-07-02_wc-blalock-wyatt-bla_re-1621-clermont-rd.md`)
+
+**T-26 · 2026-07-02 · Blalock attachments read (vision OCR → sidecar)**
+Transcribed in `sources/emails/attachments/1621-clermont-rd-durham__2026-07-02-BLALOCK-ATTACHMENTS.ocr.md`.
+- **NCDHHS/State GIS landfill packet** (`...r3202201992-parkwoodlf-keyhomes.pdf`) = state registry
+  site **"Parkwood LF" (Key Homes), ref R320220/1992**; contents are a re-scan of the
+  already-held Closure Notice DB 1710/761–764 + Key Homes execution page + PB 127/25 boundary
+  survey (DUPLICATE of T-08/T-09/T-20/T-21). Plat acreage table: **13.610 ac total · 4.435 ac
+  wetland · 4.952 ac landfill** (+0.118 ac encroaching S, excluded) — the plat says landfill
+  **4.952** ac (facts.yaml earlier carried 4.982; ~0.03-ac discrepancy, immaterial).
+- **Durham tax/GIS card** (`...durham-maps-export-4.pdf`): NWI PFO1C **3.078 ac**; soils Ch 42/
+  PfE 40/WsC 18; township Triangle; **assigned trade inspectors — Building: Michael Altman
+  (Dist 3); Electrical: Chris Januzys (Dist 8); Mechanical: James Hobby (Dist 4)**.
+- Two JPGs = Durham Building & Safety logo (no text).

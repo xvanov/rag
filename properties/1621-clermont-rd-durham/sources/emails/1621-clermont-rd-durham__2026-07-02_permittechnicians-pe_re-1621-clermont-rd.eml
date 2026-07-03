@@ -1,0 +1,633 @@
+Delivered-To: ivanovkalin7@gmail.com
+Received: by 2002:a05:6a10:f007:b0:72d:3b16:d310 with SMTP id t7csp3766797pxk;
+        Thu, 2 Jul 2026 03:18:49 -0700 (PDT)
+X-Received: by 2002:a53:ac8d:0:b0:664:ae6a:ee5 with SMTP id 956f58d0204a3-66596629f52mr4400044d50.67.1782987529525;
+        Thu, 02 Jul 2026 03:18:49 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1782987529; cv=pass;
+        d=google.com; s=arc-20260327;
+        b=MzRdOv3rAB9vwcApGx1e8yngN9aDtzijON2LFfrOrf48xsTq8DsLCS4+CWzBKDHCGh
+         5hASk2KkiUUieS18KWjuRa0QTq5JsyOjS60UZjYQ03u/T1AonY0ew15Ri9BTcHiL5sbp
+         rFNVpovH/Jf8eEcWPdqZMNWPu4nYzIMldD1bKYlIEZdgwFcsQ3MKKhe6oxi+vye7BMrn
+         iaCwlEnw+Ywkhwi8m2Su4Y5abiEoYPwTOdEPhYiIdlXYWUHhz7/Lj9DPOS2C7y6f6Yjr
+         A8/e+ovQITf4VXYqWlLlaRCJnyFOP8OCSd2MtYBJuulYeM1+pkc6RfZgmt0bfz1FKANj
+         4AxQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=mime-version:msip_labels:content-language:accept-language
+         :in-reply-to:references:message-id:date:thread-index:thread-topic
+         :subject:cc:to:from:dkim-signature;
+        bh=CqObxAnvX4tV7GnQlvYaTVm9NbEwvTHqXGk/3r1jAUM=;
+        fh=ZTE99Ra6GqVubiPMAyqE4CptcCWUpWgrOVkH+nhEdUI=;
+        b=Dl8ok6PGTEYmYLUxbWtpQS1exGz52yOQoZw5m9BCL93jHS3aMZK4OCJdzWMMSTwOq1
+         lgOXuM3NFKVrdyrKGtIip2g3p//UR5S/upu9C0y4NlfSxTQOwafyVAUP66fLX/xJzQJb
+         wwG9zv5JJvuBV5Oriwbd6NvXq1VMkzHquuihKKW/YSkbeLn0mTFDO5xd0Wlbboeyfh+3
+         J+jfP2UXbrTrf/aBHI1E2It3GEhABRzc43ekhXrGdh/SwbRulMV4JQSB5gLkTf+dTKXS
+         0ykKHqXE3SsmN0zoIH9hj0VHyzdrQE2tJ0TVLvu8aM6CXFu2fkRgqJ4o7VeLDfpoe+k/
+         1quQ==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@durhamnc.gov header.s=selector1 header.b=zmBrw06u;
+       arc=pass (i=1 spf=pass spfdomain=durhamnc.gov dkim=pass dkdomain=durhamnc.gov dmarc=pass fromdomain=durhamnc.gov);
+       spf=pass (google.com: domain of permittechnicians@durhamnc.gov designates 2a01:111:f403:c10e::1 as permitted sender) smtp.mailfrom=PermitTechnicians@durhamnc.gov;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=durhamnc.gov
+Return-Path: <PermitTechnicians@durhamnc.gov>
+Received: from SA9PR09CU002.outbound.protection.outlook.com (mail-southcentralusazlp170100001.outbound.protection.outlook.com. [2a01:111:f403:c10e::1])
+        by mx.google.com with ESMTPS id 956f58d0204a3-6662412d13asi1741687d50.123.2026.07.02.03.18.49
+        for <ivanovkalin7@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 02 Jul 2026 03:18:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of permittechnicians@durhamnc.gov designates 2a01:111:f403:c10e::1 as permitted sender) client-ip=2a01:111:f403:c10e::1;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@durhamnc.gov header.s=selector1 header.b=zmBrw06u;
+       arc=pass (i=1 spf=pass spfdomain=durhamnc.gov dkim=pass dkdomain=durhamnc.gov dmarc=pass fromdomain=durhamnc.gov);
+       spf=pass (google.com: domain of permittechnicians@durhamnc.gov designates 2a01:111:f403:c10e::1 as permitted sender) smtp.mailfrom=PermitTechnicians@durhamnc.gov;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=durhamnc.gov
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=NwDmeAI5S9Hl/20qd/wUXDaKh1j8spNzbaUdWCdAkBDxN07VlPdmLtcG0e+b9GRTauamuRnbstfEmkY0+pSxGwTuAwklTYYWYIBS57ulzxS+C2Aeod4ImOcQG7dQ2v6JbX77cirwpokmaTx6yIxDsZvzEsi2ZiWJ3pu0umEouckD3CTJ0q5C5819NoqI1wJsUt3S3OGMhhcUALaPCV9m/GYDaFQB5mINux58mtwAo96a9j6OoNOAQeEXP7OS05q/3pyq29RNbhph84CT7ok1UePW423wwXSk0FXWlvJLTQS8VRTYaaWEVc3kicftw+YSGIxq2G6LWixG2vBAyYGPOA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=CqObxAnvX4tV7GnQlvYaTVm9NbEwvTHqXGk/3r1jAUM=;
+ b=MwYiOkuEFbm8TtMPvMsG4AByjHBFesAiZyzp2xa8Aj/7t6RSGwsazl4pHih1sZabrLXDwv0GGVOHeeofoZafscZ57BD2es5nhv7tXHF4yd+q1dU4c1qVMnZQ14p5VnW1eem4SiEzY0lnhirRAte23RIfZHEH+tnjFJDDt8NYC93YZ6eBJiZtDfBZWkbIXvBs5I2Hzn9hXp5z0mOQ0L5cvkjmn4HLQPoKskfNRdqmxZOaqO2+U2VjCQN7BZbQDMATLxmFrE4JxA4erj63+dUDOGLMfeVKQ7BLPxh2IVm4IdkGCaA9jHu4sy8zM783mxUz1NG0P0pO31u8btYErA28DA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=durhamnc.gov; dmarc=pass action=none header.from=durhamnc.gov;
+ dkim=pass header.d=durhamnc.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=durhamnc.gov;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=CqObxAnvX4tV7GnQlvYaTVm9NbEwvTHqXGk/3r1jAUM=;
+ b=zmBrw06uX7WbGuA3LpzSOnGHEUENvW+M1pzzPErnf7nHEDQnEBYAZM6lrs1I269d1jh1N8oc1654Zy/QdR3W1t+3bppJdiPx9PydhnSl4a8dh0Pyp81Pap+F04KssKRPvtzciLEVqFdwKSjmIfeVloo7d2OXrdvZWeiZ7gq28bA=
+Received: from PH0PR09MB11568.namprd09.prod.outlook.com
+ (2603:10b6:510:2c2::19) by DS0PR09MB10826.namprd09.prod.outlook.com
+ (2603:10b6:8:170::21) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.181.10; Thu, 2 Jul
+ 2026 10:18:44 +0000
+Received: from PH0PR09MB11568.namprd09.prod.outlook.com
+ ([fe80::8320:5301:4214:31b1]) by PH0PR09MB11568.namprd09.prod.outlook.com
+ ([fe80::8320:5301:4214:31b1%5]) with mapi id 15.21.0181.009; Thu, 2 Jul 2026
+ 10:18:44 +0000
+From: PermitTechnicians <PermitTechnicians@durhamnc.gov>
+To: Kalin Ivanov <ivanovkalin7@gmail.com>
+CC: Wc Blalock <Wyatt.Blalock@durhamnc.gov>
+Subject: Re: 1621 Clermont Rd
+Thread-Topic: 1621 Clermont Rd
+Thread-Index: AQHdBB5IA05pyFUUAUSHEiJLqeVpe7ZaDLdw
+Date: Thu, 2 Jul 2026 10:18:44 +0000
+Message-ID:
+ <PH0PR09MB115680B400101A09BFB1BEDD6DCF52@PH0PR09MB11568.namprd09.prod.outlook.com>
+References:
+ <CAE3DOw+-rjoXi2ysZLhVwEJUrPW10HhOuhv8DTVcmMhm6wJh5w@mail.gmail.com>
+In-Reply-To:
+ <CAE3DOw+-rjoXi2ysZLhVwEJUrPW10HhOuhv8DTVcmMhm6wJh5w@mail.gmail.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+msip_labels:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=durhamnc.gov;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: PH0PR09MB11568:EE_|DS0PR09MB10826:EE_
+x-ms-office365-filtering-correlation-id: c79cad2e-d769-4f70-1520-08ded8234bd0
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|6049299003|23010399003|366016|41320700013|1800799024|13003099007|4013099003|4053099003|38070700021|59022699003|56012099006|6133799003|18002099003|8096899003|22082099003;
+x-microsoft-antispam-message-info:
+ JQi7ymb6ydHtwEvXtoyPNIg8oyP/1e5gI6yrKfXAwxApYS5YKFkLb6UoLu0S8N0veyzlny5DdE0ET9dEazLmk6u2s/pBXLlw5snqPt+GCYInKgmqPOmGeFrR6geJaZGPm1OfPVulRDFXL3eQA5CztN2kj1CZlAIuNj8pXG83UPBolXSQdqYEaq3ZRVzSI7PQtmjvG80VVdTFdJj4JHOkQz2BPwilgtdijBN5327M4zi7zoy6/S7SsmdgotLIO9EuMf5OGLklHfihvjCLv3icViHiyfHsP9fSPGLy6owf1eAlnodgvE60tQWYhmNHVM/inVUQvZU931b2OqFQ4oxPoFRHXMTI9LShME0b/SSnbC3Jz72XjCFw7XKaaRguJCJFMfoirrX5deGwY9dQwH0+Brahqk+4JKO3I4HimuJaPPzKzBJo0sJ69NOGwRNbxaRIlE9V7iz0BsdLNfk7KZYtmZy/6alheXJ9f6gbjyk5kC5Dx0DimVML/d4YeKc2yum2521W/nJSdVEVVNg+cafdpSrE+uLS2jedB2d84MVSYBWo4rRB7cYnU7nyWQCLJgYyZErT80c0OOWDQU6+YRUBf37le+PLuzvsDnwFBO4JvNqLFE25q1dLeeRCY2cIKQCVQUL9AgmegS1AWMPJcpoOM0UdFmkfpWfEYW+Fp2Vkj/mve+wSVZxs5A0YomAUQ5EC
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:PH0PR09MB11568.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(6049299003)(23010399003)(366016)(41320700013)(1800799024)(13003099007)(4013099003)(4053099003)(38070700021)(59022699003)(56012099006)(6133799003)(18002099003)(8096899003)(22082099003);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?xbKcpjmokEiVj16j2Z5Zt+qlqdiw+JWRo9Jooqu9gFhHiD9TFOnsH0KE2k?=
+ =?iso-8859-1?Q?zAraln1DnjJ4Z86iwBPMMoo1jaQcjSpfwI4W2boG0bm33Z3vTidCDlNFNp?=
+ =?iso-8859-1?Q?L/wt4FWXr9v3khYGP9dwmuBnUCMwfnl1WZ6xbM8ipXZKi1W1c76YAtebRC?=
+ =?iso-8859-1?Q?KEoxSpg7BPjyFrqnth8W1BMd09s0QllBjfL+I0a1ewYvFPZNnR2p9VxrKX?=
+ =?iso-8859-1?Q?loxuoFEDGzVN6Mf97ER83BEu/IfQjINADuDtpRbynS6Iagmb4sw9QrL0HM?=
+ =?iso-8859-1?Q?mJK+cRkcH86VHpv8Zt7fpyA1Stln8TEcyTeKZ0n0BqDuLnURyVZG+8Lf6a?=
+ =?iso-8859-1?Q?8ZqtgkW0xHZ9k7QdvcD/3emUjebVx6uAuYzj0RkkNIoWwCsDqqkp1TJXf5?=
+ =?iso-8859-1?Q?Rc7CXiIA4lbrEbF/m7yVZKpmRktqqxYSiqiRIBtsN2XBFsbwFnkQXV0AEs?=
+ =?iso-8859-1?Q?WP2XF3ME51WgqV4wifS8ZAfsPy64o6cRQdE9UUVnUAYMdQtcPXWPBU/DUS?=
+ =?iso-8859-1?Q?rJN8RBiFZ55vSjtf8dxIjm4P0K4UsF+8mUpJhh5L33ASgL45GmkysED1mn?=
+ =?iso-8859-1?Q?g4yYxnVeIJ5dnJrAqvshw45ENs8lGTKT42g/lGtVnmtLQKRYOQwJYvc0Ql?=
+ =?iso-8859-1?Q?YbsFEG1T6NPQ7sFPDJQK1c5+ZruZ1S/7bMEqclTXtjYyr83TOeR9YrB548?=
+ =?iso-8859-1?Q?j77aYD8wfeHFAr20XPn3x0E7xGmy93n19PkWaREg3ULouMxTFDwCcfTfAy?=
+ =?iso-8859-1?Q?GoSiScYLx7hgPfi01pBYgZLSWFpEtHzh0cq8vZq0qUEkJk8rBbL2FXvD5j?=
+ =?iso-8859-1?Q?vnvP/ZR89ZhO+/onsoPTwrwE08TfdvtMf4y4Ga4TqnjWhUnWp4ouYxMsRM?=
+ =?iso-8859-1?Q?5sjPypwR/6yhJhhR14uvS2rsVzUA9h85sZyy7459NicErVT8fxXYPOg4eT?=
+ =?iso-8859-1?Q?fqR9iWp0GQNCDBXr3BweEVkLb4Ojhy+N/cHM6EGlPgxF74l+Ehg3cCgTkw?=
+ =?iso-8859-1?Q?tMglZG7siX2BK+Ydp+veYK7a+TR5xHITe2U0kQ3TZXpLAAKaThhNFwBK1V?=
+ =?iso-8859-1?Q?h9RTgvTJX0NtrVLC3UBoFs6bMSqKQ4RtPT8utevl6zOGxXgGGBaPmGom9Q?=
+ =?iso-8859-1?Q?lolnWb3E7m6Je1QdNmqUvfPBmXDQZvkXAvud46oJeSw3azgF/vXBrBOOka?=
+ =?iso-8859-1?Q?cEgjAMP0/pG5+NwPEkL5fv0gDsLQhHRIrGc7BQtHbIAiYf2SS0KBOjDXBr?=
+ =?iso-8859-1?Q?lQdY4YdaZvIQj84ymusZvS4uFlsGE2geKOkSQZWI7OMf+BiDi/mdq5bPz3?=
+ =?iso-8859-1?Q?LLtdbSeoi4+JnynYGafF1aubYDRh2Vr5Cpm43Vai9G/rh/CU5gjw/3jHX1?=
+ =?iso-8859-1?Q?B/NesKbwV1QcbYpopkzKFWVOO3UbWd6xpEG1fXUhxIho1RaB6A7U2gXwBV?=
+ =?iso-8859-1?Q?vQK9HpWTJ+TBCZSGnyZA5Q2N0McmRzxoJDKd+qoXBTVjvxmwyqfj8MtH7R?=
+ =?iso-8859-1?Q?IRojM3AUjG+SnMJD+1rlUREX2bxc3CbrRW5CndFwrv1oc+edeX81JViTFy?=
+ =?iso-8859-1?Q?q3iZ84vr/q7kCZiylGQmhrf8ZxWMszLLDqP55w20cCwkf/Oey+FGgpSV2M?=
+ =?iso-8859-1?Q?32l6IJ0Mfd53C2NcYKVABHcnhFB561WyWexukDoKO1gyOzN+Ubb5RgHp9+?=
+ =?iso-8859-1?Q?T63tnJKKNYkHNrQyS7ugLamIq0xWdflpuZzzG+BStZpopiXDj9jVq4x4kg?=
+ =?iso-8859-1?Q?Ef+94BNE0oMZs6VNyzowu2LPVzV2YWl9V56MOxi+nCapYMErBcXsnDnCUE?=
+ =?iso-8859-1?Q?KkfjAxSK/cxiuRditPUGPVtdy6eCZFw=3D?=
+Content-Type: multipart/related;
+	boundary="_004_PH0PR09MB115680B400101A09BFB1BEDD6DCF52PH0PR09MB11568na_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-OriginatorOrg: durhamnc.gov
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: PH0PR09MB11568.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: c79cad2e-d769-4f70-1520-08ded8234bd0
+X-MS-Exchange-CrossTenant-originalarrivaltime: 02 Jul 2026 10:18:44.0243
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 297def82-9439-4388-a808-3548a4ecf47d
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS0PR09MB10826
+
+--_004_PH0PR09MB115680B400101A09BFB1BEDD6DCF52PH0PR09MB11568na_
+Content-Type: multipart/alternative;
+	boundary="_000_PH0PR09MB115680B400101A09BFB1BEDD6DCF52PH0PR09MB11568na_"
+
+--_000_PH0PR09MB115680B400101A09BFB1BEDD6DCF52PH0PR09MB11568na_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Greetings,
+
+Please see the responses to your inquiry within the thread of this email in=
+ yellow.  Most of your questions must be addressed by a different workgroup=
+ as we do not have the answers to those questions.
+
+2. What foundation or methane-mitigation conditions typically apply on a cl=
+osed landfill? The chief building inspector is copied to assist with this q=
+uestion.
+4. Would you require NCDEQ Solid Waste sign-off before issuing a permit her=
+e? The chief building inspector is copied to assist with advising who can a=
+nswer this question.
+
+
+
+For the most current updates from the Building & Safety Department includin=
+g current inspection procedures, please visit:  https://www.durhamnc.gov/41=
+45/Important-Updates
+
+
+Please advise if additional assistance is needed. Have a great day!
+
+
+Thank you,
+
+
+
+Building & Safety Department Administrative Staff
+
+Durham City-County Building & Safety Department
+
+101 City Hall Plaza, Ground Floor, Ste. 400
+
+Dept Phone: 919-560-4144, opt. 1
+
+Building Permit Application Forms:  https://www.durhamnc.gov/295/Applicatio=
+n-Forms
+
+Dplans Portal for Building Permit App Submission:  https://durhamnc.gov/467=
+/Dplans
+
+LDO Portal for Permit Payments and Trade Permit App Submission: https://ldo=
+4.durhamnc.gov/durhamweb
+
+Building & Safety Department Contact List:  https://durhamnc.gov/Directory.=
+aspx?did=3D37
+
+
+Visit our webpage<https://linkprotect.cudasvc.com/url?a=3Dhttps%3a%2f%2fwww=
+.durhamnc.gov%2f293%2fCity-County-Inspections&c=3DE,1,nE0exLfTv4L4ATDd6Th2w=
+1kMtXINfI9QBDPzsYljs9rgPXbYSJLr3jTM8pu8Fatp5Q96bD8ybvgqfGbdBhw_LrTGnkP0ek-M=
+hQp02CxSEKaKfuwT23pvlERB9g,,&typo=3D1>.  Subscribe<https://linkprotect.cuda=
+svc.com/url?a=3Dhttps%3a%2f%2fwww.durhamnc.gov%2flist.aspx&c=3DE,1,na-GVf7E=
+oKv5s0Y5bx2__R71UlVlsL2-yz78HYSzNI6_F2tzW10chtIpu6YcljTL2gPwSpIT0XBt2T8T4Az=
+ssYQStPogi8VAKSNHqS-KyklC&typo=3D1> to our news & updates
+
+[cid:686d976c-5657-4fa4-981b-e0a7c7060938]
+
+
+________________________________
+From: Kalin Ivanov <ivanovkalin7@gmail.com>
+Sent: Wednesday, June 24, 2026 5:12 PM
+To: PermitTechnicians <PermitTechnicians@durhamnc.gov>
+Subject: 1621 Clermont Rd
+
+
+CAUTION: This email originated from outside your organization. Exercise cau=
+tion when opening attachments or clicking links, especially from unknown se=
+nders.
+
+Re: 1621 Clermont Rd, Durham NC, 27713 - PIN 0728808242 / REID 153775 (9.4 =
+acres).
+
+Hello,
+I'm doing due diligence on a possible purchase. Durham Planning referred me=
+ to you for the questions below. A quick reply, even partial, would help me=
+ a lot.
+
+1. Given the former-landfill use, what soil/compaction or geotechnical test=
+ing would you require before a building permit? This question needs to be d=
+irected to planning at Planning@DurhamNC.gov
+2. What foundation or methane-mitigation conditions typically apply on a cl=
+osed landfill? The chief building inspector is copied to assist with this q=
+uestion.
+3. What impact fees would apply (Parks Zone 1, Open Space 1C, Streets Zone =
+4), and are there liens on the property? The tax office would advise of lie=
+ns.  We do not have this information.  For impact fees, you can find them a=
+t:  https://www.durhamnc.gov/DocumentCenter/View/1007/City-Impact-Fee-Ordin=
+ance-PDF
+4. Would you require NCDEQ Solid Waste sign-off before issuing a permit her=
+e? The chief building inspector is copied to assist with advising who can a=
+nswer this question.
+
+Thanks,
+Kalin Ivanov
+
+
+
+
+--_000_PH0PR09MB115680B400101A09BFB1BEDD6DCF52PH0PR09MB11568na_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"font-family: &quot;Times New Roman&q=
+uot;, Times, serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Greetings,</div>
+<div class=3D"elementToProof" style=3D"font-family: &quot;Times New Roman&q=
+uot;, Times, serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: &quot;Times New Roman&q=
+uot;, Times, serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Please see the responses to your inquiry within the thread of this email in=
+ yellow.&nbsp; Most of your questions must be addressed by a different work=
+group as we do not have the answers to those questions.</div>
+<div class=3D"elementToProof" style=3D"font-family: &quot;Times New Roman&q=
+uot;, Times, serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: &quot;Times New Roman&q=
+uot;, Times, serif; font-size: 12pt; color: rgb(0, 0, 0);">
+2. What foundation or methane-mitigation conditions typically apply on a cl=
+osed landfill?
+<span style=3D"background-color: rgb(255, 255, 0);">The chief building insp=
+ector is copied to assist with this question.</span></div>
+<div class=3D"elementToProof" style=3D"font-family: &quot;Times New Roman&q=
+uot;, Times, serif; font-size: 12pt; color: rgb(0, 0, 0);">
+4. Would you require NCDEQ Solid Waste sign-off before issuing a permit her=
+e?<span style=3D"background-color: rgb(255, 255, 0);">&nbsp;The chief build=
+ing inspector is copied to assist with advising who can answer this questio=
+n.</span></div>
+<div id=3D"Signature" class=3D"elementToProof">
+<div class=3D"elementToProof" style=3D"font-family: &quot;Times New Roman&q=
+uot;, Times, serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: &quot;Times New Roman&q=
+uot;, Times, serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<p class=3D"elementToProof" style=3D"text-align: left; background-color: rg=
+b(255, 255, 255); margin: 0in 0px 0.0001pt; font-size: 11pt;">
+<span style=3D"font-family: &quot;Times New Roman&quot;, serif; font-size: =
+12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">For the m=
+ost current updates from the Building &amp; Safety Department including cur=
+rent inspection procedures, please visit:&nbsp;
+<a href=3D"https://www.durhamnc.gov/4145/Important-Updates" id=3D"OWAd69e28=
+6f-4626-46c8-fae3-7614c5cae0f5" class=3D"OWAAutoLink" style=3D"margin: 0px;=
+">
+https://www.durhamnc.gov/4145/Important-Updates</a></span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; background-color: rg=
+b(255, 255, 255); margin: 0in 0px 0.0001pt; font-size: 11pt;">
+<span style=3D"font-family: &quot;Times New Roman&quot;, Times, serif; font=
+-size: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><b=
+r>
+</span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; background-color: rg=
+b(255, 255, 255); margin: 0in 0px 0.0001pt; font-size: 11pt;">
+<span style=3D"font-family: &quot;Times New Roman&quot;, Times, serif; font=
+-size: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">Pl=
+ease advise if additional assistance is needed. Have a great day!</span></p=
+>
+<p class=3D"elementToProof" style=3D"text-align: left; background-color: rg=
+b(255, 255, 255); margin: 0in 0px 0.0001pt; font-size: 11pt;">
+<span style=3D"font-family: &quot;Times New Roman&quot;, serif; font-size: =
+12pt; color: rgb(0, 0, 0);"><br>
+</span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; background-color: rg=
+b(255, 255, 255); margin: 0in 0px 0.0001pt; font-size: 11pt;">
+<span style=3D"font-family: &quot;Times New Roman&quot;, serif; font-size: =
+12pt; color: rgb(0, 0, 0);">Thank you,&nbsp;</span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; background-color: rg=
+b(255, 255, 255); margin: 0in 0px 0.0001pt; font-size: 11pt;">
+<span style=3D"font-family: &quot;Script MT Bold&quot;; font-size: 12pt; co=
+lor: rgb(31, 73, 125);">&nbsp;</span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; background-color: rg=
+b(255, 255, 255); margin: 0in 0px 0.0001pt; font-size: 11pt;">
+<span style=3D"font-family: &quot;Script MT Bold&quot;; font-size: 12pt; co=
+lor: rgb(31, 73, 125);"><b>Building &amp; Safety Department Administrative =
+Staff</b></span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; background-color: rg=
+b(255, 255, 255); margin: 0in 0px 0.0001pt; font-size: 11pt;">
+<span style=3D"font-family: &quot;Times New Roman&quot;, serif; font-size: =
+8pt; color: rgb(64, 64, 64);">Durham City-County Building &amp; Safety Depa=
+rtment&nbsp;</span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; background-color: rg=
+b(255, 255, 255); margin: 0in 0px 0.0001pt; font-size: 11pt;">
+<span style=3D"font-family: &quot;Times New Roman&quot;, serif; font-size: =
+8pt; color: rgb(64, 64, 64);">101 City Hall Plaza, Ground Floor, Ste. 400&n=
+bsp;</span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; background-color: rg=
+b(255, 255, 255); margin: 0in 0px 0.0001pt; font-size: 11pt;">
+<span style=3D"font-family: &quot;Times New Roman&quot;, serif; font-size: =
+8pt; color: rgb(64, 64, 64);">Dept Phone: 919-560-4144, opt. 1&nbsp;</span>=
+</p>
+<p class=3D"elementToProof" style=3D"background-color: rgb(255, 255, 255); =
+margin: 0in 0px 0.0001pt; font-family: Calibri, sans-serif; font-size: 11pt=
+; color: rgb(0, 0, 0);">
+<span style=3D"font-family: &quot;Times New Roman&quot;, serif; font-size: =
+8pt; color: rgb(64, 64, 64);">Building Permit Application Forms:&nbsp;
+<a href=3D"https://www.durhamnc.gov/295/Application-Forms" id=3D"OWA59fdde6=
+f-0601-df24-5f72-94dbc40fd821" class=3D"ContentPasted2 OWAAutoLink" style=
+=3D"margin: 0px;">
+https://www.durhamnc.gov/295/Application-Forms</a>&nbsp;</span></p>
+<div class=3D"_Entity _EType_OWALinkPreview _EId_OWALinkPreview _EReadonly_=
+1" style=3D"font-size:14.6667px;font-family:Calibri,sans-serif;margin:0px;c=
+olor:rgb(0,0,0);background-color:rgb(255,255,255)">
+</div>
+<p class=3D"elementToProof" style=3D"background-color: rgb(255, 255, 255); =
+margin: 0in 0px 0.0001pt; font-family: Calibri, sans-serif; font-size: 11pt=
+; color: rgb(0, 0, 0);">
+<span style=3D"font-family: &quot;Times New Roman&quot;, serif; font-size: =
+8pt; color: rgb(64, 64, 64);">Dplans Portal for Building Permit App Submiss=
+ion:&nbsp;
+</span><span style=3D"font-family: &quot;Times New Roman&quot;, serif; font=
+-size: 8pt; color: blue;"><a href=3D"https://durhamnc.gov/467/Dplans" id=3D=
+"OWAffb99717-61a3-8c98-4a68-e706c5e2863d" class=3D"ContentPasted2 OWAAutoLi=
+nk" style=3D"color: blue; margin: 0px;">https://durhamnc.gov/467/Dplans</a>=
+</span><span style=3D"font-family: &quot;Times New Roman&quot;, serif; font=
+-size: 8pt; color: rgb(64, 64, 64);">&nbsp;&nbsp;</span></p>
+<p class=3D"elementToProof" style=3D"background-color: rgb(255, 255, 255); =
+margin: 0in 0px 0.0001pt; font-family: Calibri, sans-serif; font-size: 11pt=
+; color: rgb(0, 0, 0);">
+<span style=3D"font-family: &quot;Times New Roman&quot;, serif; font-size: =
+8pt; color: rgb(64, 64, 64);">LDO Portal for Permit Payments and Trade Perm=
+it App Submission:
+</span><span style=3D"font-family: &quot;Times New Roman&quot;, serif; font=
+-size: 8pt; color: blue;"><a href=3D"https://ldo4.durhamnc.gov/durhamweb" i=
+d=3D"OWA4fc4c07d-e4f3-f312-7db4-b4f93c3b7c01" class=3D"ContentPasted2 OWAAu=
+toLink" style=3D"color: blue; margin: 0px;">https://ldo4.durhamnc.gov/durha=
+mweb</a></span><span style=3D"font-family: &quot;Times New Roman&quot;, ser=
+if; font-size: 8pt; color: rgb(64, 64, 64);">&nbsp;</span></p>
+<p class=3D"elementToProof" style=3D"background-color: rgb(255, 255, 255); =
+margin: 0in 0px 0.0001pt; font-family: Calibri, sans-serif; font-size: 11pt=
+; color: rgb(0, 0, 0);">
+<span style=3D"font-family: &quot;Times New Roman&quot;, serif; font-size: =
+8pt; color: rgb(64, 64, 64);">Building &amp; Safety Department Contact List=
+:&nbsp;
+</span><span style=3D"font-family: &quot;Times New Roman&quot;, serif; font=
+-size: 8pt; color: blue;"><a href=3D"https://durhamnc.gov/Directory.aspx?di=
+d=3D37" id=3D"OWAc9163b10-226d-954f-b84c-dc37c2659110" class=3D"ContentPast=
+ed2 OWAAutoLink" style=3D"color: blue; margin: 0px;">https://durhamnc.gov/D=
+irectory.aspx?did=3D37</a></span><span style=3D"font-family: &quot;Times Ne=
+w Roman&quot;, serif; font-size: 8pt; color: rgb(64, 64, 64);">&nbsp;</span=
+></p>
+<p class=3D"elementToProof" style=3D"margin: 0in 0in 0.0001pt; font-family:=
+ Calibri, sans-serif; font-size: 11pt; color: rgb(0, 0, 0);">
+<span style=3D"font-family: &quot;Times New Roman&quot;, serif; font-size: =
+10pt; color: rgb(64, 64, 64);"><br>
+</span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; background-color: rg=
+b(255, 255, 255); margin: 0in 0in 12pt; font-family: Calibri, sans-serif; f=
+ont-size: 11pt; color: rgb(36, 36, 36);">
+<b>Visit our</b><span style=3D"color: rgb(5, 99, 193);"><a href=3D"https://=
+linkprotect.cudasvc.com/url?a=3Dhttps%3a%2f%2fwww.durhamnc.gov%2f293%2fCity=
+-County-Inspections&amp;c=3DE,1,nE0exLfTv4L4ATDd6Th2w1kMtXINfI9QBDPzsYljs9r=
+gPXbYSJLr3jTM8pu8Fatp5Q96bD8ybvgqfGbdBhw_LrTGnkP0ek-MhQp02CxSEKaKfuwT23pvlE=
+RB9g,,&amp;typo=3D1" target=3D"_blank" id=3D"OWA80763662-41a1-80bc-e1ae-c13=
+e48d7b36f" class=3D"ContentPasted0 OWAAutoLink" rel=3D"noopener noreferrer"=
+ style=3D"color: rgb(5, 99, 193); margin: 0px;"><b><u>&nbsp;webpage</u></b>=
+</a>.
+<b><u>&nbsp;</u></b><a href=3D"https://linkprotect.cudasvc.com/url?a=3Dhttp=
+s%3a%2f%2fwww.durhamnc.gov%2flist.aspx&amp;c=3DE,1,na-GVf7EoKv5s0Y5bx2__R71=
+UlVlsL2-yz78HYSzNI6_F2tzW10chtIpu6YcljTL2gPwSpIT0XBt2T8T4AzssYQStPogi8VAKSN=
+HqS-KyklC&amp;typo=3D1" target=3D"_blank" id=3D"OWA2008752d-96a6-9bfa-df24-=
+ae424f6c3957" class=3D"ContentPasted0 OWAAutoLink" rel=3D"noopener noreferr=
+er" style=3D"color: rgb(5, 99, 193); margin: 0px;"><b><u>Subscribe</u></b><=
+/a></span><b>&nbsp;to
+ our news &amp; updates</b><span style=3D"font-size: 12pt;"><br>
+</span></p>
+<p class=3D"elementToProof" style=3D"text-align: left; background-color: rg=
+b(255, 255, 255); margin: 0in 0in 0.0001pt;">
+<span style=3D"font-family: &quot;Times New Roman&quot;, serif; font-size: =
+10pt; color: rgb(0, 0, 0);"><img style=3D"max-width: 760px; margin-top: 0px=
+; margin-bottom: 0px;" data-outlook-trace=3D"F:1|T:1" src=3D"cid:686d976c-5=
+657-4fa4-981b-e0a7c7060938"></span></p>
+<div class=3D"elementToProof" style=3D"font-size: 12pt;"><br>
+</div>
+</div>
+<div style=3D"font-family: &quot;Times New Roman&quot;, Times, serif; font-=
+size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<hr style=3D"display: inline-block; width: 98%;">
+<div id=3D"divRplyFwdMsg">
+<div style=3D"direction: ltr; font-family: Calibri, sans-serif; font-size: =
+11pt; color: rgb(0, 0, 0);">
+<b>From:</b>&nbsp;Kalin Ivanov &lt;ivanovkalin7@gmail.com&gt;<br>
+<b>Sent:</b>&nbsp;Wednesday, June 24, 2026 5:12 PM<br>
+<b>To:</b>&nbsp;PermitTechnicians &lt;PermitTechnicians@durhamnc.gov&gt;<br=
+>
+<b>Subject:</b>&nbsp;1621 Clermont Rd</div>
+<div style=3D"direction: ltr;">&nbsp;</div>
+</div>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;">CAUTION: This email origi=
+nated from outside your organization. Exercise caution when opening attachm=
+ents or clicking links, especially from unknown senders.</p>
+<div style=3D"direction: ltr;">Re: 1621 Clermont Rd, Durham NC, 27713 - PIN=
+ 0728808242 / REID 153775 (9.4 acres).<br>
+<br>
+Hello,<br>
+I'm doing due diligence on a possible purchase. Durham Planning referred me=
+ to you for the questions below. A quick reply, even partial, would help me=
+ a lot.</div>
+<div style=3D"direction: ltr;"><br>
+</div>
+<div class=3D"elementToProof" style=3D"direction: ltr;">1. Given the former=
+-landfill use, what soil/compaction or geotechnical testing would you requi=
+re before a building permit?
+<span style=3D"background-color: rgb(255, 255, 0);">This question needs to =
+be directed to planning at Planning@DurhamNC.gov</span></div>
+<div class=3D"elementToProof" style=3D"direction: ltr;">2. What foundation =
+or methane-mitigation conditions typically apply on a closed landfill?
+<span style=3D"background-color: rgb(255, 255, 0);">The chief building insp=
+ector is copied to assist with this question.</span><br>
+3. What impact fees would apply (Parks Zone 1, Open Space 1C, Streets Zone&=
+nbsp;4), and are there liens on the property?
+<span style=3D"background-color: rgb(255, 255, 0);">The tax office would ad=
+vise of liens.&nbsp; We do not have this information.&nbsp; For impact fees=
+, you can find them at:&nbsp;
+</span><span style=3D"color: rgb(0, 0, 0); background-color: rgb(255, 255, =
+0);"><a href=3D"https://www.durhamnc.gov/DocumentCenter/View/1007/City-Impa=
+ct-Fee-Ordinance-PDF">https://www.durhamnc.gov/DocumentCenter/View/1007/Cit=
+y-Impact-Fee-Ordinance-PDF</a></span><br>
+4. Would you require NCDEQ Solid Waste sign-off before issuing a permit her=
+e? <span style=3D"color: rgb(0, 0, 0); background-color: rgb(255, 255, 0);"=
+>
+The chief building inspector is copied to assist with advising who can answ=
+er this question.</span><br>
+<br>
+Thanks,<br>
+Kalin Ivanov</div>
+<div style=3D"direction: ltr;"><br>
+</div>
+<div style=3D"direction: ltr;"><br>
+</div>
+<div style=3D"direction: ltr;"><br>
+</div>
+</body>
+</html>
+
+--_000_PH0PR09MB115680B400101A09BFB1BEDD6DCF52PH0PR09MB11568na_--
+
+--_004_PH0PR09MB115680B400101A09BFB1BEDD6DCF52PH0PR09MB11568na_
+Content-Type: image/jpeg; name="Outlook-yak0u5x2.jpg"
+Content-Description: Outlook-yak0u5x2.jpg
+Content-Disposition: inline; filename="Outlook-yak0u5x2.jpg"; size=6672;
+	creation-date="Thu, 02 Jul 2026 10:18:43 GMT";
+	modification-date="Thu, 02 Jul 2026 10:18:43 GMT"
+Content-ID: <686d976c-5657-4fa4-981b-e0a7c7060938>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMg
+IyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCACxALwDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2TrXK
+ax42XSNTlszZPJ5eMsHAzkZrqxxXlPjL/kaLz6L/ACrKtNxjdHoZZh6eIrONTax3sWvCWzW4EBAM
+e/bu9s4rjB8ZIR/zB5f+/wAP8K3LUf8AEkj/AOvf/wBlrxL/ABqcnk8S6ntOljzsy/cSXIepf8Ll
+h/6A83/f4f4Uf8Llh/6A83/f4f4V5bRXt/VaZ5f1qoepf8Llh/6A83/f4f4Vb0j4qxarq9pYjS5Y
+zcSBA5lB25715FWx4P58Y6T/ANfK/wBaUsNTUWy4Ymo5JH0NS0lLXmI9IpWn/ISvvqn/AKDV2qVp
+/wAhK++qf+g1doASsrVPEdhpNyILt3WQruAVCeP8itWvPPHxI1uI+luP5msq03CN0JuyOi/4TfR/
++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
+B//Z
+
+--_004_PH0PR09MB115680B400101A09BFB1BEDD6DCF52PH0PR09MB11568na_--

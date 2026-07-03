@@ -1,7 +1,7 @@
 # Structured facts for 1621 Clermont Rd, Durham NC.
 # Canonical, queryable layer. Every non-obvious fact carries a `src` pointing to
 # a timeline.md entry (T-NN) so the provenance chain stays auditable.
-# Maintained by /intake. Last updated: 2026-06-25.
+# Maintained by /intake. Last updated: 2026-07-02.
 
 property:
   slug: prop-1621-clermont-rd-durham
@@ -42,11 +42,12 @@ constraints:
     closure_notice_recorded: Durham County Deed Book 1710, Pages 761-763 (recorded 1991-09-30)
     closure_notice_nature: disclosure/notice only — NOT a restrictive covenant; bars improper DISTURBANCE of waste, not construction per se
     waste_footprint_map: Map Book 127, Page 25 (the "boundary survey")
-    landfill_area_acres: 4.982
+    landfill_area_acres: 4.952   # per PB 127/25 acreage table (T-26); earlier read said 4.982 — ~0.03 ac diff, immaterial
     encroaching_landfill_south_acres: 0.118
     regulatory_basis: 15A NCAC 13B .0502 (closure of non-conforming sites/open dumps)
     deed_language_required_on_conveyance: true
-    src: [T-08, T-10, T-11]
+    state_gis_registry: carried in NC (NCDHHS/DEQ) GIS as inactive/closed landfill "Parkwood LF", ref R320220/1992 (T-25, T-26)
+    src: [T-08, T-10, T-11, T-25, T-26]
   flood:
     fema_zone: AE
     flood_area_acres: 4.499
@@ -81,9 +82,9 @@ constraints:
     src: [T-19]
   wetland:
     nwi_class: PFO1C
-    nwi_acres: 3.062
+    nwi_acres: 3.078   # per Durham tax/GIS card (T-26); earlier read 3.062
     survey_wetland_acres: 4.435   # per Map Book 127/25 (parent tract)
-    src: [T-01, T-09]
+    src: [T-01, T-09, T-26]
   watershed:
     overlay: Falls/Jordan Lake Protected Area (F/J-B)
     basin: Jordan Lake
@@ -107,13 +108,31 @@ utilities_access:
   right_of_way: unmaintained (per PWEng) — pink-dot ROW; NOT a built/maintained street
   sewer: available via easement crossing the property (green line) — usable
   water: NOT available — main dead-ends at Euclid/Clermont; private extension required
-  road: must build out road for building permit (private cost) OR resolve access via driveway (TBD with Planning)
+  road: must build out road for building permit (private cost) OR resolve access via driveway (TBD)
+  access_question_owner: Justin Weist, Durham Infrastructure Review team — determines whether end of Clermont must be built out for a SFH (Planning referral, T-23)
   utility_cost_bearer: property owner / out-of-pocket; consult private civil engineer
-  src: [T-12]
+  src: [T-12, T-23]
   water_alternatives:
     private_well: code-legal where public water "not available/feasible" (NC Res. Code P2602.1; Plumbing 602.3) BUT landfill groundwater contamination + Durham County Environmental Health permitting is the gate
     rainwater: NOT allowed as sole potable source (NC Res. Code P2901.1 — only toilets/urinals/trap primers); nonpotable supplement only
     src: [T-13]
+
+building_permit:
+  ahj: Durham City-County Building & Safety Department
+  will_permit_on_landfill: true   # AHJ confirmed — landfill is NOT a Durham building-code bar (T-25)
+  authoritative_source: W.C. Blalock, Building Division Chief (Wyatt.Blalock@durhamnc.gov, 919-369-9133)
+  environmental_clearance_jurisdiction: NC DHHS per Blalock (T-25) — BUT closure was NC DEQ Solid Waste; DHHS-vs-DEQ signoff ambiguity UNRESOLVED
+  environmental_not_governed_by_building_code: true   # "not administered or governed by the NC building codes enforced by Durham B&S" (T-25)
+  engineered_foundation_required: true   # "disturbed substrate mitigation will require full-depth engineering analysis and design for any construction permits" (T-25)
+  code_basis: NC Res. Code R401.2 + R401.4.2; NC Bldg Code §1803.5.8 / §1804.6 (geotech investigation for compacted fill >12 in)
+  no_permit_records_on_file: true   # B&S has no prior permitting records for the parcel (T-25)
+  impact_fee_reference: City Impact Fee Ordinance — durhamnc.gov/DocumentCenter/View/1007 (T-24)
+  soil_compaction_question_owner: Planning (per B&S routing, T-24)
+  trade_inspectors:
+    building: "District 3 — Michael Altman"
+    electrical: "District 8 — Chris Januzys"
+    mechanical: "District 4 — James Hobby"
+  src: [T-24, T-25, T-26]
 
 brownfields:
   program: NC DEQ Brownfields Redevelopment Section

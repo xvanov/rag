@@ -4,7 +4,7 @@
 > projection + the decision gates that must clear first. Distinct from
 > UNDERSTANDING.md (what IS) — this is what we WANT, and whether it pencils.
 > Updated alongside intake; you (Kalin) and Claude iterate here.
-> **Last updated: 2026-06-25** · Stage: pre-acquisition due diligence
+> **Last updated: 2026-07-02** · Stage: pre-acquisition due diligence
 
 ---
 
@@ -23,15 +23,17 @@
 | # | Gate | Owner | Status |
 |---|---|---|---|
 | G1 | Nub on the parcel + clean title (SW DPS boundary, creek line, plat-vs-GIS) | Title-search attorney + survey | OPEN — title search recommended [T-18] |
-| G1b | Nub clear of waste | NCDWM + geotech borings | OPEN |
-| G2 | Nub outside the floodway (now hard no-build/no-fill) | Floodplain map snip + survey overlay | OPEN — get the map attachment [T-17] |
-| G3 | Water solvable (well permittable, or main cost acceptable) | County Env. Health / civil eng. | OPEN |
-| G4 | Access solvable (driveway vs. built road) + cost | Planning / civil eng. | OPEN |
+| G1b | Nub clear of waste | NCDWM + geotech borings | OPEN — geotech now REQUIRED regardless (Blalock, T-25) |
+| G2 | Nub outside the floodway (now hard no-build/no-fill) | Survey overlay | OPEN — floodway map read [T-20]; needs survey overlay on nub |
+| G3 | Water solvable (well permittable, or main cost acceptable) | County Env. Health / civil eng. | OPEN — contact confirmed HealthInspector@dconc.gov [T-23] |
+| G4 | Access solvable (driveway vs. built road) + cost | Justin Weist / civil eng. | OPEN — owner named: Justin Weist, Infrastructure Review [T-23] |
 | G5 | Acquisition priced below all-in cost + margin | this doc | PARTIAL — taxes/liens clean [T-19]; costs TBD |
+| G6 | Building permit obtainable on the landfill | Building & Safety | **CLEARED — AHJ (Blalock) confirms they'll permit; conditioned on state env. clearance + full-depth engineered foundation** [T-25] |
 
 **If any of G1–G4 fails, the lean 2-home plan likely dies.** Sequence the cheap
-checks (calls/emails) before paying for survey/geotech. **Tax side is now clean (G5
-de-risked); title side (G1) is the new diligence focus.**
+checks (calls/emails) before paying for survey/geotech. **Tax side clean (G5); Building
+permit path confirmed (G6 — landfill is not a Durham code bar); the live diligence focus
+is now road/water COST (G3/G4) + title (G1) + the engineered-foundation cost.**
 
 ## Business projection (residual land value — fill as quotes arrive)
 > Method: max land price = (finished value of viable lots) − (all costs to unlock)
@@ -46,7 +48,8 @@ Costs to unlock:
   Road / access build-out                  -$ ____  (civil eng. quote)
   Water (well OR main extension)            -$ ____  (G3)
   Sewer connection (easement on site)       -$ ____  (lower — sewer available)
-  Geotech + environmental (ESA/borings)     -$ ____
+  Geotech + environmental (ESA/borings)     -$ ____  (REQUIRED — Blalock, T-25)
+  Full-depth engineered foundation design   -$ ____  (REQUIRED on disturbed substrate — Blalock, T-25)
   Flood-pad fill (if any pad in fringe)     -$ ____
   Methane mitigation per dwelling           -$ ____
   Survey, plat, permits, impact fees        -$ ____  (Parks Z1 / OpenSpace 1C / Streets Z4)
@@ -68,12 +71,13 @@ water + road are the big unknowns and likely the largest line items. [T-12]
 - Decline Brownfields unless a lender/buyer later demands cover.
 
 ## Next actions (live)
-1. [ ] **Get the two missing attachments:** Floodplain map snip (floodway extent, from DSCFloodplain 6/26) and **deed DB 1794-855** (from Tax/GIS 6/25). Email parser took text only — reply to each thread asking for resend, or pull from Gmail.
-2. [ ] **Engage a real estate attorney for a title search** — SW boundary shared w/ Durham Public Schools, creek-moving eastern line, unresolved SW plat-vs-GIS mismatch (G1). County GIS explicitly recommended this. [T-18]
-3. [ ] Email **Durham County Environmental Health** — well feasibility on a former landfill (G3).
-4. [ ] Email **Planning (Emma Howrilla)** — driveway-vs-built-road for access + mandatory-water-connection policy (G4).
-5. [ ] Call **NCDWM Solid Waste** (Anna Mullen 919-707-8281) — documented waste extent vs. nub (G1b).
-6. [ ] Confirm impervious cap from the **1992 / DB 1794-855** date (UDO 8.7.3B).
-7. [ ] Pull **Durham finished-lot comps** for the projection (G5). ~~back-taxes/lien check~~ → done: clean [T-19].
-8. [ ] Decide duplex vs. 2 detached (changes subdivision + unit count).
-9. [ ] **Chase the silent depts:** Building & Safety (geotech/liens/fees — only auto-replied), Stormwater (wetland), Michelle Woolfolk (Env & Street Svcs).
+1. [x] ~~Get the two missing attachments (floodway map + deed DB 1794-855)~~ — captured [T-20,T-21]; NCDHHS GIS packet = re-scan of same [T-26].
+2. [ ] **Email Justin Weist, Infrastructure Review** — does the end of Clermont have to be built out for a single home/duplex, or does a private driveway suffice? (G4 — biggest cost fork.) [T-23]
+3. [ ] **Email Durham County Environmental Health (HealthInspector@dconc.gov)** — private well feasibility on the former-landfill nub (G3). [T-23]
+4. [ ] **Email/call NCDEQ Solid Waste Section** — (a) is any state sign-off required to build on the closed "Parkwood LF"? (b) reconcile Blalock's "NC DHHS" vs. DEQ jurisdiction; (c) documented waste extent vs. the nub (G1b). [T-25]
+5. [ ] **Engage a real estate attorney for a title search** — SW boundary shared w/ Durham Public Schools, creek-moving eastern line, unresolved SW plat-vs-GIS mismatch (G1). [T-18]
+6. [ ] **Get a civil/geotech quote for the mandatory full-depth engineered foundation** + road + water — Blalock confirmed engineered foundation is required regardless (T-25). Folds G1b geotech + the new foundation cost line together.
+7. [ ] Confirm impervious cap from the **1992 / DB 1794-855** date (UDO 8.7.3B).
+8. [ ] Pull **Durham finished-lot comps** for the projection (G5).
+9. [ ] Decide duplex vs. 2 detached (changes subdivision + unit count).
+10. [ ] **Chase Stormwater** (StormwaterBMPs — wetland) + Michelle Woolfolk (Env & Street Svcs). ~~Building & Safety~~ → answered [T-24,T-25].

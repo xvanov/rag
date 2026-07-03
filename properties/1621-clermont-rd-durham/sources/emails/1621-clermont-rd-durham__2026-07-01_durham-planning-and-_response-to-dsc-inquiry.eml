@@ -1,0 +1,212 @@
+Delivered-To: ivanovkalin7@gmail.com
+Received: by 2002:a05:6a10:f007:b0:72d:3b16:d310 with SMTP id t7csp3079312pxk;
+        Wed, 1 Jul 2026 13:30:20 -0700 (PDT)
+X-Received: by 2002:a05:6a00:bb05:b0:845:a435:a2eb with SMTP id d2e1a72fcca58-847c51411a6mr1963665b3a.31.1782937819721;
+        Wed, 01 Jul 2026 13:30:19 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1782937819; cv=none;
+        d=google.com; s=arc-20260327;
+        b=p1zSlNTQAvJb3wtTuQxeKvufVLwu+2/TRnpgll8pPtD1EFelKB7M4EcCmL/MIFcD8B
+         1P4twr0r0X/vhPh+kJOqD6S5UtLjLijZih4JyetiZ9DnG8CAavkWRrEmkQt3KeHI7wKl
+         3TfjKPaVVGLcnrDlgbWMUyHxbhIx90yV/3tOxyjtfZIV7ok4aXAxxHCJ4lOh0yl5N3Rx
+         617st6GnCkvqROITKhs9IxNpz6SRFDFLxkDI2Xs3U+xUP3ZHdpil80k1w9hfNwDW8zrP
+         VJ9d3R1cuvLbr7sotkAReCu6WF5jANlZPvtxZHyaFCJALLeFiiSR7+9gYjavoYCByLdj
+         Cpig==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=list-unsubscribe:precedence:auto-submitted
+         :content-transfer-encoding:mime-version:subject:message-id:to
+         :reply-to:from:dkim-signature:date;
+        bh=WzZaxo0G7iJZ0oFu9pZLMlE4mQqsMIo/CEHv/sEnT8M=;
+        fh=nTHuAk94MxOpIr8GHlbYA+2SzhP2e9XLaY6e4JoCG/k=;
+        b=bd8JarqsEsWOMdssJBTUvuZg/HVwLmUaZLNoxmXZqaG5Y02vtF/4X+rw6g10lJhnXv
+         xVIc3H/STnUFdDOLxPX/ZMDgDcaFJ0//9XGnC6L6BQzAxWldf4OTA2Pm/zNECWn9Reqt
+         7aCJLxUOFid4rrrQ7bZER93syKRXkuWfJrHt0BTfVpZJctGG+cLyGQhCWBgF+tGE1fZL
+         86oX2yB0ubac9oa//Ut0jGhBIN2tyDAZZ02N8G96x0poWryjYUMwf3TmxX7MMTsy2idU
+         kdhnDleaphWHhW0OulLr5zqv3bafHTg++U6i5Nl+I3rHs+n7w8fSp//o7jiVFREZVJ1X
+         nPjg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mojohelpdesk.com header.s=mail header.b=qI+KBKvn;
+       spf=pass (google.com: domain of mojo-bounces+a=26263@dsc.mojohelpdesk.com designates 54.149.252.182 as permitted sender) smtp.mailfrom="mojo-bounces+a=26263@dsc.mojohelpdesk.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mojohelpdesk.com
+Return-Path: <mojo-bounces+a=26263@dsc.mojohelpdesk.com>
+Received: from mail.mojohelpdesk.com (mail.mojohelpdesk.com. [54.149.252.182])
+        by mx.google.com with ESMTPS id d2e1a72fcca58-847cb6e7d9fsi1249461b3a.4.2026.07.01.13.30.19
+        for <ivanovkalin7@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 01 Jul 2026 13:30:19 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mojo-bounces+a=26263@dsc.mojohelpdesk.com designates 54.149.252.182 as permitted sender) client-ip=54.149.252.182;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mojohelpdesk.com header.s=mail header.b=qI+KBKvn;
+       spf=pass (google.com: domain of mojo-bounces+a=26263@dsc.mojohelpdesk.com designates 54.149.252.182 as permitted sender) smtp.mailfrom="mojo-bounces+a=26263@dsc.mojohelpdesk.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mojohelpdesk.com
+Date: Wed, 01 Jul 2026 20:30:17 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=mojohelpdesk.com;
+	s=mail; t=1782937817;
+	bh=GhALxsMF1qq2edA5kG5gD35nY3Tv304bmcOgWUyLzGI=;
+	h=From:Reply-To:To:Subject;
+	b=qI+KBKvn9MhynLVU+aLWjbwEDu5pX0pDFOY1f93Km9+ZjlVwfeIT8MZ5qkSYp8ket
+	 Gthje7eDcWl8xbNyfcdpPnNbx9Qtw/PW5M+G53ud97lHPq5Dx2//GTDAcAbFIvbd9I
+	 chkRhH+OUvw5v7nwWDBo/EFbj090/vl3KvE9HErI=
+From: Durham Planning and Development Department <26263.56742995@dsc.mojohelpdesk.com>
+Reply-To: Durham Planning and Development Department <26263.56742995@dsc.mojohelpdesk.com>
+To: ivanovkalin7@gmail.com
+Message-ID: <26263-56742995-public-1782937817@dsc.mojohelpdesk.com>
+Subject: Response to DSC inquiry
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6a4578d9ae13b_1203cd78100266b2";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-Mojo-Email: true
+X-Auto-Response-Suppress: All
+Auto-Submitted: auto-generated
+Precedence: bulk
+List-Unsubscribe: <mailto:no-reply@dsc.mojohelpdesk.com?subject=unsubscribe>
+
+
+----==_mimepart_6a4578d9ae13b_1203cd78100266b2
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+A Durham staff member has responded to your inquiry. 
+
+Response: 
+Good afternoon Kalin,Please reach out to Justin Weist with the Infrastructure Review team to see if you will need to build out the end of Clermont for a SFH.I would also recommend you talk to the State to ensure you are permitted to build a residence on a old landfill, as they may have certain permits or regulations. Please see my previous email for some NCDEQ contacts.Please reach out to Durham County Environmental Health about well determinations and standards for this lot: HealthInspector@dconc.govLet me know if you have any additional questions!Emma Howrilla&nbsp;(she/her/hers)
+Planning Specialist
+Planning &amp; Development Department
+101 City Hall Plaza
+Durham, NC 27701
+Planning@durhamnc.gov
+919-560-4137
+Planning &amp; Development DepartmentPlease note that e-mail correspondence to and from this sender may be subject to the provisions of North Carolina Public Records Law and disclosed to third parties.Maps, tabular data, and spatial information presented are developed from public records. While efforts have been made to use the most current and accurate public record data, no warranties *&nbsp;as to the accuracy of the data provided are being made by the City of Durham, the County of Durham, and the mapping and software companies involved. Users of this content should consult public information sources to verify the accuracy of the data provided.*
+
+You can reply directly to this email and staff will follow up further as needed.
+
+Your initial inquiry is below.
+Hi Emma,Thank you for the detailed response on 1621 Clermont Rd. Two follow-ups:
+
+Access: for a single dwelling or a duplex on the upland portion fronting Clermont Rd, could a private driveway satisfy access requirements, or is a built public street required given the unmaintained right-of-way?
+Water: does Durham require connection to public water where a main is not immediately available - i.e., would a private well be acceptable here (the Southwest corner&nbsp;of the property does not seem to be part of the landfill and perhaps a well would be possible) and does that interact with the minor-subdivision path under NCGS 160D-802(c) if I create one or two lots?
+
+Appreciate your help.Best,
+Kalin Ivanov
+
+
+Durham Planning &amp; Development
+DurhamNC.gov/Planning
+---
+Planning & Development Service
+----------
+Reply above this line. Don't delete below line.
+MHD#: 56742995-26263-public
+
+
+
+----==_mimepart_6a4578d9ae13b_1203cd78100266b2
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />
+  </head>
+  <body style=3D'font-family: -apple-system, BlinkMacSystemFont, "Segoe U=
+I", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Colo=
+r Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";line-he=
+ight: 1.15;-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rg=
+ba(0, 0, 0, 0); margin: 0;font-size: 0.9rem;font-weight: 400;line-height:=
+ 1.5;color: #212529;text-align: left;background-color: #f8f9fa !important=
+;padding: 10px 0 88px 0;'>
+    <div style=3D'padding-right: 15px;padding-left: 15px;margin-right: au=
+to;margin-left: auto;width: 700px;'>
+      <div style=3D'position: relative;display: -ms-flexbox;min-width: 0;=
+word-wrap: break-word;background-color: #fff;background-clip: border-box;=
+border: 1px solid rgba(0, 0, 0, 0.125);border-radius: 0.25rem;box-shadow:=
+ 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;width: 100%;border-top: 5px=
+ solid #c1d72e;'>
+        <div style=3D'x-ms-flex: 1 1 auto;xflex: 1 1 auto;padding: 1.25re=
+m;background-color:#fff;'>
+          A Durham staff member has responded to your inquiry.   <br>
+  <br>
+Response:   <br>
+<div style=3D"margin:0;padding:1px;background:rgba(0,0,0,0.1);margin: 5px=
+ 0;border-width: 0;border-radius: 4px;"><div style=3D"border-style: solid=
+;border-width: 0;padding:20px;background:#F7F7F7;">
+<p style=3D"margin:0 0 1em;">Good afternoon Kalin, </p>
+<p style=3D"margin:0 0 1em;">Please reach out to Justin Weist with the In=
+frastructure Review team to see if you will need to build out the end of =
+Clermont for a SFH. </p>
+<p style=3D"margin:0 0 1em;">I would also recommend you talk to the State=
+ to ensure you are permitted to build a residence on a old landfill, as t=
+hey may have certain permits or regulations. Please see my previous email=
+ for some NCDEQ contacts. </p>
+<p style=3D"margin:0 0 1em;">Please reach out to Durham County Environmen=
+tal Health about well determinations and standards for this lot:  <a href=
+=3D"mailto:HealthInspector@dconc.gov" target=3D"_blank"  >HealthInspector=
+@dconc.gov</a>  </p>
+<p style=3D"margin:0 0 1em;">Let me know if you have any additional quest=
+ions! </p>
+<p style=3D"margin:0 0 1em;"> <strong>Emma Howrilla=C2=A0 </strong><em>(s=
+he/her/hers)</em>  <br>
+ <strong><em>Planning Specialist</em> </strong>  <br>
+<em>Planning &amp; Development Department</em>  <br>
+101 City Hall Plaza  <br>
+Durham, NC 27701  <br>
+ <a href=3D"mailto:Planning@durhamnc.gov" target=3D"_blank"  >Planning@du=
+rhamnc.gov</a>   <br>
+919-560-4137  <br>
+ <a href=3D"http://durhamnc.gov/338/City-County-Planning" title=3D"http:/=
+/durhamnc.gov/338/City-County-Planning" target=3D"_blank"  >Planning &amp=
+; Development Department</a>  </p>
+<p style=3D"margin:0 0 1em;"><em>Please note that e-mail correspondence t=
+o and from this sender may be subject to the provisions of North Carolina=
+ Public Records Law and disclosed to third parties.</em> </p>
+<p style=3D"margin:0 0 1em;"><em>Maps, tabular data, and spatial informat=
+ion presented are developed from public records. While efforts have been =
+made to use the most current and accurate public record data, </em><em>no=
+ warranties *</em>=C2=A0as to the accuracy of the data provided are being=
+ made by the City of Durham, the County of Durham, and the mapping and so=
+ftware companies involved. Users of this content should consult public in=
+formation sources to verify the accuracy of the data provided.* </p>
+ </div> </div>  <br>
+  <br>
+You can reply directly to this email and staff will follow up further as =
+needed.  <br>
+  <br>
+Your initial inquiry is below.  <br>
+<p style=3D"margin:0 0 1em;">Hi Emma, </p><p style=3D"margin:0 0 1em;">Th=
+ank you for the detailed response on 1621 Clermont Rd. Two follow-ups: </=
+p>
+<ol>
+<li><p style=3D"margin:0 0 1em;">Access: for a single dwelling or a duple=
+x on the upland portion fronting Clermont Rd, could a private driveway sa=
+tisfy access requirements, or is a built public street required given the=
+ unmaintained right-of-way? </p></li>
+<li><p style=3D"margin:0 0 1em;">Water: does Durham require connection to=
+ public water where a main is not immediately available - i.e., would a p=
+rivate well be acceptable here (the Southwest corner=C2=A0of the property=
+ does not seem to be part of the landfill and perhaps a well would be pos=
+sible) and does that interact with the minor-subdivision path under NCGS =
+160D-802(c) if I create one or two lots? </p></li>
+</ol>
+<p style=3D"margin:0 0 1em;">Appreciate your help. </p><p style=3D"margin=
+:0 0 1em;">Best,  <br>
+Kalin Ivanov </p>  <br>
+  <br>
+  <br>
+Durham Planning &amp; Development  <br>
+DurhamNC.gov/Planning
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<div>---<br>This is an automated message from help desk: <a href=3D'https=
+://dsc.mojohelpdesk.com'>Planning & Development Service</a>.</div><span s=
+tyle=3D'display:none'>MHD#: 56742995-26263-public</span>
+
+----==_mimepart_6a4578d9ae13b_1203cd78100266b2--
