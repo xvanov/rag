@@ -228,3 +228,32 @@ Web search (official .gov directories) to verify two contacts and the jurisdicti
   Health** is only for on-site well/septic (a separate matter). Source: DEQ Pre-Regulatory Landfill
   Program pages (incl. a "Durham Parks Pre-Regulatory Landfill Sites" listing). *(Secondary/web —
   confirm the PRLF process directly with Channell.)*
+
+**T-28 · 2026-07-02 · Docrag: F/J-B impervious cap — grounded + DIVERGENCE flagged**
+Grounded the watershed impervious question in the corpus (authoritative on local ordinance):
+**F/J-B cap = 24% built-upon-area (BUA) low-density / 70% high-density, set by the OVERLAY under
+Durham UDO §8.7.2** (mirrored in Durham County Stormwater Ord. §14-154(b)). **DIVERGENCE:** the
+earlier planning emails (T-06, T-15) said the cap is "set by plat/deed recordation date per UDO
+§8.7.3B." The corpus does NOT corroborate a recordation-date mechanism for the *cap itself* — the
+24/70 limits attach by overlay location, and the only date-based rule found is a **vested-rights /
+"existing development"** concept tied to the stormwater program's effective date (not the parcel's
+recordation date). Per CLAUDE.md guardrail #3, corpus governs: treat the cap as **24% (low-density)
+/ 70% (high-density)**; the recordation date likely bears on vesting/grandfathering, not the base
+percentage. **Practical effect:** 1–2 homes on the small SW nub won't approach 24% impervious → the
+watershed cap is effectively NON-BINDING for the lean plan (low-density path, no SCM treatment
+train needed). De-risks another constraint.
+
+**T-29 · 2026-07-02 · Web research — Summit engineer verified + Durham value comps (SECONDARY)**
+- **Summit Design & Engineering / Brandon Johnson, PE** — email **brandon.johnson@summitde.com**
+  + phone **919-322-0115** CONFIRMED (firm domain summitde.com, convention first.last@; Raleigh
+  office). Caveat: his specialty is **transportation/roadway** (ex-NCDOT), now Civil Eng Dept
+  Manager — a strong fit for the ROAD build-out (item #1, the biggest cost) but the geotech/site/
+  stormwater scope should loop in Summit's **Land Development / Site Design** team (info@summitde.com,
+  main 919-732-3883). RFP draft updated to invite internal routing.
+- **Value comps for the residual model (planning estimates — portal/aggregator data, VERIFY via
+  MLS/agent CMA):** finished new SFH **~$430K–$650K** (mid ~$500–575K; e.g., 1039 Bellenden Dr 27713
+  sold $577,545 10/2025; 1013 Catch Fly Ln Parkwood built-2019 sold $625K 2/2025); new-construction
+  **~$230–$290/sqft** (27713 all-homes median ~$224/sqft); finished buildable lot **~$90K–$180K**
+  (Durham Co. land median ~$64K/ac). NOTE the Parkwood/Euclid micro-market likely sits BELOW the
+  Southpoint-corridor comps that dominate 27713 new-build data. Fills the VALUE side of PLAN's
+  residual model (cost side still pending Brandon's feasibility quote).

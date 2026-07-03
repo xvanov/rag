@@ -90,9 +90,10 @@ constraints:
     basin: Jordan Lake
     impervious_limit_low_density_pct: 24
     impervious_limit_high_density_pct: 70
-    impervious_limit_basis: UDO 8.7.3B (limit set by plat/deed recordation date — MUST look up)
+    impervious_limit_basis: "Durham UDO 8.7.2 — cap set by OVERLAY (24% low-density / 70% high-density), NOT by recordation date (corpus, T-28). DIVERGENCE: planning emails T-06/T-15 said '8.7.3B, set by plat/deed date' — corpus does not corroborate; recordation date bears on vesting only, not the cap %"
+    impervious_binding_for_lean_plan: false   # 1-2 homes on small nub won't approach 24% (T-28)
     nutrient_target_jordan_n_lb_ac_yr: 3.6
-    src: [T-03, T-04]
+    src: [T-03, T-04, T-28]
   riparian_buffer:
     streams: perennial (confirmed by Durham Planning)
     buffer_ft: 100   # undisturbed vegetative, top of each bank

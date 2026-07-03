@@ -41,8 +41,11 @@ is now road/water COST (G3/G4) + title (G1) + the engineered-foundation cost.**
 
 ```
 Viable units (1 duplex OR 2 SF lots):        ____  (G1/G2/G4 decide)
-Finished value per unit/lot (comps):       $ ____  (pull Durham comps)
-  ── Gross realizable                       $ ____
+Finished value per unit/lot (comps):       $ 430K-650K per new SFH (mid ~$500-575K) [T-29]
+   new-construction density:                 ~$230-290/sqft [T-29]
+   finished buildable lot (alt):             ~$90K-180K/lot [T-29]
+   (VERIFY via MLS/CMA; Parkwood/Euclid likely BELOW Southpoint comps)
+  ── Gross realizable                       $ ____  (units x value; 2 SF ~ $1.0-1.3M gross, mid case)
 
 Costs to unlock:
   Road / access build-out                  -$ ____  (civil eng. quote)
@@ -77,7 +80,7 @@ water + road are the big unknowns and likely the largest line items. [T-12]
 4. [ ] **Email NCDEQ Superfund PRLF Unit — Ryan Channell** (Ryan.Channell@deq.nc.gov, 919-707-8333) — is any state approval/AUL/no-further-action needed to build on the closed "Parkwood LF"? + documented waste extent vs. the nub (G1b). Jurisdiction resolved (DEQ PRLF, not DHHS — T-27). [T-25,T-27]
 5. [ ] **Engage a real estate attorney for a title search** — SW boundary shared w/ Durham Public Schools, creek-moving eastern line, unresolved SW plat-vs-GIS mismatch (G1). [T-18]
 6. [ ] **Get a civil/geotech quote for the mandatory full-depth engineered foundation** + road + water — Blalock confirmed engineered foundation is required regardless (T-25). Folds G1b geotech + the new foundation cost line together.
-7. [ ] Confirm impervious cap from the **1992 / DB 1794-855** date (UDO 8.7.3B).
-8. [ ] Pull **Durham finished-lot comps** for the projection (G5).
+7. [x] ~~Confirm impervious cap~~ → RESOLVED (corpus T-28): 24%/70% by overlay (UDO §8.7.2), non-binding for the lean plan.
+8. [~] Pull **Durham comps** → DONE as web estimates (T-29): new SFH ~$430-650K, ~$230-290/sqft, lot ~$90-180K. **Still: verify with MLS/agent CMA** before trusting the residual.
 9. [ ] Decide duplex vs. 2 detached (changes subdivision + unit count).
 10. [ ] **Chase Stormwater** (StormwaterBMPs — wetland) + Michelle Woolfolk (Env & Street Svcs). ~~Building & Safety~~ → answered [T-24,T-25].
