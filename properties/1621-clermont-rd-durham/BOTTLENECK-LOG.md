@@ -22,3 +22,13 @@ substrate is now a CONFIRMED mandatory cost line (grounded: NC Res. Code R401.2/
 Code §1803.5.8/§1804.6). (3) Access question now owned by **Justin Weist, Infrastructure Review**;
 well contact confirmed (**HealthInspector@dconc.gov**). New open item: DHHS-vs-DEQ signoff
 ambiguity → ask NCDEQ Solid Waste. Still waiting: Stormwater (wetland).
+
+**2026-07-06** — **BOTTLENECK CHANGED: the water fork resolved the wrong way — private well is
+DEAD.** Durham County Env Health (Patrick Eaton, Onsite Water Protection Supervisor, T-33): most
+restrictive setback = **500 ft from the limit of the landfill** to any well. Owner measured the nub
+at ~200 ft wide / 0.57 ac, ~120–200 ft from the waste → 500-ft setback unachievable anywhere on the
+parcel (waste is central; the only ground 500 ft away is floodway/wetland). Cheap-water fork closed;
+**water = city-main extension only (expensive).** Primary bottleneck stays "all-in cost vs. thin
+residual," but a source of upside is gone and the deal moved toward the kill line. New do-now: get
+the water-main-extension cost (PWEng/Summit) + Weist access answer → all-in cost → go/no-go. Also:
+title/boundary attorney engaged (David Nahm, Morningstar — call 7/7 3:30pm).

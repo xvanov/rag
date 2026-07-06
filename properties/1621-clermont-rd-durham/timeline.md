@@ -340,3 +340,25 @@ accessory structure built "big on the landfill." Fails on two independent ground
 §5.4.14 — kills the power-line extension) + a **well** (self-supply water, pending Env Health). These
 trim UTILITY cost lines but do NOT touch the foundation cost. **Cheapest compliant path stays: smallest
 code dwelling on the clean nub (lightest footing there), solar + well, minimal footprint.**
+
+**T-33 · 2026-07-06 · Durham County Env Health (Patrick Eaton) — WELL EFFECTIVELY IMPOSSIBLE (AUTHORITATIVE) + nub measured + attorney call set**
+- **Patrick C. Eaton, REHS — Onsite Water Protection Supervisor, Durham County Dept. of Public Health**
+  (peaton@dconc.gov, 919-560-7812) replied to our well-feasibility question. THE authority on private
+  wells. Key statement: **"The most restrictive setback is 500 feet from the limit of the landfill to
+  any proposed well site."** Standard testing = coliform, inorganics, nitrate/nitrite. Formal answer to
+  "can a well be permitted?" = *"Unknown — application ($425 non-refundable) + site plan + site visit
+  required,"* and the site plan must show "limit of the landfill with setback to the proposed well site."
+  Rules: 15A NCAC 02C. (`sources/emails/1621-clermont-rd-durham__2026-07-06_eaton-patrick-peaton_re-1621-clermont-rd-pin-0728808242-priva.md`; app form attached.)
+- **Owner measurement (Kalin, from the GIS map):** the SW nub is **~200 ft wide, ~0.57 ac** (≈124 ft
+  deep), fronting Clermont, directly against the landfill limit.
+- **CONCLUSION — private well is effectively IMPOSSIBLE here.** The 500-ft setback from the landfill
+  limit cannot be met: the nub sits ~120–200 ft from the waste (fails by ~300+ ft), and no point on the
+  9.4-ac parcel is 500 ft from the centrally-located waste footprint (the only ground that far east is
+  floodway/wetland/buffer — undrillable/unbuildable). **Do NOT spend the $425 app — geometry dooms it.**
+  → **The cheap-water fork is DEAD; water = city-main extension only (the expensive path).** Materially
+  worsens the already margin-tight deal. Grounding note: docrag confirms 15A NCAC 02C .0107 well rules
+  are not in the corpus; Eaton (the permitting authority) is authoritative on the 500-ft figure.
+- **David Nahm, Counsel, Morningstar Law Group** (dnahm@morningstarlawgroup.com, 919-590-0357) — Bill
+  Brian forwarded our title-search inquiry to him; **call scheduled 2026-07-07 @ 3:30pm** (Kalin already
+  confirmed). Title/boundary + brownfields engagement now moving.
+  (`sources/emails/1621-clermont-rd-durham__2026-07-06_david-nahm-dnahm-mor_*.md`)

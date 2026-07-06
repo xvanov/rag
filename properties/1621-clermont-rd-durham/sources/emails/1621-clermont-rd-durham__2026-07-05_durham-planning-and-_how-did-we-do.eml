@@ -1,0 +1,263 @@
+Delivered-To: ivanovkalin7@gmail.com
+Received: by 2002:a05:6a10:cac9:b0:735:c343:4ac0 with SMTP id ea9csp1480936pxb;
+        Sat, 4 Jul 2026 19:28:18 -0700 (PDT)
+X-Received: by 2002:a05:6a21:6e48:b0:3bf:6c04:a816 with SMTP id adf61e73a8af0-3c03e4da45cmr5233740637.55.1783218498438;
+        Sat, 04 Jul 2026 19:28:18 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1783218498; cv=none;
+        d=google.com; s=arc-20260327;
+        b=HAkk61g2TtftXkJxWDU7sUdbhddo4oOuRxlejVGwyD/m/nU4hgy0Vwd1MijKWkagqH
+         yaK0nFwJ6Z6jViMD59I+k3ZglR9o0I2MVC63FDAtzIFhRqi83lZD1l4lAFOuiB1NZulZ
+         /YvVikLd9VtLscn9sSOQVybpxJkvtVJp4EVuCdBMU5XfrztrpKTegmbzxTMwPaXmwGVK
+         Q9eYIYL3Amw5rV3FEv4IlqVkhLTSWiv/H38yE2uTDJlEJ8YanwrMjdOFfVu64xoHEFfv
+         H/vYLex5cr9uMgZIdj1cIX+yVpJ/KRdtFYiW7DvaKbLKR3RFJaytDrt6Syv9WN6pk3GR
+         zbJg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=list-unsubscribe:precedence:auto-submitted
+         :content-transfer-encoding:mime-version:subject:message-id:to
+         :reply-to:from:dkim-signature:date;
+        bh=rnBov/CjxSXTMewRayPG6oQ7h4zzaCl6plthVLqDGSI=;
+        fh=nTHuAk94MxOpIr8GHlbYA+2SzhP2e9XLaY6e4JoCG/k=;
+        b=eRc/eXoayFNPX8b6g2uYkSYnc9lTumknvG0N/1iConlSQ8PHWcUYMsZkvV/u36ZXhO
+         J3OcYOUArmdaikYnySLiAg7yzKFKsTDuNRlYIphEzPQAY+h6VvIs3P3v6TkVP2Gu2AK5
+         sSOcSVJmeIVdky9CaVqiKd84Jlv2sNy2Z0+A9VLYK5YHR9ory2ST0WOgEqlnR+IdOzsa
+         oHe/b6x0zP7BskV6IrGK/9vJZKN+9CjWXCb8cDqvytm4Z6/k5Nja8sKsHZtEYQTNVGMo
+         EUxQCQO2hamQfk6VD+iS3c4GGUpKLV1aQq0JnXGEwOY33kWMMXi6sutBHs3iNfFCrXJL
+         JCeQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mojohelpdesk.com header.s=mail header.b=OreREIfa;
+       spf=pass (google.com: domain of mojo-bounces+a=26263@dsc.mojohelpdesk.com designates 54.149.252.182 as permitted sender) smtp.mailfrom="mojo-bounces+a=26263@dsc.mojohelpdesk.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mojohelpdesk.com
+Return-Path: <mojo-bounces+a=26263@dsc.mojohelpdesk.com>
+Received: from mail.mojohelpdesk.com (mail.mojohelpdesk.com. [54.149.252.182])
+        by mx.google.com with ESMTPS id 41be03b00d2f7-c9e8e920b63si16300772a12.34.2026.07.04.19.28.18
+        for <ivanovkalin7@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sat, 04 Jul 2026 19:28:18 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mojo-bounces+a=26263@dsc.mojohelpdesk.com designates 54.149.252.182 as permitted sender) client-ip=54.149.252.182;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mojohelpdesk.com header.s=mail header.b=OreREIfa;
+       spf=pass (google.com: domain of mojo-bounces+a=26263@dsc.mojohelpdesk.com designates 54.149.252.182 as permitted sender) smtp.mailfrom="mojo-bounces+a=26263@dsc.mojohelpdesk.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=mojohelpdesk.com
+Date: Sun, 05 Jul 2026 02:28:18 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=mojohelpdesk.com;
+	s=mail; t=1783218498;
+	bh=n3rU7fJQe1U29UmvcvxsMI1sgNkB+IhN0k8QqcfuA38=;
+	h=From:Reply-To:To:Subject;
+	b=OreREIfapFs+CaWLU0QywwLojR7D9R5FvkJxiFKjgAOtZtWm7vfNCbSc+ZFlJzUtz
+	 44L3slh15otGFF3WmLAhjbOxeC2e+iQwrpM0zoyYUERk/YHKOc6jQLz11lcROkBkud
+	 AuzA3KrSNfxOWKKY4LGGN6kHGQTC5CjgxoRdmQA8=
+From: Durham Planning and Development Department <26263.56710393@dsc.mojohelpdesk.com>
+Reply-To: Durham Planning and Development Department <26263.56710393@dsc.mojohelpdesk.com>
+To: ivanovkalin7@gmail.com
+Message-ID: <26263-56710393-public-1783218497@dsc.mojohelpdesk.com>
+Subject: How did we do?
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6a49c141ef86e_123e56c890563fc";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-Mojo-Email: true
+X-Auto-Response-Suppress: All
+Auto-Submitted: auto-generated
+Precedence: bulk
+List-Unsubscribe: <mailto:no-reply@dsc.mojohelpdesk.com?subject=unsubscribe>
+
+
+----==_mimepart_6a49c141ef86e_123e56c890563fc
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Dear Kalin Ivanov,
+
+Durham Planning &amp; Development staff recently resolved your inquiry (t=
+icket number 56710393):
+
+Please rate our service by clicking the link below. =
+
+ - Rate our service
+
+Note: If the above link does not work, please copy and paste this URL int=
+o your web browser:
+https://dsc.mojohelpdesk.com/mc/rate/7e2c737ab4bb1b3a3431fb22008d560c
+
+Thank You,
+Durham Development Services Center
+
+Your initial inquiry is below.
+Hello,Thank you so&nbsp;much for getting back Emma Howrilla to me on tick=
+et #56479794! I would like to ask for the additional information pertaini=
+ng&nbsp;to the 1621 CLERMONT RD property.&nbsp;Unfortuantaly that ticket =
+is no longer active so I am opening a new one.Records
+1. You offered the "full information" - please send everything&nbsp;you h=
+ave if possible: any post-closure monitoring records, and any environment=
+al reports on file etc.&nbsp;Boundary &amp; parcel history
+2. The boundary survey you sent appears to cover two parcels: 1621 and 16=
+15 Clermont Rd, but not the small southeastern area that the Durham GIS s=
+hows as part of 1621 and outside the old landfill (circled in red in the =
+map below). Was this one tract that was divided, with extra land recombin=
+ed in? Can you point me to the recorded plats and deeds showing that hist=
+ory if so?
+3. Is the south-east corner (the part outside the landfill footprint) con=
+firmed clean of waste in your records?Zoning &amp; subdivision potential
+4. What does the RS-10 zoning allow by-right on this specific parcel, giv=
+en the site constraints?
+5. Can this 9.4-ac tract be split as a minor subdivision (=E2=89=A43 lots=
+, plat-only under NCGS 160D-802(c))? Specifically, if a portion near Cler=
+mont Rd is clear of the landfill footprint, could I create two single-fam=
+ily RS-10 lots there? Would conventional standards (10,000 sf / 75 ft wid=
+th) fit, or would I need cluster-subdivision standards (5,000 sf / 40 ft)=
+?
+6. Does each potential lot have enough Clermont Rd frontage and legal acc=
+ess or would I have to build out the road?Flood / buffer / wetland
+7. Does the AE flood area include a mapped regulatory floodway (not just =
+floodplain)?
+8. What's the Base Flood Elevation here, and roughly how much fill would =
+a buildable pad need (2 ft above BFE)?
+9. Is the rear stream perennial or intermittent i.e., is the buffer 100 f=
+t or 50 ft? (You mentioned 110'.)
+10. Has the wetland (3.06 ac PFO) been delineated, or would I need a deli=
+neation + Army Corps 404 sign-off?Process, cost &amp; restrictions
+11. Does the City require NCDEQ Solid Waste sign-off before issuing a bui=
+lding permit on this parcel and is there a documented compaction/geotech =
+requirement from Building &amp; Safety?
+12. Are there any open code-enforcement actions, environmental violations=
+, or liens on the property?
+13. Roughly what impact fees would apply? (The parcel sits in Parks Zone =
+1, Open Space 1C, Streets Zone 4, so I would like the cost picture.)=E2=80=
+=8BThis was the previous info you provided:To give a summary, this proper=
+ty was used as an unpermitted solid waste disposal site until it was clos=
+ed by the State in 1991. Please see attached. Any additional regulations =
+on development may be in the hands of the NC Dept. of Waste Management. A=
+dditionally, Building &amp; Safety may have a say in how things can be bu=
+ilt on the ground since there are likely compaction considerations with t=
+he landfill.Much of the property is also in flood areas, and there is als=
+o a 110' riparian buffer to the rear of the property.Lastly, there is a c=
+hance you would need to build out the road to get street access and utili=
+ties to the property.Let me know if you would like me to send over the fu=
+ll information.
+---
+Planning & Development Service
+----------
+Reply above this line. Don't delete below line.
+MHD#: 56710393-26263-public
+
+
+
+----==_mimepart_6a49c141ef86e_123e56c890563fc
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />
+  </head>
+  <body style=3D'font-family: -apple-system, BlinkMacSystemFont, "Segoe U=
+I", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Colo=
+r Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";line-he=
+ight: 1.15;-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rg=
+ba(0, 0, 0, 0); margin: 0;font-size: 0.9rem;font-weight: 400;line-height:=
+ 1.5;color: #212529;text-align: left;background-color: #f8f9fa !important=
+;padding: 10px 0 88px 0;'>
+    <div style=3D'padding-right: 15px;padding-left: 15px;margin-right: au=
+to;margin-left: auto;width: 700px;'>
+      <div style=3D'position: relative;display: -ms-flexbox;min-width: 0;=
+word-wrap: break-word;background-color: #fff;background-clip: border-box;=
+border: 1px solid rgba(0, 0, 0, 0.125);border-radius: 0.25rem;box-shadow:=
+ 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;width: 100%;border-top: 5px=
+ solid #c1d72e;'>
+        <div style=3D'x-ms-flex: 1 1 auto;xflex: 1 1 auto;padding: 1.25re=
+m;background-color:#fff;'>
+          Dear Kalin Ivanov,  <br>
+  <br>
+Durham Planning &amp; Development staff recently resolved your inquiry (t=
+icket number 56710393):  <br>
+  <br>
+Please rate our service by clicking the link below.   <br>
+ -  <a href=3D"https://dsc.mojohelpdesk.com/mc/rate/7e2c737ab4bb1b3a3431f=
+b22008d560c"  >Rate our service</a>   <br>
+  <br>
+Note: If the above link does not work, please copy and paste this URL int=
+o your web browser:  <br>
+<a href=3D"https://dsc.mojohelpdesk.com/mc/rate/7e2c737ab4bb1b3a3431fb220=
+08d560c">https://dsc.mojohelpdesk.com/mc/rate/7e2c737ab4bb1b3a3431fb22008=
+d560c</a>  <br>
+  <br>
+Thank You,  <br>
+Durham Development Services Center  <br>
+  <br>
+Your initial inquiry is below.  <br>
+<p style=3D"margin:0 0 1em;">Hello, </p><p style=3D"margin:0 0 1em;">Than=
+k you so=C2=A0much for getting back Emma Howrilla to me on ticket #564797=
+94! I would like to ask for the additional information pertaining=C2=A0to=
+ the 1621 CLERMONT RD property.=C2=A0Unfortuantaly that ticket is no long=
+er active so I am opening a new one. </p><p style=3D"margin:0 0 1em;">Rec=
+ords  <br>
+1. You offered the "full information" - please send everything=C2=A0you h=
+ave if possible: any post-closure monitoring records, and any environment=
+al reports on file etc.=C2=A0 </p><p style=3D"margin:0 0 1em;">Boundary &=
+amp; parcel history  <br>
+2. The boundary survey you sent appears to cover two parcels: 1621 and 16=
+15 Clermont Rd, but not the small southeastern area that the Durham GIS s=
+hows as part of 1621 and outside the old landfill (circled in red in the =
+map below). Was this one tract that was divided, with extra land recombin=
+ed in? Can you point me to the recorded plats and deeds showing that hist=
+ory if so?  <br>
+3. Is the south-east corner (the part outside the landfill footprint) con=
+firmed clean of waste in your records? </p><p style=3D"margin:0 0 1em;">Z=
+oning &amp; subdivision potential  <br>
+4. What does the RS-10 zoning allow by-right on this specific parcel, giv=
+en the site constraints?  <br>
+5. Can this 9.4-ac tract be split as a minor subdivision (=E2=89=A43 lots=
+, plat-only under NCGS 160D-802(c))? Specifically, if a portion near Cler=
+mont Rd is clear of the landfill footprint, could I create two single-fam=
+ily RS-10 lots there? Would conventional standards (10,000 sf / 75 ft wid=
+th) fit, or would I need cluster-subdivision standards (5,000 sf / 40 ft)=
+?  <br>
+6. Does each potential lot have enough Clermont Rd frontage and legal acc=
+ess or would I have to build out the road? </p><p style=3D"margin:0 0 1em=
+;">Flood / buffer / wetland  <br>
+7. Does the AE flood area include a mapped regulatory floodway (not just =
+floodplain)?  <br>
+8. What's the Base Flood Elevation here, and roughly how much fill would =
+a buildable pad need (2 ft above BFE)?  <br>
+9. Is the rear stream perennial or intermittent i.e., is the buffer 100 f=
+t or 50 ft? (You mentioned 110'.)  <br>
+10. Has the wetland (3.06 ac PFO) been delineated, or would I need a deli=
+neation + Army Corps 404 sign-off? </p><p style=3D"margin:0 0 1em;">Proce=
+ss, cost &amp; restrictions  <br>
+11. Does the City require NCDEQ Solid Waste sign-off before issuing a bui=
+lding permit on this parcel and is there a documented compaction/geotech =
+requirement from Building &amp; Safety?  <br>
+12. Are there any open code-enforcement actions, environmental violations=
+, or liens on the property?  <br>
+13. Roughly what impact fees would apply? (The parcel sits in Parks Zone =
+1, Open Space 1C, Streets Zone 4, so I would like the cost picture.) </p>=
+<p style=3D"margin:0 0 1em;">=E2=80=8B </p><p style=3D"margin:0 0 1em;">T=
+his was the previous info you provided: </p><p style=3D"margin:0 0 1em;">=
+To give a summary, this property was used as an unpermitted solid waste d=
+isposal site until it was closed by the State in 1991. Please see attache=
+d. Any additional regulations on development may be in the hands of the N=
+C Dept. of Waste Management. Additionally, Building &amp; Safety may have=
+ a say in how things can be built on the ground since there are likely co=
+mpaction considerations with the landfill. </p><p style=3D"margin:0 0 1em=
+;">Much of the property is also in flood areas, and there is also a 110' =
+riparian buffer to the rear of the property. </p><p style=3D"margin:0 0 1=
+em;">Lastly, there is a chance you would need to build out the road to ge=
+t street access and utilities to the property. </p><p style=3D"margin:0 0=
+ 1em;">Let me know if you would like me to send over the full information=
+. </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<div>---<br>This is an automated message from help desk: <a href=3D'https=
+://dsc.mojohelpdesk.com'>Planning & Development Service</a>.</div><span s=
+tyle=3D'display:none'>MHD#: 56710393-26263-public</span>
+
+----==_mimepart_6a49c141ef86e_123e56c890563fc--

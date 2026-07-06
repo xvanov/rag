@@ -59,6 +59,12 @@ constraints:
     fema_floodway_path: No-Rise Certification + possibly CLOMR/LOMR map revision (T-17)
     firm_panel: 370605 0070 (per boundary survey)
     src: [T-05, T-09, T-15, T-17]
+  sw_nub:
+    width_ft: 200            # owner measurement from GIS (T-33)
+    area_acres: 0.57         # ~24,800 sf; ~124 ft deep
+    location: SW corner fronting Clermont Rd, outside mapped waste footprint, outside floodway
+    distance_to_landfill_limit_ft: 120-200   # << 500 ft well setback (T-33)
+    src: [T-33]
   boundary_title:
     current_config_since: 1992 (deed DB 1794-855)
     current_owner_deed: DB 9937/913 (LEIGHS LAND LLC acquired 2023-06-21)
@@ -114,9 +120,11 @@ utilities_access:
   utility_cost_bearer: property owner / out-of-pocket; consult private civil engineer
   src: [T-12, T-23]
   water_alternatives:
-    private_well: code-legal where public water "not available/feasible" (NC Res. Code P2602.1; Plumbing 602.3) BUT landfill groundwater contamination + Durham County Environmental Health permitting is the gate
+    private_well: "EFFECTIVELY IMPOSSIBLE (T-33). Durham County Env Health (Patrick Eaton, Onsite Water Protection Supervisor) states the most restrictive setback = 500 ft from the LIMIT OF THE LANDFILL to any proposed well. Nub is ~120-200 ft from waste (fails by ~300+ ft); no point on the parcel is 500 ft from the centrally-located waste (rest is floodway/wetland/buffer). Well permit app = $425 non-refundable + site plan + site visit — NOT worth spending; geometry dooms it. Rules 15A NCAC 02C."
+    well_status: dead   # 500-ft landfill setback cannot be met (T-33)
     rainwater: NOT allowed as sole potable source (NC Res. Code P2901.1 — only toilets/urinals/trap primers); nonpotable supplement only
-    src: [T-13]
+    water_conclusion: "city water-main extension is the ONLY viable water path (expensive; main dead-ends at Euclid/Clermont) — the cheap-well fork is closed"
+    src: [T-13, T-33]
 
 building_permit:
   ahj: Durham City-County Building & Safety Department
