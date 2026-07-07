@@ -43,7 +43,8 @@ Tested whether a cheaper, non-residential use could dodge the engineered-foundat
 | G3 | Water solvable | County Env. Health / civil eng. | **WELL DEAD (500-ft landfill setback, Eaton T-33) → water = city-main extension ONLY (expensive). Gate now = is main extension affordable?** |
 | G4 | Access solvable (driveway vs. built road) + cost | Justin Weist / civil eng. | OPEN — owner named: Justin Weist, Infrastructure Review [T-23] |
 | G5 | Acquisition priced below all-in cost + margin | this doc | PARTIAL — taxes/liens clean [T-19]; costs TBD |
-| G6 | Building permit obtainable on the landfill | Building & Safety | **CLEARED — AHJ (Blalock) confirms they'll permit; conditioned on state env. clearance + full-depth engineered foundation** [T-25] |
+| G6 | Building permit obtainable on the landfill | Building & Safety | **CLEARED — AHJ (Blalock) confirms they'll permit; conditioned on env. steps + full-depth engineered foundation** [T-25] |
+| G7 | Environmental (NCDEQ Solid Waste) | NCDEQ SWS / REC | **Open-dump notice PERMANENT; even nub build needs an REC (waste-boundary + soil/GW/gas) + possible gas mitigation; avoid waste mass** [T-34] |
 
 **If any of G1–G4 fails, the lean 2-home plan likely dies.** Sequence the cheap
 checks (calls/emails) before paying for survey/geotech. **Tax side clean (G5); Building
@@ -72,6 +73,8 @@ Costs to unlock:
   Water — CITY MAIN EXTENSION (well is dead) -$ ____  (G3; expensive — the cheap-well fork is closed, T-33)
   Sewer connection (easement on site)       -$ ____  (lower — sewer available)
   Geotech + environmental (ESA/borings)     -$ ____  (REQUIRED — Blalock, T-25)
+  REC assessment (waste-boundary + soil/GW/gas) -$ ____  (REQUIRED even off-waste — NCDEQ Stanley, T-34)
+  Landfill-gas mitigation/monitoring (nub)  -$ ____  (if gas migrates to the nub — T-34)
   Full-depth engineered foundation design   -$ ____  (REQUIRED on disturbed substrate — Blalock, T-25)
   Flood-pad fill (if any pad in fringe)     -$ ____
   Methane mitigation per dwelling           -$ ____
@@ -97,7 +100,7 @@ water + road are the big unknowns and likely the largest line items. [T-12]
 1. [x] ~~Get the two missing attachments (floodway map + deed DB 1794-855)~~ — captured [T-20,T-21]; NCDHHS GIS packet = re-scan of same [T-26].
 2. [ ] **Email Justin Weist, Infrastructure Review** — does the end of Clermont have to be built out for a single home/duplex, or does a private driveway suffice? (G4 — biggest cost fork.) [T-23]
 3. [x] ~~Env Health well feasibility~~ → **ANSWERED (T-33): well DEAD** (500-ft landfill setback, Eaton). Water = city-main extension only. Next: get main-extension cost from Brandon/PWEng.
-4. [ ] **Email NCDEQ Superfund PRLF Unit — Ryan Channell** (Ryan.Channell@deq.nc.gov, 919-707-8333) — is any state approval/AUL/no-further-action needed to build on the closed "Parkwood LF"? + documented waste extent vs. the nub (G1b). Jurisdiction resolved (DEQ PRLF, not DHHS — T-27). [T-25,T-27]
+4. [x] ~~NCDEQ — state approval to build?~~ **ANSWERED (T-34, Solid Waste Section/Stanley):** no build-approval process; open-dump notice permanent; retain an **REC** to verify waste boundary + test soil/GW/gas, avoid the waste. → **New action: pull NCDEQ approved-REC list + get REC assessment quotes** (feeds G7 + the residual model's env/gas cost lines).
 5. [ ] **Engage a real estate attorney for a title search** — SW boundary shared w/ Durham Public Schools, creek-moving eastern line, unresolved SW plat-vs-GIS mismatch (G1). [T-18]
 6. [ ] **Get a civil/geotech quote for the mandatory full-depth engineered foundation** + road + water — Blalock confirmed engineered foundation is required regardless (T-25). Folds G1b geotech + the new foundation cost line together.
 7. [x] ~~Confirm impervious cap~~ → RESOLVED (corpus T-28): 24%/70% by overlay (UDO §8.7.2), non-binding for the lean plan.

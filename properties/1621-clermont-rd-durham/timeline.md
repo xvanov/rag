@@ -340,6 +340,34 @@ accessory structure built "big on the landfill." Fails on two independent ground
 §5.4.14 — kills the power-line extension) + a **well** (self-supply water, pending Env Health). These
 trim UTILITY cost lines but do NOT touch the foundation cost. **Cheapest compliant path stays: smallest
 code dwelling on the clean nub (lightest footing there), solar + well, minimal footprint.**
+[NOTE T-33: the "solar + well" salvage is now HALF-dead — the well is impossible (500-ft setback);
+only self-power solar survives.]
+
+**T-34 · 2026-07-07 · NCDEQ Solid Waste Section (Sherri Stanley, Permitting Branch Head) — AUTHORITATIVE on the landfill/open-dump**
+Ryan Channell forwarded our inquiry to the **Solid Waste Section** because the site is **NOT in the
+PRLF program** (refines T-27: right DEQ desk = Solid Waste Section, not PRLF; still DEQ, not DHHS).
+Sherri Stanley (sherri.stanley@deq.nc.gov, 919-707-8235) — Permitting Branch Head — replied with the
+State's records (the 1987 file; see `sources/emails/attachments/1621-clermont-rd-durham__2026-07-07-STANLEY-NCDEQ-1987-FILE.ocr.md`)
+and these authoritative points:
+- The property is recorded as an **"open dump"** with a **Notice of Open Dump** to prospective owners
+  (= the recorded Closure Notice DB 1710/761).
+- **To REMOVE the Notice of Open Dump:** the **waste must be removed AND soils + groundwater tested**
+  to show no contamination above regulatory limits. → effectively a full excavation/cleanup; never
+  done historically (closure was paper-only). **So the Notice is effectively permanent** = a lasting
+  title/marketability + disclosure drag.
+- **"It is unlikely that you would be able to build on a landfill waste mass"** — stability + landfill-
+  gas generation. (Confirms: no vertical build on the waste.)
+- **Even to build on the non-waste area (the nub):** must retain a consultant to (a) **verify the waste
+  boundary**, (b) determine whether **contamination (soil/groundwater/surface water) or landfill-gas**
+  issues exist **that might affect residents of newly built homes**, and (c) buffer/remediate as needed;
+  **the waste mass must be AVOIDED during construction to maintain cap integrity.**
+- Recommends a **Recognized Environmental Consultant (REC)** — NCDEQ maintains an approved-REC list.
+**Decision impact:** even the clean-nub plan now carries MANDATORY environmental due diligence — an REC
+assessment (waste-boundary verification + soil/GW/soil-gas testing) and possible **landfill-gas
+mitigation/monitoring** for homes near the waste — plus a **permanent open-dump title notice**. Stacks
+onto: well dead (T-33), engineered foundation (T-25), margin-tight exit (T-30). Deal gets heavier →
+further toward kill.
+(`sources/emails/1621-clermont-rd-durham__2026-07-07_stanley-sherri-sherr_1621-clermont-rd-durham-pin-0728808242-b.md`)
 
 **T-33 · 2026-07-06 · Durham County Env Health (Patrick Eaton) — WELL EFFECTIVELY IMPOSSIBLE (AUTHORITATIVE) + nub measured + attorney call set**
 - **Patrick C. Eaton, REHS — Onsite Water Protection Supervisor, Durham County Dept. of Public Health**

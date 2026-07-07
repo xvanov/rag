@@ -32,3 +32,16 @@ parcel (waste is central; the only ground 500 ft away is floodway/wetland). Chea
 residual," but a source of upside is gone and the deal moved toward the kill line. New do-now: get
 the water-main-extension cost (PWEng/Summit) + Weist access answer → all-in cost → go/no-go. Also:
 title/boundary attorney engaged (David Nahm, Morningstar — call 7/7 3:30pm).
+
+**2026-07-07** — **BOTTLENECK unchanged (all-in cost vs. thin residual) but the extraordinary
+stack GREW again.** NCDEQ Solid Waste Section (Sherri Stanley, Permitting Branch Head, T-34):
+the site is a recorded **open dump**; the **Notice of Open Dump is effectively permanent**
+(removable only by full waste excavation + clean soil/GW tests). Building on the waste is
+unlikely (stability/gas); **even the clean-nub build requires a Recognized Environmental
+Consultant** to verify the waste boundary + test soil/GW/surface-water + **landfill gas** that
+could affect residents, buffer/remediate as needed, and avoid the waste mass. New cost lines:
+REC assessment + possible landfill-gas mitigation; new title drag: permanent open-dump notice.
+Trend since 7/2 is one-directional — every agency reply adds cost/constraint (well dead 7/6,
+permanent notice + mandatory REC 7/7). Deal drifting toward KILL; viability now hinges on a
+near-free land basis + a clean REC result. Next inputs: Weist (access), Summit quote (road +
+main extension + foundation), REC quote (waste/gas), attorney call (title/marketability).

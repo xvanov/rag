@@ -47,7 +47,11 @@ constraints:
     regulatory_basis: 15A NCAC 13B .0502 (closure of non-conforming sites/open dumps)
     deed_language_required_on_conveyance: true
     state_gis_registry: carried in NC (NCDHHS/DEQ) GIS as inactive/closed landfill "Parkwood LF", ref R320220/1992 (T-25, T-26)
-    src: [T-08, T-10, T-11, T-25, T-26]
+    state_regulator: "NCDEQ Division of Waste Management, SOLID WASTE SECTION (NOT the PRLF program — site not in PRLF). Contact: Sherri Stanley, Permitting Branch Head, sherri.stanley@deq.nc.gov, 919-707-8235 (T-34)"
+    open_dump_notice: "recorded 'Notice of Open Dump' to prospective owners; effectively PERMANENT — removable only by excavating all waste + testing soils/groundwater clean (never done; closure was paper-only). Title/marketability + disclosure drag (T-34)"
+    build_on_waste: "unlikely permittable — stability + landfill-gas generation (NCDEQ Stanley, T-34)"
+    build_on_nub_requires: "even off-waste, NCDEQ requires an REC (Recognized Environmental Consultant) to verify waste boundary + test for soil/GW/surface-water contamination + landfill-GAS that could affect residents, buffer/remediate as needed; waste mass must be AVOIDED during construction to keep cap intact (T-34)"
+    src: [T-08, T-10, T-11, T-25, T-26, T-34]
   flood:
     fema_zone: AE
     flood_area_acres: 4.499
@@ -130,7 +134,7 @@ building_permit:
   ahj: Durham City-County Building & Safety Department
   will_permit_on_landfill: true   # AHJ confirmed — landfill is NOT a Durham building-code bar (T-25)
   authoritative_source: W.C. Blalock, Building Division Chief (Wyatt.Blalock@durhamnc.gov, 919-369-9133)
-  environmental_clearance_jurisdiction: "NCDEQ Superfund Section, Pre-Regulatory Landfill (PRLF) Unit (RESOLVED, T-27) — NOT DHHS. Blalock's DHHS claim (T-25) unsupported; DHHS-delegated Durham County Env Health covers only well/septic. Contact: Ryan Channell, Ryan.Channell@deq.nc.gov, 919-707-8333"
+  environmental_clearance_jurisdiction: "NCDEQ Division of Waste Management, SOLID WASTE SECTION (REFINED T-34 — site is NOT in the PRLF program; Channell forwarded to SWS). Contact: Sherri Stanley, Permitting Branch Head, sherri.stanley@deq.nc.gov, 919-707-8235. NOT DHHS (Blalock's T-25 claim unsupported). No state build-approval process per se — instead: retain an REC, verify waste boundary, test soil/GW/gas, avoid the waste mass. Open-dump notice is effectively permanent."
   environmental_not_governed_by_building_code: true   # "not administered or governed by the NC building codes enforced by Durham B&S" (T-25)
   engineered_foundation_required: true   # "disturbed substrate mitigation will require full-depth engineering analysis and design for any construction permits" (T-25)
   code_basis: NC Res. Code R401.2 + R401.4.2; NC Bldg Code §1803.5.8 / §1804.6 (geotech investigation for compacted fill >12 in)
