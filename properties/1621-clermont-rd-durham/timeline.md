@@ -386,6 +386,25 @@ further toward kill.
   former-landfill site ~$20k–$50k** pre-purchase, more if remediation/ongoing gas monitoring is
   triggered. Sources: Aegis/A3E (Phase I), APF/Curren (Phase II); WithersRavenel does this in NC.
 
+**T-36 · 2026-07-07 · RESIDUAL LAND VALUE computed → max bid ≈ $0 / negative (likely WALK)**
+New listing data: tax-assessed $174,134; annual tax $1,726; listed 4/14/2025; **264 cumulative
+days on market**; Exclusive Right to Sell; terms Cash/Conventional only. Ran the residual model
+with everything known:
+- **2-home optimistic:** $1.2M gross (2×$600K) − ~$1.211M cost (hard build $800K @ ~$200/sf +
+  soft ~$96K + sewer $25K + driveway $40K + water-main $80K + engineered foundation $100K +
+  REC $30K + gas $20K + survey/title $20K) = **residual ~$0 BEFORE profit and BEFORE land.** Add
+  25% developer margin → deeply negative.
+- **1-home worse:** fixed extraordinary costs (water main/REC/road) don't halve → ~$688K cost vs
+  $600K gross.
+- **Generous case** (cheap water $30K, driveway $20K, light foundation, no gas) → ~breakeven only
+  at an irrational ~10% margin.
+**Conclusion: max bid ≈ $0 (seller-credit territory); realistically WALK.** Tax-assessed $174K is
+a red herring (assessed ≠ market for an encumbered landfill). The market agrees — 264 DOM,
+cash/conventional only. The FIXED extraordinary costs are too large to amortize over 1–2 low-
+ceiling ($600–650K) homes. Only a surprisingly cheap water main + a confirmed 2-unit yield flips
+it, and barely. **Do the free water-main-feasibility check (Durham Water Mgmt) BEFORE spending the
+$20–50K REC or anything else.**
+
 **T-33 · 2026-07-06 · Durham County Env Health (Patrick Eaton) — WELL EFFECTIVELY IMPOSSIBLE (AUTHORITATIVE) + nub measured + attorney call set**
 - **Patrick C. Eaton, REHS — Onsite Water Protection Supervisor, Durham County Dept. of Public Health**
   (peaton@dconc.gov, 919-560-7812) replied to our well-feasibility question. THE authority on private

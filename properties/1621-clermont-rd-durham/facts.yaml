@@ -15,7 +15,13 @@ property:
   owner_address: 2920 Starmount Farms Dr, Greensboro, NC 27408
   tax_value_land: 174134
   tax_value_total: 174134
-  status: under evaluation (no contract; pennies-on-the-dollar asking)
+  annual_tax: 1726
+  listed_date: 2025-04-14
+  days_on_market: 264   # cumulative, as of 2026-07-07 (T-36)
+  listing_type: Exclusive Right To Sell
+  listing_terms: [Cash, Conventional]
+  status: "under evaluation — RESIDUAL ~= $0/NEGATIVE (T-36); leaning WALK pending water-main feasibility. Long DOM (264) + cash-only corroborate weak market"
+  max_bid_estimate: "~$0 (seller-credit territory); tax-assessed $174,134 is NOT a valuation floor for an encumbered landfill (T-36)"
 
 prospective_developer:
   entity: IVANOVSTROY LLC

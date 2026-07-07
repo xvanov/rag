@@ -83,9 +83,23 @@ Costs to unlock:
   Developer profit & risk margin (25–35%+)  -$ ____
   ── Total costs                            -$ ____
 
-RESIDUAL LAND VALUE (max bid)               $ ____
-Tax value reference:                        $174,134
+RESIDUAL LAND VALUE (max bid)               $ ~0 or NEGATIVE  (T-36)
+Tax value reference:                        $174,134  (RED HERRING — assessed != market for encumbered landfill)
 ```
+
+## RESIDUAL RESULT — computed 2026-07-07 [T-36]
+**2-home OPTIMISTIC:** gross $1.2M (2 × $600K) − hard build $800K (~$200/sf) − soft ~$96K −
+sewer $25K − driveway $40K − water-main $80K − engineered foundation $100K − REC $30K −
+gas $20K − survey/title $20K = **~$1.211M cost > $1.2M gross → residual ~$0 BEFORE profit
+and BEFORE land.** Add normal 25% developer margin (~$300K) → deeply negative.
+**1-home is WORSE:** fixed extraordinary costs (water main, REC, road) don't halve → ~$688K
+cost vs $600K gross. **Generous case** (cheap water $30K, driveway $20K, light foundation,
+no gas) only reaches ~breakeven at an irrational ~10% margin.
+**→ MAX BID ≈ $0 (seller-credit territory), realistically WALK.** Market agrees: 264 DOM,
+cash/conventional only (listed 4/14/2025). The land is a liability, not an asset.
+**Swing factors that could flip it:** (1) water-main feasibility/cost (existential free-check
+FIRST), (2) 2+ units at top-of-range comps, (3) extraordinary costs far below estimate
+(needs Summit + REC quotes). Don't spend the $20–50K REC until water is proven feasible.
 **Known so far:** capital budget $500K–$1M [T-14]; sewer available (cost down);
 water + road are the big unknowns and likely the largest line items. [T-12]
 
