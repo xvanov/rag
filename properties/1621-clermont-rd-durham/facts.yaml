@@ -126,9 +126,10 @@ utilities_access:
   water_alternatives:
     private_well: "EFFECTIVELY IMPOSSIBLE (T-33). Durham County Env Health (Patrick Eaton, Onsite Water Protection Supervisor) states the most restrictive setback = 500 ft from the LIMIT OF THE LANDFILL to any proposed well. Nub is ~120-200 ft from waste (fails by ~300+ ft); no point on the parcel is 500 ft from the centrally-located waste (rest is floodway/wetland/buffer). Well permit app = $425 non-refundable + site plan + site visit — NOT worth spending; geometry dooms it. Rules 15A NCAC 02C."
     well_status: dead   # 500-ft landfill setback cannot be met (T-33)
-    rainwater: NOT allowed as sole potable source (NC Res. Code P2901.1 — only toilets/urinals/trap primers); nonpotable supplement only
-    water_conclusion: "city water-main extension is the ONLY viable water path (expensive; main dead-ends at Euclid/Clermont) — the cheap-well fork is closed"
-    src: [T-13, T-33]
+    rainwater: "CANNOT be potable/drinking supply — NC Res. Code P2901.1 allows treated rainwater only for toilets/urinals/trap primers (lines labeled DO NOT DRINK). Offsets toilet demand only; does NOT unlock the dwelling (T-13, T-35)"
+    hauled_water_cistern: "only 'tank' route that is actually potable (water trucked in, stored); Durham Health-Dept-dependent, operationally painful, not cheap long-term — weak escape hatch (T-35)"
+    water_conclusion: "EXISTENTIAL: well dead (T-33) + rainwater nonpotable (T-35) → city water-main extension is the ONLY code-legal potable source. If uneconomic, parcel may be UNBUILDABLE for a dwelling (no legal potable water) — main-extension cost is make-or-break, not just margin"
+    src: [T-13, T-33, T-35]
 
 building_permit:
   ahj: Durham City-County Building & Safety Department

@@ -70,11 +70,11 @@ Finished value per SFH (Parkwood pocket):  $ 525K-625K; EXIT CEILING ~$600-650K 
 
 Costs to unlock:
   Road / access build-out                  -$ ____  (civil eng. quote)
-  Water — CITY MAIN EXTENSION (well is dead) -$ ____  (G3; expensive — the cheap-well fork is closed, T-33)
+  Water — CITY MAIN EXTENSION (ONLY legal potable) -$ ____  (G3; well dead T-33 + rainwater nonpotable T-35 = EXISTENTIAL; if uneconomic, parcel unbuildable)
   Sewer connection (easement on site)       -$ ____  (lower — sewer available)
   Geotech + environmental (ESA/borings)     -$ ____  (REQUIRED — Blalock, T-25)
-  REC assessment (waste-boundary + soil/GW/gas) -$ ____  (REQUIRED even off-waste — NCDEQ Stanley, T-34)
-  Landfill-gas mitigation/monitoring (nub)  -$ ____  (if gas migrates to the nub — T-34)
+  REC assessment (waste-boundary + soil/GW/gas) -$ 20K-50K  (REQUIRED even off-waste — NCDEQ Stanley T-34; web-est T-35)
+  Landfill-gas mitigation/monitoring (nub)  -$ ____  (if gas migrates to the nub — T-34; may recur)
   Full-depth engineered foundation design   -$ ____  (REQUIRED on disturbed substrate — Blalock, T-25)
   Flood-pad fill (if any pad in fringe)     -$ ____
   Methane mitigation per dwelling           -$ ____

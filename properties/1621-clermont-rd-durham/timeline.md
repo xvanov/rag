@@ -369,6 +369,23 @@ onto: well dead (T-33), engineered foundation (T-25), margin-tight exit (T-30). 
 further toward kill.
 (`sources/emails/1621-clermont-rd-durham__2026-07-07_stanley-sherri-sherr_1621-clermont-rd-durham-pin-0728808242-b.md`)
 
+**T-35 · 2026-07-07 · Rainwater ruled out as potable (docrag) + REC cost bounded (web) — WATER IS NOW EXISTENTIAL**
+- **Rainwater catchment CANNOT be the drinking-water supply.** NC Residential Code **§P2901.1**:
+  dwelling fixtures require potable water; treated rainwater/graywater allowed **only for water
+  closets, urinals, trap primers** (all rainwater lines labeled "DO NOT DRINK"; §P2901.2). Rainwater
+  can offset toilet demand but does NOT unlock the house. Confirms T-13.
+- **IMPLICATION — water is now potentially EXISTENTIAL, not just costly.** Well is dead (T-33) +
+  rainwater is nonpotable → the **city water-main extension is the ONLY code-legal potable source.**
+  If the main extension is uneconomic, the parcel may be **unbuildable for a dwelling at all** →
+  residential value collapses. Main-extension cost is make-or-break. (Weak escape hatches: hauled-
+  water cistern — potable water trucked in/stored, Health-Dept-dependent + painful; or treated-
+  rainwater-to-potable via alternative-materials/engineered AHJ approval — heavy lift, not cheap.
+  Neither reliably beats the main.)
+- **REC assessment cost (web-grounded):** Phase I ESA $2–5k; Phase II (soil/GW borings + lab)
+  $8–25k; landfill-gas/soil-vapor survey + probes ~$5–20k+ (may recur). **Realistic all-in for this
+  former-landfill site ~$20k–$50k** pre-purchase, more if remediation/ongoing gas monitoring is
+  triggered. Sources: Aegis/A3E (Phase I), APF/Curren (Phase II); WithersRavenel does this in NC.
+
 **T-33 · 2026-07-06 · Durham County Env Health (Patrick Eaton) — WELL EFFECTIVELY IMPOSSIBLE (AUTHORITATIVE) + nub measured + attorney call set**
 - **Patrick C. Eaton, REHS — Onsite Water Protection Supervisor, Durham County Dept. of Public Health**
   (peaton@dconc.gov, 919-560-7812) replied to our well-feasibility question. THE authority on private

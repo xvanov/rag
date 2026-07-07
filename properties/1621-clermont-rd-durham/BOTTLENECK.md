@@ -34,6 +34,14 @@ Critical path: `Weist + Summit quote + main-extension cost + REC quote -> all-in
 (well dead, permanent notice, mandatory REC + gas). The deal is drifting toward the kill
 line; the burden of proof is now on the land being nearly free.
 
+**WATER IS NOW EXISTENTIAL (T-35):** well dead + rainwater can't be potable (NC Res. Code
+P2901.1 — nonpotable only) → the **city water-main extension is the ONLY code-legal potable
+source.** If it's uneconomic, the parcel is **unbuildable for a dwelling** — no potable water,
+no home, no residential value. So the FIRST question to resolve is no longer "how much" but
+"**is a main extension even feasible/affordable here at all?**" — get that from Durham Water
+Management / PWEng before spending on anything else. The REC workup is ~$20–50k of pre-purchase
+diligence (Phase I + Phase II + landfill-gas), itself a meaningful sunk cost.
+
 *(NOT the bottleneck — resolved this cycle: zoning [RS-10 OK]; taxes/liens [clean, T-19];
 floodway geometry [nub outside floodway, T-20]; **building permit on the landfill** [AHJ
 Blalock: state env. matter, not a Durham code bar — Durham WILL permit, T-25]; **env.
