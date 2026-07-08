@@ -86,5 +86,13 @@
     "name": "FEMA National Flood Hazard Layer",
     "url": "https://hazards.fema.gov/femaportal/wps/portal/NFHLWMS",
     "notes": "authoritative FEMA flood; Durham flood layer usually sufficient locally."
+  },
+  {
+    "jurisdiction": "nc-state",
+    "data_type": "road_maintenance",
+    "name": "NCDOT SR / road-maintenance lookup",
+    "method": "rest",
+    "url": "https://apps.ncdot.gov/ventures/prd/srlookup/",
+    "notes": "confirm whether a street is NCDOT-maintained (buildability access gate)"
   }
 ]
