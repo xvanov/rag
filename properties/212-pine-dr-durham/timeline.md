@@ -114,3 +114,23 @@ Zillow (zpid 449399807) is bot-blocked; recovered listing facts via portal searc
   want (Corps/lake privacy is a genuine residence amenity), the calculus is partly personal. Still:
   **condition any offer on perc + access; don't pay $140K for a lot that might not perc or have a
   buildable street.** Source: portal search (Homes.com/Redfin snippets); verify on the actual listing.
+
+**T-08 · 2026-07-08 · Full Zillow listing text (owner-provided; Zillow 403'd auto-fetch) — resolves 2 gates**
+Filed verbatim: `sources/web/212-pine-dr-durham__zillow-listing.md`. Materially richer than the portal
+snippet in T-07. Key:
+- **SEPTIC GATE (#1) likely addressed:** "**Soil testing results are in**" — seller HAS results.
+  -> **request them** (a passing soil/perc result would clear the make-or-break gate). New survey coming.
+- **ACCESS GATE (#2) RESOLVED (as a cost):** the lot sits at "the **corner of two publicly dedicated,
+  UNDEVELOPED rights-of-way**," and **"building requires construction of an ~20'-wide road to NCDOT
+  standards, along with well and septic."** Access is legally available but **the road must be BUILT**
+  -> a real, quantifiable cost line (cf. 1621 Clermont's road problem). Confirms well + septic.
+- **IMPERVIOUS/watershed refined:** "**no impervious restrictions unless lot lines are moved or lots
+  are recombined**" -> the single 0.92-ac lot is fine as-is; **recombining TRIGGERS** watershed
+  impervious limits. (Refines T-04 watershed inference.)
+- **Assemblage clarified:** neighbor **7412 Star Dr** separately for sale -> combine for ±1.84 ac
+  (would trigger impervious). Explains the $275K/4.98-ac listing confusion (T-07) = separate lots.
+- **New flag:** "**Proposed Jordan Lake Water Supply program facility nearby**" — research (amenity vs
+  nuisance vs future impact?).
+- **Flexible:** No HOA/dues, no build timeline, no builder requirement.
+- **NET:** buildability gates are now (1) get the soil results, (2) **cost the ~20' NCDOT-standard
+  road** — the road-build is the new dominant cost driver alongside well+septic.

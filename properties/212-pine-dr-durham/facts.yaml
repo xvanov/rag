@@ -18,9 +18,11 @@ property:
   legal_description: "OAK HILL / BLK C / LT#03 & LT#04, Plat Book 43 Page 20"
   status: "under evaluation (cold-start research 2026-07-07)"
   listing_price: "~$140,000 (0.92-ac lot, Zillow zpid 449399807; recovered via portal search, T-07)"
-  listing_flag: "a $275K / 4.98-ac '212 Pine Dr' listing also appears (-$25K drop) — verify if larger assemblage vs the 0.92-ac Lots 3&4 (T-07)"
-  amenity: "borders US Army Corps of Engineers / Jordan Lake land (privacy) — a plus for an owner-occupied residence (T-07)"
-  src: [T-01, T-02, T-07]
+  neighbor_lot: "7412 Star Dr separately for sale -> combine for ±1.84 ac (recombining triggers impervious limits). Explains the earlier $275K/4.98-ac confusion = separate lots (T-08)"
+  amenity: "borders US Army Corps of Engineers / Jordan Lake land, no homes directly behind (privacy) — plus for an owner-occupied residence; ±1.9mi I-40, 4.6mi Southpoint (T-07,T-08)"
+  nearby_flag: "proposed Jordan Lake Water Supply program facility nearby — research benefit/nuisance (T-08)"
+  no_hoa: true   # no HOA/dues, no build timeline, no builder requirement (T-08)
+  src: [T-01, T-02, T-07, T-08]
 
 identity_correction:
   note: >
@@ -67,8 +69,16 @@ constraints:
     water: WELL (private) — unincorporated; county health permits (NCGS 87-97)
     wastewater: SEPTIC (on-site) — Durham County Env Health / 15A NCAC 18E; SOIL PERC = feasibility gate #1
     city_service: "city water/sewer ~300-400 ft away (Southpoint Manor annexed) but requires voluntary annexation + main extension — costly fallback, not the plan"
-    access_pine_dr: "UNCONFIRMED — Pine Dr serves only 2 parcels + absent from OSM -> possibly unbuilt/private. Buildability requires accepted/maintained street (UDO 13.5.1/14.3.2). Verify NCDOT SR status. GATE #2"
-    src: [T-04]
+    access_pine_dr: "RESOLVED (T-08, listing): lot at corner of two publicly-dedicated but UNDEVELOPED ROWs. Building REQUIRES constructing an ~20-ft-wide road to NCDOT standards. Legally available, but road must be BUILT -> real cost line (cf. 1621 Clermont). GATE #2 = cost the road."
+    road_build_required: "~20-ft-wide road to NCDOT standards on the undeveloped ROW — dominant cost driver alongside well+septic (T-08)"
+    src: [T-04, T-08]
+  soil_test:
+    status: "DONE per listing — 'Soil testing results are in' (T-08). REQUEST results from seller; a passing soil/perc clears septic gate #1. New survey also coming."
+    src: [T-08]
+  impervious:
+    as_is: "NO impervious restriction on the single 0.92-ac lot as-is (per listing, T-08)"
+    triggered_if: "lot lines moved OR lots recombined (e.g., combining with 7412 Star Dr) -> Jordan Lake watershed impervious limits apply"
+    src: [T-08]
 
 verdict:
   summary: "REFRAMED (T-06): owner-occupied home + rented room (homestay). Regulation now the FRIENDLY path (B&B/homestay L/m, owner-occupancy met; IRC build, no R-1 premium). Plausibly VIABLE — now gated by BUILDABILITY (septic perc #1, Pine Dr access #2, watershed->one home) + whether you want to live in this rural Jordan-Lake spot. NOT the earlier lean-WALK (that assumed non-owner STR investment)."

@@ -39,11 +39,14 @@
    not the plan.)*
 2. **Building code (REFRAMED — IRC, no premium).** Owner-occupied dwelling renting ≤8 guest rooms
    builds to the **residential IRC** (NC Bldg Code 310.4.2) — the R-1 commercial premium is gone. [T-06]
-3. **Septic (feasibility gate #1).** Well+septic, not city (unincorporated; city ~300–400 ft away =
-   costly annexation fallback). **Septic soil/perc suitability w/ Durham County Env Health is
-   make-or-break; a failed perc kills the build.** [T-04]
-4. **Access (gate #2).** Pine Dr serves only 2 parcels + absent from OSM → possibly unbuilt/private.
-   Buildability requires an accepted/maintained street (§13.5.1/§14.3.2). Verify NCDOT SR status. [T-04]
+3. **Septic (gate #1 — likely addressed).** Well+septic, not city. Listing says **"soil testing
+   results are in"** (T-08) → **request them**; a passing result clears the make-or-break perc gate.
+   Confirm septic permitting + watershed siting w/ Durham County Env Health. [T-04,T-08]
+4. **Access (gate #2 — resolved as a COST).** Lot is at the **corner of two publicly-dedicated but
+   UNDEVELOPED ROWs**; **building requires constructing an ~20-ft-wide road to NCDOT standards** (T-08).
+   Legally available, but the road must be BUILT — a real, 1621-style cost line. Cost it with a civil
+   engineer. [T-08]
+   - *Impervious:* none on the 0.92-ac lot as-is; triggered only if lots recombined (T-08).
 5. **Watershed limits** (buffers + impervious + lot-size, above). [T-04]
 
 ## 4. Market (STR)

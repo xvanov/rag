@@ -39,9 +39,10 @@ land value ≈ **near zero** (unbuildable).
 room: permitting is the friendly path (homestay/B&B, owner-occupancy met), build is IRC (no R-1
 premium), and the "does STR income cover the build?" test no longer applies (it's the home you'd live
 in anyway; room income is a bonus). **The deal now turns on:**
-1. **Septic perc** — does the lot support on-site septic? (gate #1, make-or-break)
-2. **Pine Dr access** — is it a buildable/accepted street? (gate #2)
-3. **Watershed/lot** — one home is fine; confirm buffers/impervious.
+1. **Septic** — soil testing is DONE (get the results, T-08); a pass clears gate #1 cheaply.
+2. **Road** — access is legal but the ROW is UNDEVELOPED → must **build an ~20' NCDOT-standard road**
+   (T-08). The **dominant cost line** — get a civil quote (cf. 1621 Clermont's road problem).
+3. **Watershed/lot** — one home fine; NO impervious limit as-is (only if lots recombined, T-08).
 4. **Price** — **$140K ask vs ~$40–90K for a contingent-buildable rural lot.** Condition any offer on
    perc + access; if it percs, has access, and you value the Corps/Jordan-Lake privacy for a home,
    the premium is a personal call — but don't pay $140K for an unconfirmed lot.

@@ -4,22 +4,25 @@
 > **REFRAMED (T-06):** plan is owner-occupied home + rented room (homestay) — permitting is now the
 > friendly path, so the bottleneck moved from "STR legality" to **BUILDABILITY.**
 
-## Primary bottleneck
-**Can a home actually be built on this lot? — and that hinges first on SEPTIC.** The lot is
-unincorporated (well + septic, no city sewer without costly annexation), so **on-site septic soil/perc
-suitability is the make-or-break gate.** A failed perc = unbuildable = the ~$140K asking price buys a
-near-worthless lot. Everything else (house design, room-STR homestay permit, financing) is downstream
-of "does it perc + is there legal street access."
+## Primary bottleneck (SHARPENED T-08)
+**The all-in cost to make the lot buildable — dominated by BUILDING A ~20-ft-wide NCDOT-standard ROAD
+on the undeveloped right-of-way (+ well + septic) — vs. the $140K ask.** Access is legally available
+but the road is UNBUILT and must be constructed (listing, T-08) — a real, 1621-Clermont-style cost.
+Septic is likely already addressed ("**soil testing results are in**" — just get them). So the gate
+is no longer "will it perc / is there access" (both ~answered) but **"what does the road + well +
+septic cost, and does that + $140K land make sense for the home I'd build here?"**
 
 ## To unblock — do NOW (cheap → decisive)
-- [ ] **Durham County Environmental Health (Patrick Eaton, 919-560-7812) — septic perc/soil evaluation**
-      process + cost + timeline; is a soil scientist eval the first step? **Gate #1.** (Draft staged.)
-- [ ] **NCDOT SR lookup + Durham — Pine Dr maintenance/access status** (apps.ncdot.gov/ventures/prd/srlookup).
-      Is it an accepted/maintained street a permit can rely on? **Gate #2.** (Free.)
-- [ ] **Durham Planning (Emma Howrilla, 919-560-4137) — homestay/room-rental confirmation** in RR:
-      is an owner-occupied room STR allowed as homestay/B&B, any minor SUP or guest-room cap? (Draft
-      staged — now the friendly question, not a make-or-break.)
-- [ ] **Verify the listing** — is the sale the 0.92-ac Lots 3&4 at $140K, or a 4.98-ac package at $275K? [T-07]
+- [ ] **Get the SOIL TEST RESULTS from the seller/listing agent** — the listing says they're in. A
+      passing result clears the septic gate cheaply; a marginal one reopens it. (FREE, do first.)
+- [ ] **Civil engineer — cost the ~20' NCDOT-standard road** on the undeveloped ROW (+ driveway,
+      grading) + well + septic install. The **dominant cost line**; needed to judge the $140K price.
+- [ ] **Durham County Environmental Health (Eaton, 919-560-7812)** — confirm septic permitting given
+      the soil results + any watershed siting rules. (Draft staged.)
+- [ ] **Durham Planning (Howrilla, 919-560-4137)** — owner-occupied homestay/room-rental confirmation
+      in RR (friendly question). (Draft staged.)
+- [ ] **Verify the sale scope** — 0.92-ac Lots 3&4 @ $140K (subject) vs the separate neighbor 7412
+      Star Dr; the $275K/4.98-ac was a separate listing (T-08).
 
 ## Waiting on (status: WAITING)
 - Nothing yet — the perc + access + homestay questions above start the chain. 2 drafts staged.
@@ -29,12 +32,15 @@ of "does it perc + is there legal street access."
 - If perc + access clear: a **build cost quote** + a personal visit (is this a place you want to live?).
 
 ## Kill criteria (walk away if)
-- **Perc fails** → no septic → unbuildable (city sewer only via costly annexation). **Primary kill.**
-- **Pine Dr is unbuilt/private + not accepted** → not a buildable lot (§14.3.2).
-- Seller won't go below ~$90K AND perc/access unconfirmed → overpaying for a contingent lot.
+- **Soil results show the lot won't perc** → no septic → unbuildable. **Primary kill.**
+- **Road-to-NCDOT-standard + well + septic all-in is too high** relative to $140K land + the finished
+  home's value → the homesite is uneconomic even as a residence.
+- **$140K + ~$road/well/septic** exceeds comparable finished/buildable homesites → overpaying; negotiate.
 - You decide the rural/car-dependent location isn't where you want your permanent residence.
 
 ## Read
-The owner-occupancy clarification removed the STR-permitting wall; the deal is now a **normal
-rural-homesite buildability question** + a **price/lifestyle** call. Spend $0 until the perc + access
-answers come back — a failed perc ends it.
+Owner-occupancy removed the STR-permitting wall; the full Zillow text (T-08) then largely answered the
+two buildability gates — **soil test is done (get it) and access is legally available but needs a
+built road.** So it's now a **cost + price question**: the ~20' NCDOT road (+ well + septic) is the
+dominant unknown. Get the free soil results first, then a civil quote on the road/utilities before
+committing to $140K.
