@@ -134,3 +134,28 @@ snippet in T-07. Key:
 - **Flexible:** No HOA/dues, no build timeline, no builder requirement.
 - **NET:** buildability gates are now (1) get the soil results, (2) **cost the ~20' NCDOT-standard
   road** — the road-build is the new dominant cost driver alongside well+septic.
+
+**T-09 · 2026-07-08 · Road requirement grounded + adjacent-parcel ownership + Corps land (docrag + REST + web)**
+- **ROAD = real land-use requirement, owner's expense (docrag/UDO):** §12.2.2 — no building unless
+  the parcel abuts a publicly accepted/maintained street, except a **private street for ≤6 SF lots,
+  which must still be built to City/NCDOT public-street standards**; a plain driveway/easement does
+  NOT qualify for a standalone SF lot. §12.2.1 — on an unmaintained ROW a **building permit can issue
+  but NO occupancy permit (CO)** until the street is built to acceptable standard or surety posted.
+  → **You cannot occupy until the road is built.** ~400 ft to Stagecoach × ~20' NCDOT standard ≈ the
+  dominant cost (~$40–100K+; verify + ask Durham/NCDOT re a reduced rural cross-section). NOT electrical.
+- **Adjacent parcels (Durham REST):** the subject's neighbors in Oak Hill Blk C are almost all
+  **UNITED STATES OF AMERICA** ("WILD/PARKS/FDRL PROJ," 1970s deed bks 413–416): Lots 1&2 (204 Pine,
+  REID 143265), Lot 7 (7418 Star, 143263), Lots 8-10 (7413 Oak Leaf, 143266), Blk D 5&6 (3207
+  Stagecoach, 143267). **The Herrings own BOTH the subject (Lots 3&4, 212 Pine) AND 7412 Star Dr
+  (Lots 5&6, REID 143262) — same deed 5947/977.** So "buy the lot next door" = same seller;
+  combined = Lots 3-6 (1.84 ac). Surrounded by Corps land → **permanent privacy (Corps won't develop).**
+- **Corps lots NOT buyable (web, high conf.):** federal Jordan Lake project land, held for project
+  purposes, not sold on request. Disposal only via excess→GSA (competitive, rare for buffer land),
+  land exchange (must benefit project), or special Act of Congress. Corps policy: "private exclusive
+  use of public land is always denied." **Best case = a limited outgrant (lease/easement/permit), no
+  fee title.** Contact: **USACE Wilmington District Real Estate Division** (69 Darlington Ave,
+  Wilmington NC 28403; ~910-251-4626) + B. Everett Jordan Lake Project Office.
+- **Inholding history:** Oak Hill platted (PB 43/20, ~1960s–early '70s) BEFORE the reservoir; Corps
+  took lots inside the taking line/buffer contour in the 1970s; higher-ground lots (Herrings' 3-6)
+  weren't needed → stayed private. Herrings acquired 2008. Verify plat date + 1970s USA deeds at
+  Durham ROD.

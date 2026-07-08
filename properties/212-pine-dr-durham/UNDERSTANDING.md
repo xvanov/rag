@@ -68,6 +68,15 @@ buildability. See AREA.md. [T-05]
 - [ ] **City-vs-county review authority** for this parcel (affects process). [T-03]
 - [ ] Plat PB 43/20 + deed — easements/frontage. [T-02]
 - [ ] STR/new-home resale comps specific to this rural pocket (vs 27713-wide). [T-03]
+- [ ] **Road cross-section** — confirm required standard (full public vs reduced rural) + cost with a civil engineer + Durham/NCDOT; ~400 ft to Stagecoach is the dominant cost. [T-09]
+- [ ] Verify **plat PB 43/20 date + the 1970s "to USA" deeds** at Durham ROD (inholding history). [T-09]
+
+## Adjacent land / assemblage (T-09)
+- Subject is **surrounded by U.S. Corps of Engineers Jordan Lake land** (Lots 1,2,7,8-10, etc.) →
+  **permanent privacy** (won't be developed). **Corps lots are NOT buyable** (federal project land;
+  best case a limited outgrant). Contact: USACE Wilmington District Real Estate, ~910-251-4626.
+- The **only assemblage = 7412 Star Dr (Lots 5&6), also Herring-owned** (same deed) → combine for
+  1.84 ac, but recombining **triggers the watershed impervious cap.**
 
 ## 7. Contacts (from the canonical DB — reused, not rediscovered)
 - **Durham Planning — Emma Howrilla**, Planning@durhamnc.gov, 919-560-4137 (zoning/STR use determination). [contacts DB]

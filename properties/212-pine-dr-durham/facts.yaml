@@ -18,7 +18,11 @@ property:
   legal_description: "OAK HILL / BLK C / LT#03 & LT#04, Plat Book 43 Page 20"
   status: "under evaluation (cold-start research 2026-07-07)"
   listing_price: "~$140,000 (0.92-ac lot, Zillow zpid 449399807; recovered via portal search, T-07)"
-  neighbor_lot: "7412 Star Dr separately for sale -> combine for ±1.84 ac (recombining triggers impervious limits). Explains the earlier $275K/4.98-ac confusion = separate lots (T-08)"
+  neighbor_lot: "7412 Star Dr (REID 143262, Oak Hill Blk C Lots 5&6, 0.92 ac) is ALSO Herring-owned (same deed 5947/977) -> 'buy next door' = same seller; combine = Lots 3-6, 1.84 ac (recombining triggers watershed impervious limits) (T-08, T-09)"
+  adjacent_parcels: "most neighboring Oak Hill Blk C lots are UNITED STATES OF AMERICA (Corps, Jordan Lake project, WILD/PARKS/FDRL PROJ, 1970s deeds 413-416): Lots 1&2 (204 Pine 143265), Lot 7 (7418 Star 143263), Lots 8-10 (7413 Oak Leaf 143266), Blk D 5&6 (3207 Stagecoach 143267). Subject surrounded by Corps land = permanent privacy buffer (T-09)"
+  corps_land_buyable: "NO (high conf) - federal project land, not sold on request; disposal only via excess->GSA / land-exchange / Act of Congress; best case a limited outgrant (lease/easement), no fee title. Contact USACE Wilmington District Real Estate, 69 Darlington Ave Wilmington NC 28403, ~910-251-4626 (T-09)"
+  inholding_history: "Oak Hill platted PB43/20 (~1960s-early70s) pre-reservoir; Corps took lots below taking-line/buffer contour in 1970s; higher lots (Herrings' 3-6) not needed -> stayed private; Herrings acquired 2008. Verify plat date + 1970s USA deeds at Durham ROD (T-09)"
+  road_requirement: "REAL land-use requirement (UDO 12.2.2/12.2.1), owner's expense: private street for <=6 SF lots must be built to City/NCDOT standard; plain driveway insufficient; CO withheld until road built/surety. ~400ft to Stagecoach = dominant cost (~$40-100K+; verify reduced rural section) (T-09)"
   amenity: "borders US Army Corps of Engineers / Jordan Lake land, no homes directly behind (privacy) — plus for an owner-occupied residence; ±1.9mi I-40, 4.6mi Southpoint (T-07,T-08)"
   nearby_flag: "proposed Jordan Lake Water Supply program facility nearby — research benefit/nuisance (T-08)"
   no_hoa: true   # no HOA/dues, no build timeline, no builder requirement (T-08)
