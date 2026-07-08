@@ -22,7 +22,26 @@ corpora/prop-<slug>/
   sources/
     docs/  emails/  gis/  web/  photos/   # raw artifacts, all indexed
     emails/attachments/   # email attachments auto-saved with standard slug names
+  MARKET.md           # skeptical, primary-source-first market analysis
+  AREA.md             # 10/20/30/50/100-yr area trajectory (scenarios)
+  PROPOSAL.md         # dev-idea analysis + residual land-value model (max bid)
 ```
+
+## Shared, cross-property stores (grow over time)
+Two canonical stores at the properties root, consulted BEFORE rediscovering and
+appended after each research run — so property N+1 starts ahead of property N:
+- **`properties/.contacts.db`** (SQLite) — every agency/vendor/agent/seller we learn,
+  keyed by jurisdiction + topic, with source (`<slug>/T-NN`), confidence, last-verified.
+  CLI: `propkb contacts add|query|merge|export|seed`. Seeded from the 1621 Clermont roster.
+- **`properties/sources_registry.json`** — WHERE to get data per jurisdiction+type
+  (verified Durham ArcGIS REST endpoints, tax/ROD/DEQ/FEMA URLs, and the method:
+  rest|browser|scrape|manual). CLI: `propkb sources list|query|add|seed`.
+
+## Durham data acquisition (REST-first)
+`propkb acquire --slug <slug> --pin <pin>|--address "<addr>"` pulls Durham parcel
+(AGOL ArcGIS), zoning + flood (spatial intersect), files raw JSON + a readable
+summary under `sources/gis/`. No browser/auth/key for core data; Playwright/tax-card
+extras are an optional later pass. (Verified: reproduces 1621 Clermont incl. floodway.)
 
 Three layers, three jobs:
 1. **Retrieval** — the indexed corpus (LLM-queryable over everything).
@@ -36,6 +55,10 @@ Three layers, three jobs:
   append the chain, regenerate UNDERSTANDING/PLAN, draft outreach.
 
 ## Commands (skills)
+- **`/property-research <address> + <dev plan>`** — **cold start.** Scaffolds a new property,
+  pulls Durham GIS/tax/web + docrag, runs market/area/proposal analysis, builds the full KB,
+  names the bottleneck, finds + drafts outreach to contacts, indexes. One-shot autonomous.
+  Hands off to `/intake` for increments. See `PRD-property-research.md`.
 - **`/intake <file|text|url|"email">`** — ingest new info → classify + file → extract
   facts → append `timeline.md` → update `facts.yaml` → regenerate `UNDERSTANDING.md`
   (+ `PLAN.md` if affected) → re-index → report + discuss next actions.

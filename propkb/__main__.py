@@ -55,6 +55,36 @@ def main(argv: list | None = None) -> int:
     a = sub.add_parser("email-sync"); a.add_argument("--slug", required=True)
     a.add_argument("--days", type=int, default=7); a.add_argument("--max", type=int, default=50)
 
+    # contacts: canonical cross-property contacts DB
+    a = sub.add_parser("contacts")
+    csub = a.add_subparsers(dest="contacts_cmd", required=True)
+    ca = csub.add_parser("add")
+    for f in ("name", "org", "role", "category", "jurisdiction", "topic",
+              "email", "phone", "address", "source", "confidence", "notes"):
+        ca.add_argument("--" + f, default="")
+    cq = csub.add_parser("query")
+    cq.add_argument("--jurisdiction"); cq.add_argument("--topic")
+    cq.add_argument("--category"); cq.add_argument("--text")
+    cm = csub.add_parser("merge")
+    cm.add_argument("--keep", type=int, required=True)
+    cm.add_argument("--dupes", required=True, help="comma-separated ids")
+    ce = csub.add_parser("export"); ce.add_argument("--format", default="json", choices=("json", "yaml"))
+    csub.add_parser("seed")
+
+    # sources: canonical source registry (where to get data per jurisdiction)
+    a = sub.add_parser("sources")
+    ssub = a.add_subparsers(dest="sources_cmd", required=True)
+    ssub.add_parser("list")
+    ssub.add_parser("seed")
+    sq = ssub.add_parser("query"); sq.add_argument("--jurisdiction"); sq.add_argument("--type")
+    sa = ssub.add_parser("add")
+    for f in ("jurisdiction", "data_type", "name", "method", "url", "notes"):
+        sa.add_argument("--" + f, default="")
+
+    # acquire: pull Durham property data (REST-first) into a property KB
+    a = sub.add_parser("acquire"); a.add_argument("--slug", required=True)
+    a.add_argument("--pin", default=""); a.add_argument("--address", default="")
+
     args = ap.parse_args(argv)
 
     if args.cmd == "new":
@@ -84,7 +114,59 @@ def main(argv: list | None = None) -> int:
         for h in hits:
             print("  - %s | %s" % (h.get("date", "?"), h.get("subject", "")))
         return 0
+    if args.cmd == "contacts":
+        from . import contacts as _contacts
+        if args.contacts_cmd == "add":
+            cid = _contacts.add(**{f: getattr(args, f) for f in (
+                "name", "org", "role", "category", "jurisdiction", "topic",
+                "email", "phone", "address", "source", "confidence", "notes")})
+            print("Contact #%d saved." % cid); return 0
+        if args.contacts_cmd == "query":
+            rows = _contacts.query(jurisdiction=args.jurisdiction, topic=args.topic,
+                                   category=args.category, text=args.text)
+            if not rows:
+                print("(no matching contacts)"); return 0
+            for r in rows:
+                who = r["name"] or "(office)"
+                print("#%-3d %-28s | %-32s | %s | %s | [%s] %s"
+                      % (r["id"], who, r["org"], r["email"] or "-",
+                         r["phone"] or "-", r["topic"], r["jurisdiction"]))
+            print("\n%d contact(s)." % len(rows)); return 0
+        if args.contacts_cmd == "merge":
+            dupes = [int(x) for x in args.dupes.split(",") if x.strip()]
+            m = _contacts.merge(args.keep, dupes)
+            print("Merged %s into #%d (%s)." % (dupes, args.keep, m["name"] or m["org"])); return 0
+        if args.contacts_cmd == "export":
+            print(_contacts.export(args.format)); return 0
+        if args.contacts_cmd == "seed":
+            n = _contacts.seed_1621(); print("Seeded/updated %d contact(s) from 1621 Clermont." % n); return 0
+        return 1
+    if args.cmd == "sources":
+        from . import registry as _reg
+        if args.sources_cmd == "seed":
+            print("Registry now has %d source(s)." % _reg.seed()); return 0
+        if args.sources_cmd == "list":
+            for r in _reg.list_all():
+                print("[%s] %-22s %-8s %s" % (r["jurisdiction"], r["data_type"], r["method"], r["url"]))
+            return 0
+        if args.sources_cmd == "query":
+            rows = _reg.query(jurisdiction=args.jurisdiction, data_type=args.type)
+            print(_json_dumps(rows)); return 0
+        if args.sources_cmd == "add":
+            _reg.add(**{f: getattr(args, f) for f in ("jurisdiction", "data_type", "name", "method", "url", "notes")})
+            print("Source added/updated."); return 0
+        return 1
+    if args.cmd == "acquire":
+        from . import acquire
+        result = acquire.durham(args.slug, pin=args.pin or None, address=args.address or None)
+        print(_json_dumps(result))
+        return 0
     return 1
+
+
+def _json_dumps(obj) -> str:
+    import json
+    return json.dumps(obj, indent=2, ensure_ascii=False)
 
 
 if __name__ == "__main__":
