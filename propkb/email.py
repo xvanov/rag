@@ -45,39 +45,66 @@ _STOPWORDS = {
 }
 
 
-def _relevance_terms(slug: str) -> list[str]:
-    """Distinctive terms that mark a message as relevant to this property: PIN,
-    REID, street name, zip, street number. Parsed from facts.yaml (no yaml dep).
-    Generic city/state/street-type tokens are excluded so unrelated mail to the
-    same city doesn't match."""
-    terms = set()
-    p = store.paths(slug)
-    for w in re.split(r"[-_]", slug):
-        if len(w) >= 4 and w.lower() not in _STOPWORDS:
-            terms.add(w.lower())
+# A message qualifies only if it clears this score (so a shared ZIP alone -- weight
+# 1 -- can never file an email; you need a street name / number / PIN-level hit).
+_RELEVANCE_FLOOR = 5
+
+
+def _relevance_terms(slug: str) -> dict[str, int]:
+    """WEIGHTED distinctive terms for a property, parsed from facts.yaml (no yaml
+    dep). Weights let us both (a) require more than a shared ZIP and (b) route a
+    message to the BEST-matching property when several share a city/ZIP:
+        PIN / REID .............. 100  (unique to the parcel)
+        full address string ...... 50
+        street number ............. 8
+        street name ............... 5
+        ZIP ....................... 1  (shared across same-ZIP properties -> weak)
+    Generic city/state/street-type tokens are excluded entirely."""
+    terms: dict[str, int] = {}
+
+    def add(t: str, w: int) -> None:
+        t = (t or "").lower().strip()
+        if t and t not in _STOPWORDS:
+            terms[t] = max(terms.get(t, 0), w)
+
+    for w in re.split(r"[-_]", slug):              # slug words (street name etc.)
+        if len(w) >= 4:
+            add(w, 5)
     try:
-        with open(p["facts"], "r", encoding="utf-8") as f:
+        with open(store.paths(slug)["facts"], "r", encoding="utf-8") as f:
             txt = f.read()
         for key in ("pin", "reid"):
             m = re.search(rf"{key}\s*:\s*\"?([^\n\"]+)", txt, re.I)
             if m and m.group(1).strip():
-                terms.add(m.group(1).strip().lower())
+                add(m.group(1).strip(), 100)
         m = re.search(r"address\s*:\s*\"?([^\n\"]+)", txt, re.I)
         if m:
             val = m.group(1).strip()
-            terms.add(val.lower())                       # full address string
-            for tok in re.findall(r"[A-Za-z0-9]{4,}", val):  # street name, zip, street number
-                t = tok.lower()
-                if t not in _STOPWORDS:
-                    terms.add(t)
+            add(val, 50)                            # full address string
+            for tok in re.findall(r"[A-Za-z0-9]{3,}", val):
+                if tok.isdigit():
+                    add(tok, 1 if len(tok) == 5 else 8)   # 5-digit = ZIP (weak); else street number
+                elif len(tok) >= 4:
+                    add(tok, 5)                     # street name
     except OSError:
         pass
-    return sorted(t for t in terms if t)
+    return terms
+
+
+def _relevance_score(slug: str, hay: str) -> int:
+    return sum(w for t, w in _relevance_terms(slug).items() if t in hay)
 
 
 def is_relevant(slug: str, subject: str, body: str, sender: str) -> bool:
+    """True only if `slug` clears the floor AND is the strongest-matching property.
+    Prevents a shared-ZIP email for one property from filing under another."""
     hay = " ".join((subject or "", body or "", sender or "")).lower()
-    return any(t in hay for t in _relevance_terms(slug))
+    mine = _relevance_score(slug, hay)
+    if mine < _RELEVANCE_FLOOR:
+        return False
+    best_other = max((_relevance_score(s, hay) for s in store.list_properties()
+                      if s != slug.strip().lower()), default=0)
+    return mine >= best_other
 
 
 # ---------- parsing ----------
