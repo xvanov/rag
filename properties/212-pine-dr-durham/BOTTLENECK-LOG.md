@@ -15,3 +15,12 @@ unincorporated), Pine Dr access (possibly unbuilt/private), Jordan Lake watershe
 min lot → substandard lot, one dwelling max). STR economics weak (~$8–14K net vs ~$450–650K build).
 **Do-now:** FREE written use-determination from Durham Planning — most likely ends the STR thesis
 before any paid diligence. Lean WALK.
+
+**2026-07-07 (later)** -- **BOTTLENECK MOVED: STR-permitting → BUILDABILITY (septic perc).** Owner
+clarified the plan (T-06): **owner-occupied primary residence + rented room (homestay)**, not a
+non-owner whole-house STR. That makes permitting the friendly path (homestay/B&B L/m, owner-occupancy
+met; IRC build, no R-1 premium) and flips the verdict from lean-WALK to **plausibly viable.** The
+gate is now **"can a home be built here?" → septic perc (#1) + Pine Dr access (#2)**; watershed caps
+it to one home (fine). Zillow price recovered (T-07): **asking ~$140K** for the 0.92-ac lot (vs
+~$40–90K contingent-lot value) — condition any offer on perc + access. Do-now: Env Health perc + NCDOT
+access + Planning homestay confirmation; spend $0 until perc clears.

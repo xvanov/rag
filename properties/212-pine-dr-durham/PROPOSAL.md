@@ -3,9 +3,14 @@
 > The plan tested against constraints (UNDERSTANDING), market (MARKET), trajectory (AREA).
 > **Last updated: 2026-07-07** · Stage: pre-acquisition
 
-## The proposal
-Buy the vacant 0.92-ac RR lot and **build a home (originally "units #3 & 4"), operate as a
-non-owner-occupied short-term rental (Airbnb).**
+## The proposal (CLARIFIED T-06)
+Buy the vacant 0.92-ac RR lot (**asking ~$140K**, T-07), **build a home to occupy as the owner's
+PERMANENT RESIDENCE, and rent out a room (later maybe more) on Airbnb** — an owner-occupied
+homestay, not a non-owner STR investment.
+
+> **This clarification flips the earlier (non-owner STR) analysis below.** Owner-occupancy makes the
+> use the *permittable* B&B/homestay form and the build IRC (not R-1). The residual model below was
+> written for a pure STR investment and **no longer governs** — read it as the (now-moot) worse case.
 
 ## Reality check vs. what we found
 - "#3 & 4" = **platted lots, not units** → this is **ground-up construction**, not buy-and-operate. [T-02]
@@ -29,10 +34,21 @@ clear), finished-lot value is on the order of **~$40–90K** (assessed $29,440);
 NO premium** — it adds cost (R-1) + permitting risk (SUP) for little income. If perc or access fails,
 land value ≈ **near zero** (unbuildable).
 
-## Verdict
-**Do NOT pursue as a non-owner whole-house build-to-STR.** Blocked/uneconomic on three fronts:
-permitting (SUP/owner-occ + R-1), buildability (perc/access/watershed unconfirmed), and weak STR
-economics vs. new-build cost.
+## Verdict (REFRAMED T-06/T-07 — owner-occupied homestay)
+**Plausibly VIABLE — proceed to the buildability checks.** As an owner-occupied residence + rented
+room: permitting is the friendly path (homestay/B&B, owner-occupancy met), build is IRC (no R-1
+premium), and the "does STR income cover the build?" test no longer applies (it's the home you'd live
+in anyway; room income is a bonus). **The deal now turns on:**
+1. **Septic perc** — does the lot support on-site septic? (gate #1, make-or-break)
+2. **Pine Dr access** — is it a buildable/accepted street? (gate #2)
+3. **Watershed/lot** — one home is fine; confirm buffers/impervious.
+4. **Price** — **$140K ask vs ~$40–90K for a contingent-buildable rural lot.** Condition any offer on
+   perc + access; if it percs, has access, and you value the Corps/Jordan-Lake privacy for a home,
+   the premium is a personal call — but don't pay $140K for an unconfirmed lot.
+5. **Do you want to live here?** — rural, car-dependent (Walk Score 3), but private/wooded by the lake,
+   4.6 mi to Southpoint, 1.9 mi to I-40. That's a lifestyle fit question, not a spreadsheet one.
+
+*(The earlier "lean WALK" applied ONLY to the non-owner whole-house STR investment — not this plan.)*
 
 ## Alternatives (ranked)
 1. **Walk** — the STR thesis doesn't survive; default.

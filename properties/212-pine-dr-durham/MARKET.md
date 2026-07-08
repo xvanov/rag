@@ -26,6 +26,9 @@
 - All figures are **gross.** Net of new-build mortgage/carry + land + 6% occupancy tax + 7.5% sales tax + cleaning + PM (~20% if hands-off) + utilities + furnishing + insurance, a ~$20K gross STR **is unlikely to cover a new-construction carry cost in south Durham.** Works only if self-managed AND build cost contained AND the RR permitting clears (see UNDERSTANDING/PROPOSAL).
 
 ## Land/build value context
-- Subject assessed **$29,440 (land only, vacant)** [T-01]. New-home resale comps for 27713 pocket + build cost to be pulled (see PROPOSAL residual). South Durham 27713 new SFH historically ~$430–650K range (cross-ref 1621 Clermont T-30 comps — same zip family; verify for Oak Hill specifically).
+- Subject **asking ~$140,000** for the 0.92-ac lot (Zillow zpid 449399807; recovered via portal search, T-07); assessed **$29,440** (land only). A **$275K/4.98-ac** "212 Pine Dr" listing also appears (−$25K drop) — verify whether that's a larger assemblage vs the 0.92-ac Lots 3&4. [T-07]
+- **Land value read:** ~$40–90K for a *contingent-buildable* rural single-home lot → **$140K ask looks rich** for an unconfirmed lot; condition on perc+access. Borders US Army Corps/Jordan Lake land (privacy) — a residence amenity, not a comp-booster.
+- New-home resale comps for the 27713 pocket + build cost to be pulled (owner-occupied → the home's value, not STR income, is the asset). South Durham 27713 new SFH historically ~$430–650K (cross-ref 1621 Clermont T-30; verify for this rural Oak Hill pocket, which likely sits below the corridor comps).
+- **Room-STR income (owner-occupied):** a rented room earns a fraction of the whole-house ~$20–25K gross — call it **~$8–15K gross/room** depending on setup; bonus income on a primary residence, not the investment driver. [T-03,T-06]
 
 > Research, not an appraisal. STR figures = vendor data (AirDNA/AirROI/Airbtics), verify with a local STR operator / AirDNA pull before relying.

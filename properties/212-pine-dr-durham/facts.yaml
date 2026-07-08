@@ -17,7 +17,10 @@ property:
   deed: DB 5947 / Page 977
   legal_description: "OAK HILL / BLK C / LT#03 & LT#04, Plat Book 43 Page 20"
   status: "under evaluation (cold-start research 2026-07-07)"
-  src: [T-01, T-02]
+  listing_price: "~$140,000 (0.92-ac lot, Zillow zpid 449399807; recovered via portal search, T-07)"
+  listing_flag: "a $275K / 4.98-ac '212 Pine Dr' listing also appears (-$25K drop) — verify if larger assemblage vs the 0.92-ac Lots 3&4 (T-07)"
+  amenity: "borders US Army Corps of Engineers / Jordan Lake land (privacy) — a plus for an owner-occupied residence (T-07)"
+  src: [T-01, T-02, T-07]
 
 identity_correction:
   note: >
@@ -30,10 +33,12 @@ identity_correction:
   src: [T-02]
 
 development_plan:
-  intent: short-term rental (STR / Airbnb)
-  form: build one or two single-family dwellings on the vacant RR lot, operate as STR
-  key_unknowns: [STR legal in RR Durham?, water-sewer vs well-septic, RR min-lot / two-lot buildability, STR market economics]
-  src: [T-02]
+  intent: "OWNER-OCCUPIED primary residence + rent a room (later maybe more rooms) on Airbnb — homestay/B&B form (CLARIFIED T-06)"
+  form: build one single-family home as own permanent residence on the vacant RR lot; owner-occupied room STR
+  owner_occupied: true   # the key fact — reframes regulation, building code, and economics (T-06)
+  key_unknowns: [septic perc, Pine Dr access, exact homestay/B&B requirements in RR (minor SUP? room cap?), do we want to live here]
+  superseded: "earlier read (T-02) assumed non-owner whole-house STR investment — WRONG; see T-06"
+  src: [T-02, T-06]
 
 jurisdiction:
   incorporation: UNINCORPORATED Durham County (parcel CITY field null; tax dist Cnty-Drhm/Fd-Parkwood)
@@ -48,8 +53,8 @@ constraints:
     src: [T-01]
   zoning:
     district: RR (Rural Residential)
-    str_permitted: "NOT by-right for a non-owner whole-house STR. Falls under UDO 'Overnight Accommodations' (5.2). RR: B&B=L/m (minor SUP, host-present), Hotel/Extended-stay=L (triggers minor SUP + 50-ft setback within 200 ft of residential -> fires here). Whole-house non-owner fits neither -> Planning use-determination needed; likely SUP or owner-occ B&B only (T-03)"
-    building_code_occupancy: "non-owner transient = R-1 COMMERCIAL (NC Bldg Code 310.2, pricier); owner-occ <=8 rooms can use IRC (310.4.2) (T-03)"
+    str_permitted: "OWNER-OCCUPIED room rental (the actual plan, T-06) = bed-&-breakfast/homestay form = RR 'L/m' (permitted w/ limitations; minor SUP possibly required). Owner-occupancy now SATISFIED -> the permittable path. VERIFY exact Durham requirements (homestay vs B&B vs accessory home-occupation, room cap, whether minor SUP triggers). [NOTE: non-owner whole-house STR would NOT be by-right -> hotel/extended-stay + SUP + 50-ft setback; that's not the plan.] (T-03, T-06)"
+    building_code_occupancy: "OWNER-OCCUPIED <=8 guest rooms builds to residential IRC (NC Bldg Code 310.4.2) -> NO R-1 commercial premium (the plan is owner-occupied, T-06)"
     rr_min_lot: "UDO 6.2.1A: 30,000 sf 'All Other Locations'; 2 ac (Rural Tier non-watershed); 3 ac (Rural Tier watershed)"
     lot_conformity: "0.92 ac (~40,000 sf) conforms ONLY if 'All Other Locations'; if Rural-Tier-watershed (LIKELY) it's a SUBSTANDARD nonconforming lot of record -> buildable for ONE dwelling under UDO 14.3.2 IF pre-ordinance plat (yes PB43), >=30ft wide, not in flood (Zone X ok), accepted street + water/wastewater available"
     dwellings_supportable: "ONE (two homes almost certainly out) (T-04)"
@@ -66,6 +71,7 @@ constraints:
     src: [T-04]
 
 verdict:
-  summary: "Non-owner whole-house build-to-STR = weak/blocked. STR not by-right in RR (SUP/owner-occ + R-1 build); only 1 dwelling; buildability unconfirmed (perc/access/watershed); STR net ~$8-14K/yr can't cover ~$450-650K build. Lean WALK. Free Planning use-determination first."
-  max_bid_land: "~$40-90K as a normal buildable lot IF perc+access+watershed clear; ~$0 if unbuildable; NO STR premium (assessed $29,440)"
-  src: [T-03, T-04]
+  summary: "REFRAMED (T-06): owner-occupied home + rented room (homestay). Regulation now the FRIENDLY path (B&B/homestay L/m, owner-occupancy met; IRC build, no R-1 premium). Plausibly VIABLE — now gated by BUILDABILITY (septic perc #1, Pine Dr access #2, watershed->one home) + whether you want to live in this rural Jordan-Lake spot. NOT the earlier lean-WALK (that assumed non-owner STR investment)."
+  economics_frame: "primary residence + incremental room income (not an investment residual). Value = a buildable home you'd occupy anyway; room STR offsets cost."
+  max_bid_land: "as a buildable residence lot IF perc+access clear: ~$40-90K (rural single-home lot; assessed $29,440); ~$0 if unbuildable (perc/access fail)"
+  src: [T-03, T-04, T-06]

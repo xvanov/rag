@@ -78,3 +78,39 @@ SW Durham near Jordan Lake / NC-751; long-run favorable but transit unfunded:
   ~+3.3% YoY; 2023–26 soft plateau (inventory +41%, ~7% rates). County permitted 2,905 units in 2024.
 - **Read:** trajectory helps *exit value* modestly, not *buildability/STR permitting* (the gates).
   50/100-yr = speculative optionality. See AREA.md.
+
+**T-06 · 2026-07-07 · PLAN CLARIFIED by owner — owner-occupied homestay, not non-owner STR (MATERIAL)**
+Kalin clarified the development plan: **build and occupy the home as his own PERMANENT RESIDENCE, and
+rent out a ROOM (later maybe more rooms) on Airbnb.** This is owner-occupied — a fundamentally
+different (and far friendlier) case than the non-owner whole-house STR analyzed in T-03/PROPOSAL:
+- **Regulatory reframe — now the permittable path.** Owner-occupied room rental = **bed-&-breakfast /
+  homestay form**, which in RR is the **"L/m"** use (permitted with limitations, minor SUP possibly
+  required) — and the **owner-occupancy that was the blocker is now SATISFIED.** No longer the
+  hotel/extended-stay + 50-ft-setback trap. VERIFY exact Durham requirements (homestay vs B&B vs
+  accessory home occupation, any guest-room cap, whether a minor SUP is actually triggered).
+- **Building code reframe — IRC, not R-1.** Owner-occupied dwelling renting ≤8 guest rooms builds to
+  the **residential IRC** (NC Bldg Code 310.4.2), NOT R-1 commercial → the big commercial-build
+  premium disappears.
+- **Economics reframe.** It's now a **primary residence + incremental room income**, not an investment
+  STR. The residual/max-bid model (which assumed a pure STR investment) no longer governs — value =
+  "a home I want to live in that I can build here, with a rented room offsetting cost." STR income
+  (~$8–14K net whole-house) is smaller for a room, but it's gravy on a house occupied anyway.
+- **Unchanged:** buildability gates — septic **perc (gate #1)**, Pine Dr **access (gate #2)**, Jordan
+  Lake **watershed → one dwelling** (fine, it's one residence), flood Zone X ✓.
+- **Verdict shift:** from "lean WALK" → **plausibly VIABLE, now gated by BUILDABILITY (perc/access) +
+  whether you want to live in this rural Jordan-Lake location** — not by STR permitting.
+- Staged Planning draft (T-03 framing) regenerated to ask the owner-occupied homestay question.
+
+**T-07 · 2026-07-07 · Zillow price recovered (user-provided link; via portal search — Zillow 403'd)**
+Zillow (zpid 449399807) is bot-blocked; recovered listing facts via portal search:
+- **Asking ~$140,000** for the 0.92-ac lot (40,075 sf) — "build or invest on wooded acres, SW Durham
+  Co. near Stagecoach/Farrington, **borders US Army Corps of Engineers / Jordan Lake land for
+  privacy**; ~1.9 mi to I-40, 4.6 mi to UNC, 10 mi to Duke, 4.6 mi to Southpoint."
+- **DISCREPANCY to verify:** a **$275,000 / 4.98-ac** "212 Pine Dr" listing (−$25K price drop) also
+  appears — possibly Lots 3&4 PLUS adjacent lots (a larger assemblage) or a separate nearby listing.
+  Confirm exactly what's being sold (the 0.92-ac Lots 3&4 at $140K, or a 4.98-ac package at $275K).
+- **Price read:** $140K ask vs my buildable-lot estimate ~$40–90K (contingent on perc+access). At
+  ask it's **above a contingent-buildable rural lot's value** — but for an OWNER-OCCUPIED homesite you
+  want (Corps/lake privacy is a genuine residence amenity), the calculus is partly personal. Still:
+  **condition any offer on perc + access; don't pay $140K for a lot that might not perc or have a
+  buildable street.** Source: portal search (Homes.com/Redfin snippets); verify on the actual listing.

@@ -2,9 +2,12 @@
 
 > Living synthesis. Claims cite timeline.md (T-NN). Built by /property-research.
 > **Last updated: 2026-07-07** · Status: cold-start research · Confidence: medium
-> **One-liner:** a vacant 0.92-ac RR lot near Jordan Lake where the STR plan means a *ground-up
-> build* — gated by (1) STR-in-RR permitting, (2) septic perc, (3) street access, (4) watershed
-> lot-size — against modest STR income. Leans hard toward NOT viable as a non-owner whole-house STR.
+> **One-liner (REFRAMED T-06/T-07):** a vacant 0.92-ac RR lot near Jordan Lake, **asking ~$140K**,
+> where the owner will **build his own home + rent a room (homestay)**. Owner-occupancy makes the
+> permitting the *friendly* path (B&B/homestay L/m, IRC build) — so the deal now turns on
+> **BUILDABILITY (septic perc, Pine Dr access, watershed→one home)** and whether he wants to live in
+> this rural Jordan-Lake spot, NOT on STR permitting. Plausibly viable if it percs + has access; at
+> $140K ask vs ~$40–90K contingent-lot value, condition any offer on perc + access.
 
 ## 1. Snapshot
 - **PIN 0707680500 / REID 143264** · **212 Pine Dr, Durham 27713** · **0.92 ac VACANT**, zoned **RR
@@ -28,13 +31,14 @@
   homes almost certainly OUT; one at most.** [T-04]
 
 ## 3. Constraint stack (each a real gate)
-1. **STR permitting in RR (deal-definer).** No Durham STR ordinance; falls under "Overnight
-   Accommodations." A **non-owner whole-house STR fits neither B&B (L/m, host-present) nor
-   Hotel/Extended-stay (L, triggers minor SUP + 50-ft setback within 200 ft of residential — fires
-   here).** Planning makes the call; likely **minor SUP or owner-occupied-B&B-only.** Not by-right.
-   **Get a written use determination before buying.** [T-03]
-2. **Building code.** Non-owner transient = **R-1 commercial** occupancy → materially pricier build
-   than an IRC house. Owner-occupied ≤8 rooms can use IRC. [T-03]
+1. **STR permitting (REFRAMED — now the friendly path).** The plan is **owner-occupied + rent a room
+   = bed-&-breakfast / homestay**, which in RR is **"L/m"** and — crucially — **owner-occupancy is
+   satisfied.** So this is the *permittable* case, not the blocked non-owner whole-house STR. Still
+   confirm with Planning: homestay vs B&B vs accessory home-occupation, any guest-room cap, whether a
+   minor SUP actually triggers. [T-03,T-06] *(Non-owner whole-house STR WOULD be blocked — but that's
+   not the plan.)*
+2. **Building code (REFRAMED — IRC, no premium).** Owner-occupied dwelling renting ≤8 guest rooms
+   builds to the **residential IRC** (NC Bldg Code 310.4.2) — the R-1 commercial premium is gone. [T-06]
 3. **Septic (feasibility gate #1).** Well+septic, not city (unincorporated; city ~300–400 ft away =
    costly annexation fallback). **Septic soil/perc suitability w/ Durham County Env Health is
    make-or-break; a failed perc kills the build.** [T-04]
