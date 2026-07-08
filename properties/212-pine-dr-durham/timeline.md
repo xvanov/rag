@@ -213,3 +213,13 @@ Drafted (NOT sent) to Justin.Weist@durhamnc.gov: required road/street cross-sect
 on the unopened ROW ~400 ft off Stagecoach; reduced rural section possible?; City vs NCDOT Div 5
 jurisdiction; request a pre-application meeting. Key cost-unblock - quotes can't be accurate until the
 required section is known.
+
+**T-14 · 2026-07-08 · Seller's 2008 purchase price found (tax GIS revenue stamps) — HARD**
+Pulled REVENUE_STAMPS + DEED_DATE from Durham tax GIS for both Herring parcels:
+- **Deed DB 5947/977, dated 2008-05-06**, revenue stamps **$32** on BOTH REID 143264 (212 Pine) and
+  143262 (7412 Star) — same deed. NC excise = $2/$1,000 → **implied consideration ~$16,000** for what
+  the deed conveyed (both parcels / all 4 lots, 1.84 ac).
+- So the Herrings paid **~$16K in 2008 for the whole 1.84 ac**, now asking **~$140K for the 0.92-ac
+  half** (~8–9× basis; ~4.75× the $29,440 assessed), held 17 yrs vacant. Major negotiation leverage.
+- **Caveat:** rev-stamp math can round / a deed could be partially exempt — confirm against the
+  recorded deed image (ROD) that it was arm's-length and covered both parcels. Built NEGOTIATION.md.
