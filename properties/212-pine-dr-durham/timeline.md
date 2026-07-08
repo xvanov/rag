@@ -175,3 +175,20 @@ snippet in T-07. Key:
 - **Road standard authority (Q5):** reduced rural cross-section is set by **Durham Development Review
   / Public Works Transportation (Justin Weist — in contacts DB)** + **NCDOT District 5 (Durham)** for
   the Stagecoach Rd connection. Civil-eng/road-contractor RFP + contacts being sourced.
+
+**T-11 · 2026-07-08 · Road-build contacts sourced + RFP drafted (web + contacts DB writeback)**
+- **Reduced rural cross-section is a jurisdiction call — confirm it FIRST** (drives the whole cost):
+  **Durham Development Review / Transportation, 919-560-4326** (Durham adopted NCDOT construction
+  standards 2018; Justin Weist is Eng Mgr here) + **NCDOT Div 5 Durham, 919-220-4600** (Jorge Benitez
+  Jaimes, PE) for the Stagecoach (state-road) connection/encroachment permit.
+- **Civil/site engineers (design + permit set):** Summit (Brandon Johnson, brandon.johnson@summitde.com,
+  919-322-0115 — already in DB), Qunity (Durham, 919-490-4990, no public email), WithersRavenel
+  (919-469-3340). **Contractors (build):** Carolina Excavation Specialties (919-302-7306, all-in incl
+  septic), Kapusnik Grading (Martin@KapusnikGrading.com), J. Coble Construction
+  (office@jcobleconstruction.com), Hunter Excavating (Hunterexcavatingllc@gmail.com), Max Tractor.
+  All written to the canonical contacts DB.
+- **RFP staged** (drafts, NOT sent) to the 4 firms with verified emails (Summit, Kapusnik, J. Coble,
+  Hunter) requesting a ROM cost for ~400 ft NCDOT-standard road + well + septic. Phone-only firms
+  (Qunity, WithersRavenel, Carolina Excavation, Max Tractor) → call.
+- **Sequencing:** confirm cross-section with Development Review (919-560-4326) → then firms quote to
+  that section. Also confirm city-limits vs ETJ (decides City vs NCDOT authority).
