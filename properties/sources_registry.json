@@ -94,5 +94,13 @@
     "method": "rest",
     "url": "https://apps.ncdot.gov/ventures/prd/srlookup/",
     "notes": "confirm whether a street is NCDOT-maintained (buildability access gate)"
+  },
+  {
+    "jurisdiction": "triangle-nc",
+    "data_type": "mls",
+    "name": "Doorify MLS (RESO Web API) / agent CSV export",
+    "method": "rest",
+    "url": "https://doorifymls.com/",
+    "notes": "RESO Web API feed needs MLS-issued creds (Trestle/Bridge/Spark) in .env: MLS_API_BASE + MLS_API_TOKEN or MLS_OAUTH_*. Easiest: agent CSV export -> propkb mls ingest-csv."
   }
 ]

@@ -85,6 +85,16 @@ def main(argv: list | None = None) -> int:
     a = sub.add_parser("acquire"); a.add_argument("--slug", required=True)
     a.add_argument("--pin", default=""); a.add_argument("--address", default="")
 
+    # mls: ingest an agent CSV export, or query a RESO Web API feed
+    a = sub.add_parser("mls")
+    msub = a.add_subparsers(dest="mls_cmd", required=True)
+    mi = msub.add_parser("ingest-csv"); mi.add_argument("--slug", required=True)
+    mi.add_argument("--file", required=True); mi.add_argument("--label", default="mls-export")
+    mq = msub.add_parser("query")
+    mq.add_argument("--resource", default="Property"); mq.add_argument("--filter", default="")
+    mq.add_argument("--select", default=""); mq.add_argument("--top", type=int, default=50)
+    mq.add_argument("--orderby", default="")
+
     args = ap.parse_args(argv)
 
     if args.cmd == "new":
@@ -161,6 +171,16 @@ def main(argv: list | None = None) -> int:
         result = acquire.durham(args.slug, pin=args.pin or None, address=args.address or None)
         print(_json_dumps(result))
         return 0
+    if args.cmd == "mls":
+        from . import mls as _mls
+        if args.mls_cmd == "ingest-csv":
+            path = _mls.ingest_csv(args.slug, args.file, label=args.label)
+            print("Filed -> %s" % path); return 0
+        if args.mls_cmd == "query":
+            rows = _mls.reso_query(resource=args.resource, filter=args.filter,
+                                   select=args.select, top=args.top, orderby=args.orderby)
+            print(_json_dumps(rows)); return 0
+        return 1
     return 1
 
 
