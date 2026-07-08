@@ -192,3 +192,24 @@ snippet in T-07. Key:
   (Qunity, WithersRavenel, Carolina Excavation, Max Tractor) → call.
 - **Sequencing:** confirm cross-section with Development Review (919-560-4326) → then firms quote to
   that section. Also confirm city-limits vs ETJ (decides City vs NCDOT authority).
+
+**T-12 · 2026-07-08 · Inholding history synthesis — "paper subdivision" partially taken for the lake**
+Explains BOTH the private inholdings AND the undeveloped-ROW road problem (same root cause):
+- Oak Hill was **platted as a speculative suburban subdivision (~1960s, PB 43/20)** — streets + ~1-ac
+  lots on paper, largely UNBUILT.
+- Corps built Jordan Lake (authorized 1963, built 1970s-82) and acquired the lots inside the project/
+  buffer boundary -> **most Oak Hill lots became USA-owned** (deed bks 413/414/416 = ~1970s). Lots above
+  the taking contour (Herrings' 3-6) weren't needed -> **stayed private inholdings**; Herrings bought 2008.
+- **KEY LINK:** the platted streets (Pine Dr, Star Dr) were **never constructed** because the
+  subdivision was absorbed by the lake before it developed -- which is exactly WHY Pine Dr is an
+  "undeveloped ROW" and the road must be built. Same root cause = the privacy buffer AND the access cost.
+- **Public records to confirm (pullable):** Durham ROD (rodweb.dconc.gov) - plat PB 43/20 date, the
+  1970s "to USA" deeds (DB 413/691, 414/525, 416/803), Herring chain (DB 5947/977); USACE Wilmington
+  Real Estate tract/taking-line maps; EDNC federal condemnation dockets if any lots were taken. ROD
+  portal is gated (browser/manual) -> deed images not auto-pulled yet.
+
+**T-13 · 2026-07-08 · Draft staged - road cross-section inquiry to Justin Weist (Development Review)**
+Drafted (NOT sent) to Justin.Weist@durhamnc.gov: required road/street cross-section for a single SFH
+on the unopened ROW ~400 ft off Stagecoach; reduced rural section possible?; City vs NCDOT Div 5
+jurisdiction; request a pre-application meeting. Key cost-unblock - quotes can't be accurate until the
+required section is known.
