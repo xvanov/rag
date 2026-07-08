@@ -4,7 +4,23 @@
 > **REFRAMED (T-06):** plan is owner-occupied home + rented room (homestay) — permitting is now the
 > friendly path, so the bottleneck moved from "STR legality" to **BUILDABILITY.**
 
-## Primary bottleneck (SHARPENED T-08)
+## Primary bottleneck (T-15/16 — all public info in)
+**SEPTIC feasibility is the make-or-break, and it has a NEGATIVE prior.** The parcel's soil is
+**White Store (WsB), USDA-rated "poorly suited for conventional septic."** No city sewer (rural/ETJ),
+no legal potable-water alternative to septic+well. If it won't perc — or needs an uneconomic
+engineered system — the lot is **unbuildable** and everything else (road, homestay, price) is moot.
+**The seller says "soil testing results are in" — that one document likely decides the deal.** Get it
+first (free). Coupled #2 = the **road cost** (build ~400 ft to NCDOT standard; cross-section drives it).
+
+**Ordered unblock (cheap/decisive first):**
+1. **Listing agent** — soil-test results + survey + price/scope (FREE, likely decisive).
+2. **Env Health (Eaton)** — is septic permittable on White Store soil; conventional vs engineered.
+3. **Weist / Development Review** — road cross-section (full vs reduced rural) + City-vs-NCDOT.
+4. **NCDOT Div 5** — Stagecoach encroachment (after Weist confirms jurisdiction).
+5. **Planning (Howrilla)** — homestay confirmation (parallel, low-risk).
+6. **HOLD contractor RFPs** until (a) septic looks viable AND (b) cross-section known — else quotes are fiction.
+
+## (superseded) Primary bottleneck (SHARPENED T-08)
 **The all-in cost to make the lot buildable — dominated by BUILDING A ~20-ft-wide NCDOT-standard ROAD
 on the undeveloped right-of-way (+ well + septic) — vs. the $140K ask.** Access is legally available
 but the road is UNBUILT and must be constructed (listing, T-08) — a real, 1621-Clermont-style cost.
