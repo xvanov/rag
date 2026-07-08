@@ -159,3 +159,19 @@ snippet in T-07. Key:
   took lots inside the taking line/buffer contour in the 1970s; higher-ground lots (Herrings' 3-6)
   weren't needed → stayed private. Herrings acquired 2008. Verify plat date + 1970s USA deeds at
   Durham ROD.
+
+**T-10 · 2026-07-08 · Duplex + lot-split ruled out (docrag/UDO)**
+- **Duplex NOT permitted in RR.** UDO §6.2.2: RR allows only single-family detached + manufactured
+  homes; duplexes only in conservation subdivisions in the Suburban Tier (n/a here). → single-family only.
+- **Cannot split the combined parcel into 2 buildable lots.** The "#3&4"/"#5&6" lot numbers are the
+  original platted lots ALREADY COMBINED into one parcel each (a merge, not a split opportunity).
+  Splitting back = a subdivision (1→2, no recombination exemption; NCGS 160D-802); each ~0.46 ac
+  (~20,038 sf) is UNDER the RR minimum in every category (30k sf / 2 ac / 3 ac watershed); UDO §14.3.1
+  PROHIBITS creating new undersized lots (absent variance). §14.3.2 only rescues pre-existing lots of
+  record, doesn't authorize a fresh split. Plus each sub-lot needs its own well+septic on 0.46 ac.
+  → **ONE home per parcel (212 Pine = 1 homesite; 7412 Star = 1 homesite).**
+- **Corollary:** can't add dwelling units → the only way to scale rental is MORE ROOMS in the one
+  owner-occupied house (the homestay plan). Fits intent.
+- **Road standard authority (Q5):** reduced rural cross-section is set by **Durham Development Review
+  / Public Works Transportation (Justin Weist — in contacts DB)** + **NCDOT District 5 (Durham)** for
+  the Stagecoach Rd connection. Civil-eng/road-contractor RFP + contacts being sourced.

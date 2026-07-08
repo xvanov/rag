@@ -64,7 +64,10 @@ constraints:
     rr_min_lot: "UDO 6.2.1A: 30,000 sf 'All Other Locations'; 2 ac (Rural Tier non-watershed); 3 ac (Rural Tier watershed)"
     lot_conformity: "0.92 ac (~40,000 sf) conforms ONLY if 'All Other Locations'; if Rural-Tier-watershed (LIKELY) it's a SUBSTANDARD nonconforming lot of record -> buildable for ONE dwelling under UDO 14.3.2 IF pre-ordinance plat (yes PB43), >=30ft wide, not in flood (Zone X ok), accepted street + water/wastewater available"
     dwellings_supportable: "ONE (two homes almost certainly out) (T-04)"
-    src: [T-01, T-02, T-03, T-04]
+    duplex_permitted: "NO — RR allows only single-family detached + manufactured homes (UDO 6.2.2); duplex only in Suburban-Tier conservation subdivisions (n/a) (T-10)"
+    lot_split: "NO — '#3&4'/'#5&6' are original platted lots already COMBINED into one parcel each; splitting back = subdivision creating ~0.46-ac lots, under RR min in every category; UDO 14.3.1 bars creating undersized lots (absent variance). One home per parcel (T-10)"
+    scaling_note: "can't add units (no duplex/split) -> scale rental only via more ROOMS in the one owner-occupied house (homestay). Fits plan (T-10)"
+    src: [T-01, T-02, T-03, T-04, T-10]
   watershed:
     status: "LIKELY Jordan Lake protected water-supply watershed + Durham Rural Tier (Little Creek + tributaries within 200-400m) — VERIFY on Durham zoning GIS"
     effects: [~50-ft stream buffers, impervious cap, raises RR min lot to 2-3 ac]
