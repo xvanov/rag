@@ -128,8 +128,13 @@ def _g(attrs: dict, *keys, default="?"):
 
 
 def _summary_md(slug, a, zoning, flood, gaps) -> str:
-    zone_vals = ", ".join(sorted({str(z.get("ZONING") or z.get("ZONE") or z.get("ZONECODE")
-                                      or z.get("Zone") or "?") for z in zoning})) or "(none returned)"
+    def _zval(z):
+        for k in ("ZONE_CODE", "UDO_LABEL", "LABEL", "ZONING", "ZONE", "ZONECODE",
+                  "Zone", "ZONE_CLASS", "ZONE_GEN", "ZONE_TYPE", "DISTRICT", "ZONE_DESC"):
+            if z.get(k) not in (None, ""):
+                return str(z[k])
+        return "?"
+    zone_vals = ", ".join(sorted({_zval(z) for z in zoning})) or "(none returned)"
     flood_vals = ", ".join(sorted({str(f.get("ZoneCode") or f.get("ZONECODE") or "?")
                                    for f in flood})) or "(none returned)"
     floodway = any(str(f.get("ZoneCode") or f.get("ZONECODE") or "").upper() == "AEFW" for f in flood)
