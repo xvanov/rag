@@ -30,12 +30,25 @@ Read `PRD-property-research.md` for the full spec. Scope v1 = **Durham County / 
    - `propkb contacts query --jurisdiction durham-county-nc` (and `nc-state`) → agencies/vendors
      already on file. Only web-discover contacts that are missing.
 
-3. **Finish property data (hybrid).** Beyond the REST pull: tax card / deed (Register of Deeds via
-   the registry URLs), **Zillow** (best-effort via WebFetch/WebSearch — listing price/history, DOM,
-   status, beds/baths/sqft, prior sales, photos), FEMA/wetlands/Census/school as relevant. When a
-   source is bot-blocked (Zillow especially), **record the gap** and move on — you'll ask the user
-   to drop it in at the end. OCR any scanned PDFs (`ocr-render` → read PNGs → write `.ocr.md`).
-   Pull listing + aerial images into `sources/photos/`.
+3. **Finish property data (hybrid).** Work the **standard source checklist** below (most are
+   free/authoritative and were high-value on 1621 Clermont + 212 Pine). Bot-blocked sites (Zillow/
+   Redfin/Realtor): **record the gap** and batch-ask the user to drop them in at the end. OCR scanned
+   PDFs (`ocr-render` → read PNGs → write `.ocr.md`). Pull listing + aerial images into `sources/photos/`.
+   - **Prior sale price / seller basis:** pull `REVENUE_STAMPS` + `DEED_DATE` from the parcel REST
+     layer → NC excise = $2/$1,000, so price = stamps × 500. (Huge negotiation input.)
+   - **Septic pre-check (rural lots):** the parcel's **soil map unit** (Durham GIS Environmental soils
+     layer, point-in-polygon) + the **USDA Official Series Description** → is it suited for a
+     conventional septic drainfield? A "very limited" soil (e.g. White Store/Triassic clay) is a
+     make-or-break red flag before any paid perc test.
+   - **Watershed/overlay:** confirm protected-watershed (Falls/Jordan F/J-B) + other overlays via the
+     Durham Planning REST layers (impervious/BUA limits, buffers).
+   - **Deed/plat + chain:** Register of Deeds (`rodweb.dconc.gov`) — prior deeds, plat, easements
+     (gated → Playwright or ask user).
+   - **Adjacent ownership:** query neighboring parcels by REID (federal/Corps? HOA? assemblage lots?).
+   - **MLS:** if the user has an agent feed/export → `propkb mls ingest-csv` (agent CSV) or
+     `propkb mls query` (RESO Web API; needs MLS creds in .env) → listing history/DOM/sold comps/remarks.
+   - **Zillow/Redfin/Realtor** (best-effort; usually 403 → gap-ask), **FEMA flood**, **USFWS wetlands**,
+     **historic aerials** (was it ever built?), **school assignment** (DPS locator + GreatSchools).
 
 4. **Regulatory / dev-plan research.** Ground EVERY code/ordinance/statute claim in docrag
    (`docrag_ask`, corpus `building-codes`, `location=durham-nc`) — zoning use-permissions for the
@@ -46,12 +59,20 @@ Read `PRD-property-research.md` for the full spec. Scope v1 = **Durham County / 
 5. **Market analysis → `MARKET.md`. Be skeptical.** Primary sources first (closed sales, county
    records, permits, Census/BLS) — NOT agent narratives. Treat listing/agent copy as biased;
    corroborate each claim independently. Spawn an adversarial subagent to try to refute the read.
-   Output comp ranges, $/sf, DOM/absorption, rent, with confidence flags + "verify via MLS/CMA".
+   Output comp ranges, $/sf, DOM/absorption, rent, with confidence flags. **Comps:** use the MLS if
+   available (`propkb mls ingest-csv`/`query`) for real closed sales + private remarks; else county
+   sales + note "verify via MLS/CMA". If STR is in the plan, pull STR economics (AirDNA/AirROI/
+   Airbtics — vendor-optimistic, discount them).
 
-6. **Area trajectory → `AREA.md`.** 10/20/30/50/100-yr outlook from comprehensive/future-land-use
-   plans, zoning trajectory, transit & infrastructure plans, demographic projections, historical
-   trajectory. Separate PLANNED/FUNDED from SPECULATIVE. Present base / bull / bear scenarios with
-   drivers — not false precision.
+6. **Area trajectory + livability → `AREA.md`.** 10/20/30/50/100-yr outlook from comprehensive/
+   future-land-use plans, zoning trajectory, transit & infrastructure plans, demographic projections,
+   historical trajectory. Separate PLANNED/FUNDED from SPECULATIVE; base / bull / bear scenarios, no
+   false precision. **Also pull demographics + safety + desirability:** **Census/ACS** (income, age,
+   education, owner/renter — data.census.gov / censusreporter.org), **crime** from **FBI Crime Data
+   Explorer + the local PD open-data portal** (authoritative; note city-vs-neighborhood divergence),
+   **Walk Score**, **GreatSchools**, and major-infrastructure/amenity context. Aggregators
+   (bestneighborhood/areavibes/crimegrade/neighborhoodscout) fetch fine (no bot wall) but are
+   secondary/modeled — lead with Census + FBI. Give a plain read for both living there + (if STR) guests.
 
 7. **Proposal analysis → `PROPOSAL.md`.** Test the user's dev plan against §4 constraints + §5
    market + §6 trajectory. Build the **residual land-value model** (max bid = gross realizable −
