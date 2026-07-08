@@ -102,5 +102,13 @@
     "method": "rest",
     "url": "https://doorifymls.com/",
     "notes": "RESO Web API feed needs MLS-issued creds (Trestle/Bridge/Spark) in .env: MLS_API_BASE + MLS_API_TOKEN or MLS_OAUTH_*. Easiest: agent CSV export -> propkb mls ingest-csv."
+  },
+  {
+    "jurisdiction": "nc-state",
+    "data_type": "crime_demographics",
+    "name": "Census ACS + FBI CDE + Durham Open Data (+ aggregators)",
+    "method": "rest",
+    "url": "https://cde.ucr.cjis.gov/ ; https://live-durhamnc.opendata.arcgis.com/ ; censusreporter.org",
+    "notes": "authoritative: Census ACS (demographics), FBI Crime Data Explorer + Durham PD open data (crime). Aggregators bestneighborhood/areavibes/crimegrade/neighborhoodscout fetch fine (no bot wall) but are secondary/modeled."
   }
 ]

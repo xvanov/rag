@@ -238,3 +238,13 @@ Full detail: `sources/web/212-pine-dr-durham__public-records-enrichment.md`. Hig
 - **"Water supply facility" = Western Intake Partnership WTP on Farrington Rd**, built ~2027–2031 — nearby
   not on-lot; construction nuisance + long-tail hint that water mains may reach the area (future city-water?).
 - Slope gentle (2–6%), supersedes earlier ~10% proxy.
+
+**T-16 · 2026-07-08 · Crime / demographics / desirability (Census + FBI + aggregators)**
+See AREA.md "Demographics · safety · desirability." Highlights: 27713 affluent (median HH income
+~$100.7K, 67.7% bachelor's+, home value ~$418K); Durham CITY crime high (FBI: violent 619/100k,
+property 3,800/100k) but **this SW-county pocket = safest part of the ZIP** (city grade overstates
+local risk); car-dependent but strong RTP/Southpoint access + Jordan Lake amenity; **weak schools**
+(Parkwood/Hillside 2/10 — matters to family buyers, not STR guests). **Capability finding:** crime/
+demographics aggregators (bestneighborhood, areavibes, neighborhoodscout, crimegrade) FETCH fine
+programmatically (no bot wall) — usable, unlike Zillow; but Census ACS + FBI CDE + Durham Open Data
+are the authoritative sources to lead with.

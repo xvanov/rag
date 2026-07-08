@@ -62,3 +62,20 @@ helps *exit value* modestly, not *buildability or STR permitting* (the actual ga
 too speculative to underwrite; treat as optionality.
 
 > Long-range = inherently uncertain. Transit items are STUDY-only — do not treat as committed.
+
+## Demographics · safety · desirability (T-16)
+**Demographics (27713, ACS 2024 5-yr — primary):** pop ~59,197; **median HH income ~$100,676**
+(affluent); median home value ~$418,400; **67.7% bachelor's+**; ~60% owner / 40% renter; median age 35.
+(Divergence: Point2 shows older/lower figures — use the ACS 2024 primary; flagged not averaged.)
+**Crime:** Durham **city-wide** (FBI UCR 2024) is high — violent ~619/100k (~72% > US), property
+~3,800/100k (~116% > US); violent **down 13.9% YoY**, property up. **BUT this SW-county pocket is
+repeatedly flagged as the SAFEST part of the ZIP** (CrimeGrade, resident reports) — the city grade
+overstates local risk. Verify address-level via Durham PD beat / LexisNexis Community Crime Map.
+**Desirability:** car-dependent (Walk ~47), but strong RTP / I-40 / Southpoint access + **Jordan Lake
+recreation** (genuine amenity). **Weak assigned schools** (GreatSchools: Parkwood Elem 2/10, Hillside
+2/10; Lowe's Grove Middle is a magnet) — matters to family buyers, **irrelevant to STR guests**.
+**Read:** affluent, low-density, safest-part-of-ZIP homesite near the lake with good commute access;
+soft spots = schools + walkability. Good homeowner fit; good STR fit (lake/RTP/Southpoint demand) —
+market it as "quiet SW-county near Jordan Lake." Sources: Census Reporter, FBI CDE, Durham Open Data,
+Walk Score, GreatSchools; aggregators (bestneighborhood/areavibes/crimegrade) secondary/modeled.
+**Capability note:** those aggregator sites fetch fine programmatically (no bot wall — unlike Zillow).
