@@ -223,3 +223,18 @@ Pulled REVENUE_STAMPS + DEED_DATE from Durham tax GIS for both Herring parcels:
   half** (~8–9× basis; ~4.75× the $29,440 assessed), held 17 yrs vacant. Major negotiation leverage.
 - **Caveat:** rev-stamp math can round / a deed could be partially exempt — confirm against the
   recorded deed image (ROD) that it was arm's-length and covered both parcels. Built NEGOTIATION.md.
+
+**T-15 · 2026-07-08 · Public-record enrichment (Durham GIS + USDA soil + deed + DPS + water program)**
+Full detail: `sources/web/212-pine-dr-durham__public-records-enrichment.md`. Highlights:
+- **SEPTIC RED FLAG:** parcel soil = **WsB (White Store fine sandy loam, Triassic Basin)** — USDA OSD
+  "**poorly suited for conventional septic**" (near-impermeable clay, high shrink-swell). Conventional
+  drainfield likely FAILS perc; expect engineered/alternative (LPP/drip/fill) if permittable. The
+  make-or-break gate now has a NEGATIVE prior → getting the seller's soil-test results + a county perc
+  eval is critical.
+- **Watershed CONFIRMED:** Falls/Jordan Lake **Protected Area (F/J-B)** overlay (UDO §4.11) → impervious
+  limits (Protected-Area-B tier). Same overlay family as 1621 Clermont.
+- **Durham County ETJ**; MLS# 10087487; 2008 price ~$16K reconfirmed; **never built (always wooded)**.
+- **Schools:** Parkwood Elem (GreatSchools 2/10) → Lowe's Grove Middle → Hillside High (verify; 2023 reassign).
+- **"Water supply facility" = Western Intake Partnership WTP on Farrington Rd**, built ~2027–2031 — nearby
+  not on-lot; construction nuisance + long-tail hint that water mains may reach the area (future city-water?).
+- Slope gentle (2–6%), supersedes earlier ~10% proxy.

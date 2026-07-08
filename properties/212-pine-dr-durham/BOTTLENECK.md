@@ -31,8 +31,15 @@ septic cost, and does that + $140K land make sense for the home I'd build here?"
 - Pull **plat PB 43/20 + deed** (Register of Deeds) for easements/frontage.
 - If perc + access clear: a **build cost quote** + a personal visit (is this a place you want to live?).
 
+## ⚠️ Septic red flag (T-15)
+Parcel soil = **WsB / White Store** (Triassic clay) — USDA rates it **poorly suited for conventional
+septic.** A standard drainfield likely fails perc; an engineered/alternative system (LPP/drip/fill) may
+be needed *if permittable at all*, at higher cost. **This raises the odds the primary kill-criterion
+triggers.** Get the seller's existing soil-test results FIRST (free) + a county perc eval before any spend.
+
 ## Kill criteria (walk away if)
-- **Soil results show the lot won't perc** → no septic → unbuildable. **Primary kill.**
+- **Soil results show the lot won't perc / needs an uneconomic engineered system** → no viable septic →
+  unbuildable. **Primary kill — now elevated by the White Store soil (T-15).**
 - **Road-to-NCDOT-standard + well + septic all-in is too high** relative to $140K land + the finished
   home's value → the homesite is uneconomic even as a residence.
 - **$140K + ~$road/well/septic** exceeds comparable finished/buildable homesites → overpaying; negotiate.

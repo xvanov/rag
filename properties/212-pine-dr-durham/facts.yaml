@@ -81,8 +81,21 @@ constraints:
     road_build_required: "~20-ft-wide road to NCDOT standards on the undeveloped ROW — dominant cost driver alongside well+septic (T-08)"
     src: [T-04, T-08]
   soil_test:
-    status: "DONE per listing — 'Soil testing results are in' (T-08). REQUEST results from seller; a passing soil/perc clears septic gate #1. New survey also coming."
-    src: [T-08]
+    status: "DONE per listing — 'Soil testing results are in' (T-08). REQUEST results from seller — now CRITICAL given the soil type."
+    soil_map_unit: "WsB = White Store fine sandy loam (Triassic Basin), 2-6% slopes"
+    septic_prognosis: "POOR — USDA OSD 'poorly suited for conventional septic' (near-impermeable clay, high shrink-swell). Conventional drainfield likely fails perc; engineered/alt system (LPP/drip/fill) if permittable at all. RED FLAG on the make-or-break gate (T-15)"
+    src: [T-08, T-15]
+  watershed_confirmed:
+    overlay: "Falls/Jordan Lake PROTECTED AREA (F/J-B), Durham UDO 4.11 — impervious/BUA limits; Protected-Area-B (less restrictive tier) (T-15)"
+    src: [T-15]
+  context_extra:
+    etj: "Durham County ETJ (unincorporated; city-ETJ review)"
+    mls: "10087487"
+    schools: "Parkwood Elem (GreatSchools 2/10) -> Lowe's Grove Middle -> Hillside High (verify; 2023 reassign)"
+    never_built: true
+    water_supply_facility: "Western Intake Partnership WTP on Farrington Rd, ~2027-2031; nearby not on-lot; construction nuisance + long-tail hint water mains may reach area"
+    slope: "gentle 2-6% (supersedes earlier ~10% proxy)"
+    src: [T-15]
   impervious:
     as_is: "NO impervious restriction on the single 0.92-ac lot as-is (per listing, T-08)"
     triggered_if: "lot lines moved OR lots recombined (e.g., combining with 7412 Star Dr) -> Jordan Lake watershed impervious limits apply"
