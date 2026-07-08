@@ -23,6 +23,24 @@ The two hard unknowns from the PRD. Prove them before building the pipeline arou
 
 **Exit criteria:** know, per source, whether we get it via REST / browser / user-drop. Update PRD §4.1 if reality differs.
 
+### Phase 0 RESULT (2026-07-07) — GO, REST-first (verified live vs PIN 0728808242)
+Durham GIS is Esri; core parcel/zoning/flood data is **open HTTP JSON — no browser/auth/key**.
+- **Parcels (primary, hosted/AGOL):**
+  `https://services2.arcgis.com/G5vR3cOjh6g2Ed8E/arcgis/rest/services/Parcels_NEW/FeatureServer/0/query?where=PIN='<pin>'&outFields=*&f=json`
+  → returns REID, LOCATION_ADDR, PROPERTY_OWNER, **ZONING** (on the parcel — no join), ACREAGE,
+  DEED_BOOK/PAGE/DATE, TOTAL_*_VALUE_ASSESSED, etc. Address lookup: `where=LOCATION_ADDR LIKE '1621 CLERMONT%'`.
+- **Parcels (on-prem mirror):** `https://webgis.durhamnc.gov/server/rest/services/PublicServices/Property/MapServer/4`
+- **Zoning polygons:** `.../PublicServices/Planning/MapServer/12` (spatial query by parcel geometry).
+- **Flood:** `.../PublicServices/Flood_Zones_Development/MapServer/0` — `ZoneCode`: **AEFW=floodway**, AE/AO/A=SFHA (point-in-polygon vs parcel).
+- **Address points:** `.../PublicServices/Property/MapServer/0`. On-prem root: `https://webgis.durhamnc.gov/server/rest/services`.
+- **Tax card / Property Record / Advanced Report / Related Records tabs** = **Spatialest** JS app
+  (`https://property.spatialest.com/nc/durham-tax/`) — NO public API → **Playwright only for the
+  extras** (photo, sketch, permit history, >3yr sales). Try CAMA (`https://taxcama.dconc.gov/camapwa/`)
+  as a structured alt first. Core assessment data is already in the REST parcel layer.
+- **Register of Deeds:** `https://rodweb.dconc.gov/web/` (deeds/plats; pair with parcel DEED_BOOK/PAGE).
+**Design impact:** Phase 3 is mostly HTTP JSON calls (easy); Playwright deferred to an optional
+"extras" pass. Verify next: geometry-intersect queries for zoning/flood; CAMA structured access.
+
 ---
 
 ## Phase 1 — Canonical Contacts DB — M  (independent; highest reuse)
