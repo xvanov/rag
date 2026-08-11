@@ -1,0 +1,116 @@
+Delivered-To: ivanovkalin7@gmail.com
+Received: by 2002:a05:6802:6853:b0:63f:707d:1f97 with SMTP id 19csp2804396oct;
+        Fri, 24 Jul 2026 14:29:46 -0700 (PDT)
+X-Received: by 2002:a05:620a:bd6:b0:92e:46cd:72a0 with SMTP id af79cd13be357-9310391ea86mr1041051585a.6.1784928586344;
+        Fri, 24 Jul 2026 14:29:46 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1784928586; cv=none;
+        d=google.com; s=arc-20260327;
+        b=VSRBkcgh25uRE8BBhlnHeOTqW6x3XBS58IJaF4BIqR8zNhVVuYQEAXl+X3CW0m8vCy
+         9i8xF92FUKksh8tpaLk4QdhXYgKFWixR53UdThM6nUjL8IKLVo08a4Jy9uDSGcldG0ie
+         E9NJcuuajtBzxj0PKv+owZu00JqE9Ne2vFUrULyEdpSV6dNlV5hv1vq9LlzkngJhw9Qh
+         05iJ1gBH0ioZw3dlmruSIVpQ5A7tdhiYekHrOsRwiZ6+2CMcaev7Tc86FqSzI/+qgkkR
+         hSLu/C9gvpZnfgBY855djGF3lUQ+Iuhvr7H5eBwkkJuK/cw2LjNQ9buORDIKq07vedtA
+         ExVw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=to:reply-to:subject:message-id:mime-version:from:date
+         :content-transfer-encoding:dkim-signature:dkim-signature;
+        bh=CeZeyg1ONaUUklO/3LTZ0Uig1NirZa8yrBUmUp0I8B0=;
+        fh=8RKt9nSDG2uq41XhHY+xXaKPCVFuRnt0rMr8sO+ptro=;
+        b=Sr27l6EyjyiuzMzBVHzLtRzwmRJlpwOR8TXzsEkioEnQhB7oUdVc5oGvDXXqLdpRpd
+         6gxW/ZgH1kdjKTBjD6PqdCnodeHayPNvP0vlVDw4JBPFXN0PbgqREfDO3dHx5jAN0Jpj
+         0MzCJfpV56Bll7eOYJrr7YvkPB1Rwgdor3ssheIXrExwJ+LTx/euC8jhHznwHP5buvRR
+         6y5LNoqPgMGIKyIZ5kvdUKmv2zN+YAkYlBUOVLRjZ1AcOiE01hlf7Bwer/Gv8I8AyHh3
+         JL08GdKX73YSTCVh0XiHwdub2QjWDBGhbFDlRqhI+NX502/8SfkZHQuZiE5ybO2fAPcO
+         WajQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@jobnimbusmail.com header.s=s1 header.b=g9O6G0rt;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=cr12lynG;
+       spf=pass (google.com: domain of bounces+19875413-36fd-ivanovkalin7=gmail.com@em6511.jobnimbusmail.com designates 167.89.24.130 as permitted sender) smtp.mailfrom="bounces+19875413-36fd-ivanovkalin7=gmail.com@em6511.jobnimbusmail.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=jobnimbusmail.com
+Return-Path: <bounces+19875413-36fd-ivanovkalin7=gmail.com@em6511.jobnimbusmail.com>
+Received: from o1.ptr8664.jobnimbusmail.com (o1.ptr8664.jobnimbusmail.com. [167.89.24.130])
+        by mx.google.com with ESMTPS id af79cd13be357-932de6d9d25si11291785a.358.2026.07.24.14.29.45
+        for <ivanovkalin7@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 24 Jul 2026 14:29:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+19875413-36fd-ivanovkalin7=gmail.com@em6511.jobnimbusmail.com designates 167.89.24.130 as permitted sender) client-ip=167.89.24.130;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@jobnimbusmail.com header.s=s1 header.b=g9O6G0rt;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=cr12lynG;
+       spf=pass (google.com: domain of bounces+19875413-36fd-ivanovkalin7=gmail.com@em6511.jobnimbusmail.com designates 167.89.24.130 as permitted sender) smtp.mailfrom="bounces+19875413-36fd-ivanovkalin7=gmail.com@em6511.jobnimbusmail.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=jobnimbusmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=jobnimbusmail.com;
+	h=content-transfer-encoding:content-type:date:from:mime-version:subject:
+	reply-to:to:cc:content-type:date:feedback-id:from:subject:to;
+	s=s1; t=1784928585;
+	bh=CeZeyg1ONaUUklO/3LTZ0Uig1NirZa8yrBUmUp0I8B0=;
+	b=g9O6G0rtIb9QKSyuf4DNMxVZhX4ZkWM9RLNM1Ffpn5Vvt31QthRzgMKG9RO5OYdX7XFx
+	jwcYbQ4RZweFMnTDghJxgcjVqER2+BroZ0MxvUwUhVyO6Hg+PLoY+0ZbpYJUTs4JXwgGlp
+	fSYfe+tnJ7GygiLjvtOh3ixAHgBgM0qDEl/9+mtQ38z64ZdtVaqC03nhNvEarxyYBDJOiM
+	Zz9wRjQ9iuS6xjyB+jgguMAcxHWH2M7z9lv1KcYo4gYxvBataLnezkcUc2xR1eeDsQClof
+	rrk01mgZSkEKHXEEg3nQsgBHQr09H6shn1QvXXZjSnQ7PYyi2/oYGXKH5poN/DwA==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info;
+	h=content-transfer-encoding:content-type:date:from:mime-version:subject:
+	reply-to:to:cc:content-type:date:feedback-id:from:subject:to;
+	s=smtpapi; t=1784928585;
+	bh=CeZeyg1ONaUUklO/3LTZ0Uig1NirZa8yrBUmUp0I8B0=;
+	b=cr12lynGhckil96tVXs8Val4eAglf2rkwirBU1w5uz33JDBeq0Y2fCSGY25Z5r1IGBoE
+	In09HEzUywWGjbB/CZL3NuVFxcoR+xj/m5nN9hp8qKepldDQCfhL6GAGOZNxvMkxKLQitz
+	1omdrzplHKAis3xmUTeuEukopu6Ctl3ig=
+Received: by recvd-54bf4d5fd9-lqdcr with SMTP id recvd-54bf4d5fd9-lqdcr-1-6A63D949-64
+	2026-07-24 21:29:45.595551878 +0000 UTC m=+178728.368184398
+Received: from MTk4NzU0MTM (unknown)
+	by geopod-ismtpd-43 (SG) with HTTP
+	id dybpQOECQyqRehWTLLeSQQ
+	Fri, 24 Jul 2026 21:29:45.592 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Date: Fri, 24 Jul 2026 21:29:45 +0000 (UTC)
+From: Lifetime Roofing and Renovation
+	<lifetimeroofingrenovation@jobnimbusmail.com>
+Mime-Version: 1.0
+Message-ID: <mrzge7398p793tvaprso34z@jobnimbusmail.com>
+Subject: Quick Follow Up
+Reply-To:
+	"Lifetime Roofing and Renovation via JobNimbus" <lifetimeroofingrenovation@jobnimbusmail.com>
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EVqNQ3+KtzGqDQKORpJnxc6=2Fnd84EjqxjO6FcY1ecFPic+dPEGJ7oNKlY6?=
+ =?us-ascii?Q?Z9mE+hYSv5nXraFm58JUTWLzvmB5qn7L2zAOxpu?=
+ =?us-ascii?Q?=2FwHj2HzohBTzrgis+dYadHWske=2FglC8PWZU7wSV?=
+ =?us-ascii?Q?=2FHbWKaYIj=2FACDZ573W1vd54IsCRXf0qv2Y9WRN+?=
+ =?us-ascii?Q?gfws=2FwGAf=2Fpq37bV=2FMpAg6W1oIRygKrSOb4IL2G?=
+ =?us-ascii?Q?wS+kL7EQwW8Gihh3GwRJG9O0xztSmrc8=2F1LbUAE?=
+ =?us-ascii?Q?UicaiBp3GxERfrT3RF1Y6cE3TX5jLnJ8LCSHtVb?=
+ =?us-ascii?Q?9ILF1Ozw=3D?=
+X-SG-ID: 
+ =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprDdDuXkbbNM5bIm4?=
+ =?us-ascii?Q?bv1Ye3IoLmLR8nSQQY3KsAl3m7gDQdGJhmfexXx?=
+ =?us-ascii?Q?fNWuvmak3RM=3D?=
+To: Kalin Ivanov-  San Francisco- 5505 <ivanovkalin7@gmail.com>, Brad Kenny
+	<brad@lifetimeroofingrenovation.com>
+X-Entity-ID: u001.oYJCwBe08pncmn5KuejtHg==
+
+Hello KalinIvanov,<br>A while back, you contacted us about getting an estim=
+ate for your roof repair or replacement project.<br>I am reaching out to se=
+e if the project is still on your radar.<br>If you still need help, simply =
+reply to this email or call us at 408-212-7233 and we'll be happy to answer=
+ questions, update your estimate, or schedule a time to take another look.<=
+br>If you've already completed the work or no longer need assistance, just =
+let us know and we'll update our records.<br>Thank you for the opportunity,=
+ and we wish you the best with your home improvement project.<br><br>Lifeti=
+me Roofing and Renovation<br>333 Cobalt Way,<br/>Suite 103,<br/>Sunnyvale, =
+CA 94085<br>(408) 685-2177<br><img alt=3D"JobNimbus" src=3D"https://static.=
+jobnimbus.com/logos/1820b0ad974b58b1d0cacfc2175f4e98b3fb5396389e98c68dbb2ad=
+385d9e04a?" height=3D"40" style=3D"max-height: 40px; width: auto;" /><br/><=
+br/><span style=3D'color:#99a4ae' >[jnid:mrzge7398p793tvaprso34z]</span><im=
+g src=3D"https://u19875413.ct.sendgrid.net/wf/open?upn=3Du001.R90ZT9tuS-2Fz=
+9dFh5ByQpZTM9m3Rn9iu7sQeREYyYk-2F99uI12dm1SJTyrJklw-2F9SkOCy5S8sUpevvgqyLTq=
+yBhOl743Wy5hRRZb-2B4Nr4PrlTUCrY4iouusB2LfBBq6eFaRlSHGcZXCOyhZWBsZpzygtWIf28=
+kKA-2Fot6wZkPhwwT0pIm-2BfjMIvgpKE83t6G1cZcXTVXhCD8HnWFkx41lHhInxnGbXXla0B2b=
+djONqiumdmzZuxFA4KbSC22ebzliU5DlzC0Gp0PwUGPCRcEFvGcQ-3D-3D" alt=3D"" width=
+=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !important;width:1px !=
+important;border-width:0 !important;margin-top:0 !important;margin-bottom:0=
+ !important;margin-right:0 !important;margin-left:0 !important;padding-top:=
+0 !important;padding-bottom:0 !important;padding-right:0 !important;padding=
+-left:0 !important;"/>

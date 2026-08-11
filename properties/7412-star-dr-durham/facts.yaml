@@ -1,0 +1,118 @@
+# Structured facts for 7412 Star Dr, Durham NC 27713.
+# Canonical, queryable layer. Each non-obvious fact carries a `src: [T-NN]`.
+# Created by /property-research 2026-07-08. TWIN of 212-pine-dr-durham (inherited facts cite [212-pine T-NN]).
+
+property:
+  slug: 7412-star-dr-durham
+  address: 7412 Star Dr, Durham, NC 27713
+  pin: "0707589331"
+  reid: "143262"
+  deeded_acres: 0.92
+  zoning: RR (Rural Residential)
+  land_class: "VAC RES / LOT-SML TRA (VACANT residential small tract)"
+  current_owner: "HERRING, ELIZABETH B; HERRING, DAVID R"
+  owner_mailing: 4206 Riceland Dr, Durham NC 27705
+  tax_value_land: 29440
+  tax_value_total: 29440   # land only — VACANT, never built (no permit, no heated area)
+  deed: DB 5947 / Page 977 (2008-05-06)
+  legal_description: "OAK HILL / BLK C / LT#05 & LT#06, Plat Book 43 Page 20"
+  neighborhood_code: "I40/751/FATVL/COUNTY LINE"
+  status: "under evaluation (cold-start research 2026-07-08)"
+  never_built: true
+  src: [T-01]
+
+twin_relationship:
+  note: >
+    7412 Star Dr = the platted TWIN of 212 Pine Dr. Same Oak Hill subdivision (Block C), same
+    owner (Herring), SAME DEED (5947/977 conveyed both), same 0.92 ac, same RR zoning, same FEMA
+    Zone X, same plat PB43/20. 212 Pine = Lots 3&4; 7412 Star = Lots 5&6. The two are adjacent /
+    contiguous. Nearly the entire regulatory + environmental + market picture is shared.
+  src: [T-01, T-03, "212-pine T-08", "212-pine T-09"]
+
+seller_basis:
+  both_lots_2008: "~$16,000 for BOTH parcels / 1.84 ac (deed 5947/977, 2008-05-06, revenue stamps 32 x $500). Held 17 yrs vacant. Assessed now $29,440 EACH (~$58,880 combined). Big leverage on a two-lot buy."
+  src: [T-02]
+
+development_plan:
+  intent: >
+    Buy BOTH lots (212 Pine Lots 3&4 + 7412 Star Lots 5&6) from the same seller (Herring); build
+    single-family home(s) to LIVE IN; sublease room(s) on Airbnb (owner-occupied homestay). Explore
+    STR angles / who to cater to. Wedding venue (Valora Oak Estate) across Stagecoach Rd is a key
+    demand anchor. Near UNC Chapel Hill (~10 min), downtown Chapel Hill (~15 min), RDU + downtown
+    Durham (~20 min), Jordan Lake.
+  owner_occupied: true
+  two_lot_purchase: true
+  key_unknowns: [septic perc (both lots), road access/ROW build, watershed overlay confirm, one-vs-two homes, do we want to live here]
+  src: [T-03, T-04]
+
+assemblage:
+  both_herring: "Both target parcels are Herring-owned under the SAME deed (5947/977) -> one seller, one negotiation. 212 Pine REID 143264 + 7412 Star REID 143262 = Oak Hill Blk C Lots 3-6, 1.84 ac contiguous."
+  keep_separate_vs_recombine: >
+    KEEP SEPARATE (recommended): each is a legally-established lot of record -> under UDO 14.3.2 each
+    is separately buildable with ONE single-family dwelling if it independently meets the conditions
+    -> TWO homes total (live in one, second = rent whole/rooms or spec-sell). NO impervious cap as-is.
+    RECOMBINE into one 1.84-ac lot: only ONE dwelling (still under the 2-3 ac watershed RR minimum) AND
+    triggers Jordan Lake watershed impervious/BUA limits. So recombining is strictly worse for this plan.
+  no_merger_rule: "docrag: Durham UDO has NO contiguous-common-ownership merger provision; each lot of record retains separate development rights (UDO 14.3.2). VERIFY with Durham Planning in writing."
+  src: [T-04, "212-pine T-09"]
+
+jurisdiction:
+  incorporation: UNINCORPORATED Durham County (ETJ Durham County; city-ETJ review)
+  context: >
+    SW Durham off Stagecoach/Farrington Rd near NC-751 / Jordan Lake, right at the Durham/Chatham +
+    Chapel Hill edge. Rural, car-dependent. Neighborhood code "I40/751/FATVL/COUNTY LINE".
+  src: [T-01, T-03]
+
+constraints:  # INHERITED from 212 Pine twin unless noted; verify on THIS parcel
+  flood:
+    fema_zone: X
+    floodway_present: false
+    src: [T-01]
+  zoning:
+    district: RR (Rural Residential)
+    nonconforming_lot_path: "UDO 14.3.2: legally-established lot of record buildable with ONE single-family dwelling if not in SFHA (Zone X ok), >=30 ft wide, created pre-ordinance (PB43 ok), on accepted street OR 12.2.2 access, water+wastewater available, use permitted. Else Board of Adjustment minor SUP (3.9)."
+    duplex_permitted: "NO — RR = single-family detached + manufactured only; two-family use not permitted (so 14.3.2's 'two-family' option is unavailable in RR)."
+    dwellings_supportable: "ONE per lot of record -> TWO across both lots if kept separate; ONE if recombined."
+    str_use: "owner-occupied room rental = bed-&-breakfast/homestay form, RR 'L/m' (permitted w/ limitations, minor SUP possibly). Non-owner whole-house STR NOT clean by-right. VERIFY exact Durham requirements. [inherited 212-pine T-06]"
+    building_code: "owner-occupied <=8 guest rooms builds to residential IRC (NC Bldg Code 310.4.2) — no R-1 commercial premium. [inherited 212-pine T-06]"
+    src: [T-04, "212-pine T-03", "212-pine T-06", "212-pine T-10"]
+  soil_test:
+    soil_map_unit: "WsB = White Store fine sandy loam (Triassic Basin), 2-6% slopes [INHERITED — verify point-in-polygon on THIS parcel]"
+    septic_prognosis: "POOR — USDA OSD 'poorly suited for conventional septic' (near-impermeable clay, high shrink-swell). RED FLAG on the make-or-break gate. TWO homes = TWO septic systems, each needs to perc. [inherited 212-pine T-15]"
+    src: ["212-pine T-15"]
+  watershed:
+    overlay: "Falls/Jordan Lake PROTECTED AREA (F/J-B), Durham UDO 4.11 — impervious/BUA limits; Protected-Area-B tier. Raises RR min lot to 2-3 ac (why lots are substandard). [inherited 212-pine T-15]"
+    src: ["212-pine T-15"]
+  utilities:
+    water: WELL (private) — county health permits; TWO homes may share or need two wells
+    wastewater: SEPTIC (on-site) — Durham County Env Health / 15A NCAC 18E; PERC = feasibility gate #1
+    access: "Star Dr / Pine Dr = publicly-dedicated but UNDEVELOPED ROW at the corner. Building requires constructing an ~20-ft-wide road to NCDOT standards (own expense). GATE #2 = cost the road. Serving TWO lots may share the road cost. [inherited 212-pine T-08/T-09]"
+    src: ["212-pine T-08", "212-pine T-09"]
+  adjacent:
+    corps_land: "surrounded by US Army Corps / Jordan Lake project land (Lots 1,2,7,8-10, Blk D) — permanent privacy buffer, NOT buyable (federal). [inherited 212-pine T-09]"
+    src: ["212-pine T-09"]
+
+demand_anchors:  # T-05 subagent
+  valora_oak_estate: "3406 Stagecoach Rd (across from Cedarwood 3405; subject pocket in cluster). 22 ac, 200-250 guest cap, OWN 38-bed lodging (overflow only for big events), events $4,300-15,800 (3-day wedding pkg $11.5-15.8K = mid/upper tier). Realty Rhythm LLC (919) 884-7858 / @thevaloraoak / aka 'Champion Estate at the Triangle'. events/year NOT published (KEY GAP - call venue)."
+  cedarwood_equine: "3405 Stagecoach Rd; Morgan-horse training/boarding/lessons, day-use, local. Minimal overnight draw; adds rural character."
+  jordan_lake: "State Rec Area (Farrington Point ramp + Crosswinds Campground, ~1,050 sites); 2nd overnight driver (campground overflow + boaters), Apr-Sep peak."
+  competitors: "Barn at Stoney Hill, Shady Wagon Farm = lodging competitors; Chatham wine trail supports 'weekend in the country'."
+  drive_times_claimed: "UNC Chapel Hill ~10 min; downtown Chapel Hill ~15 min; RDU ~20 min; downtown Durham ~20 min; Duke ~20 min; UNC Hospitals ~10-15 min; Duke Hospital ~20 min; Southpoint same ZIP; RTP ~15-20 min. PLAUSIBLE, not point-verified — verify in Google Maps from build site."
+  calendar_spikes: "Duke+UNC commencement (~mid-May, 3-night hotel minimums); UNC football Fall Sat (2026: Oct3 Notre Dame, Oct31 Miami, Nov28 NC State); UNC/Duke basketball Nov-Mar; parents' weekends; medical long-stay year-round (counter-cyclical)."
+  three_demand_streams: "(1) weddings across street [primary], (2) university events [high-rate seasonal], (3) medical stays [steady counter-cyclical]."
+  src: [T-05]
+
+second_home_str_classification:  # T-08
+  finding: "Home #2 (separate lot, NOT owner-occupied) rented whole-house to transient nightly guests is NOT a home occupation (UDO 5.4.4 needs resident-conducted); unlisted use assigned to most-similar listed = Hotels/Motels/Extended Stay (UDO 5.3) -> minor-SUP triggers within 200 ft of SF residential (applies here). R-1 build (NC BC 310.2). HARDER discretionary path."
+  cleaner_alternatives_home2: "(a) mid-term 30+ day furnished lease = ordinary tenancy, dodges STR classification + NC occupancy tax; (b) long-term rental; (c) spec-build-and-sell. Owner-occupied ROOM rental in home #1 = friendly homestay/B&B path."
+  src: [T-08]
+
+market_str:  # T-06 subagent — FILLED after research; baseline inherited 212-pine T-03
+  baseline: "Durham STR modest: ADR ~$140-185, occ ~42-64%, whole-house gross ~$17-33K/yr (vendor-optimistic). [inherited 212-pine T-03]"
+  segments: "[pending T-06]"
+  amenities: "[pending T-06]"
+  src: [T-06, "212-pine T-03"]
+
+verdict:
+  frame: "Two-lot owner-occupied play. Regulation is the friendly path (homestay L/m, IRC build). Upside vs 212-pine-alone: keeping both lots separate = TWO by-right homes. Gated by SAME buildability constraints x2: septic perc (White Store red flag) + road-build + watershed. Value = homes you'd occupy/hold; STR income offsets cost + is boosted by the wedding-venue-across-the-street demand anchor."
+  src: [T-02, T-04]
