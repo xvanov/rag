@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#15151c">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Scout &middot; Listings Intelligence</title>
+  <link rel="stylesheet" href="/scout.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <a class="wordmark-link" href="/" title="Back to docrag chat">
+        <span class="wordmark"><strong>Scout</strong><small>Listings Intelligence</small></span>
+      </a>
+      <div class="topbar-note">Research, not investment advice &mdash; verify every figure before acting.</div>
+    </header>
+
+    <main class="main">
+      <div id="empty-banner" class="empty-banner" hidden>
+        <strong>No listings ingested yet.</strong>
+        <span>Seed the store with the sample adapter, then reload:</span>
+        <code>python -m listings ingest --source sample --geo durham</code>
+      </div>
+
+      <section class="panel search-panel">
+        <h2>Thesis search</h2>
+        <p class="panel-note">Meaning, not keywords &mdash; e.g. &ldquo;lots with existing septic and well under $150k&rdquo;.</p>
+        <form id="search-form" class="search-form">
+          <input id="q" type="text" class="q-input"
+                 placeholder="Describe what you're looking for&hellip;" autocomplete="off">
+          <div class="filters-row">
+            <input id="price-min" type="number" min="0" step="1000" placeholder="Min $">
+            <input id="price-max" type="number" min="0" step="1000" placeholder="Max $">
+            <input id="type" type="text" placeholder="Type (land, single_family, ...)">
+            <input id="jurisdiction" type="text" placeholder="Jurisdiction (durham-nc, ...)">
+            <input id="top-k" type="number" min="1" max="100" value="20" title="Result count" class="topk-input">
+            <button type="submit" class="primary">Search</button>
+          </div>
+        </form>
+        <div id="search-status" class="status-line" aria-live="polite"></div>
+        <div class="table-wrap">
+          <table id="results-table" class="results-table" hidden>
+            <thead>
+              <tr>
+                <th>Address</th><th>Price</th><th>Type</th><th>Jurisdiction</th>
+                <th>Score</th><th>Buildability</th><th>Snippet</th>
+              </tr>
+            </thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+        <div id="results-empty" class="empty-state" hidden>No matching listings.</div>
+      </section>
+
+      <section class="panel stats-panel">
+        <h2>Market statistics</h2>
+        <p class="panel-note">Scoped to the same type/jurisdiction filters above.</p>
+        <div id="stats-status" class="status-line" aria-live="polite"></div>
+        <div id="stats-body" class="stats-grid"></div>
+      </section>
+
+      <section class="panel theses-panel">
+        <h2>Saved theses</h2>
+        <p class="panel-note">Standing searches monitored via <code>listings monitor</code>; new hits alert over NTFY.</p>
+        <div id="theses-status" class="status-line" aria-live="polite"></div>
+        <div id="theses-body" class="theses-list"></div>
+      </section>
+    </main>
+  </div>
+  <script src="/scout.js"></script>
+</body>
+</html>

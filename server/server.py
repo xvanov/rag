@@ -17,6 +17,12 @@ Routes:
     POST /api/rate          -> append a JSONL feedback line
     POST /api/upload        -> multipart file upload + reindex
 
+    GET  /scout                 -> web/scout.html (read-only Scout dashboard, E9)
+    GET  /scout.js, /scout.css
+    GET  /api/scout/search       -> {results: [...]}  (listings.search.search)
+    GET  /api/scout/stats        -> {...}             (listings.stats.compute_stats)
+    GET  /api/scout/theses       -> {theses: [...]}   (listings.store theses+hits)
+
 PID file at {index_dir}/docrag_server.pid stores ``{pid}\\n{port}\\n``.
 """
 
@@ -101,6 +107,19 @@ _UPLOAD_ALLOWED_EXT = {
     ".csv", ".log", ".json", ".xml", ".html", ".htm",
 }
 _FILENAME_SAFE_RE = re.compile(r"[^A-Za-z0-9._\-]")
+
+
+# --- Scout (E9 read-only views) ----------------------------------------------
+#
+# Scout SEARCH runs in a CHILD process (see _handle_scout_search) precisely so
+# it never mutates THIS process's docrag env. listings.search repoints the
+# shared DOCRAG_DOCS_ROOT/DOCRAG_INDEX_DIR at the listings instance for the
+# duration of a search; doing that in-process (as this handler used to) would
+# misdirect a concurrent /api/chat (building-codes) request on another thread at
+# the listings corpus -- ThreadingHTTPServer runs requests in parallel and the
+# vars are re-read from os.environ on every docrag call. The stats + theses
+# views below stay in-process: they only read listings.db and never touch
+# docrag, so they cannot leak the env.
 
 
 def _now_iso_utc() -> str:
@@ -460,6 +479,18 @@ class DocRagHandler(http.server.BaseHTTPRequestHandler):
             self._send_json({"ok": True, "ts": _now_iso_utc()})
         elif path == "/source":
             self._handle_source(urllib.parse.parse_qs(parsed.query))
+        elif path == "/scout":
+            self._serve_static("scout.html")
+        elif path == "/scout.js":
+            self._serve_static("scout.js")
+        elif path == "/scout.css":
+            self._serve_static("scout.css")
+        elif path == "/api/scout/search":
+            self._handle_scout_search(urllib.parse.parse_qs(parsed.query))
+        elif path == "/api/scout/stats":
+            self._handle_scout_stats(urllib.parse.parse_qs(parsed.query))
+        elif path == "/api/scout/theses":
+            self._handle_scout_theses()
         elif path.startswith("/api/"):
             self._send_error_json(404, "Unknown endpoint: %s" % path)
         else:
@@ -869,6 +900,146 @@ class DocRagHandler(http.server.BaseHTTPRequestHandler):
             return
         self._send_json(result)
 
+    # --- Scout (E9 read-only views) ---
+    #
+    # `listings` is a sibling package (PRD-listings.md), imported lazily here
+    # so a missing/broken listings install, or a not-yet-created listings.db,
+    # never takes down the docrag chat server -- every path below degrades to
+    # a clean JSON {"...": [], "error": "..."} instead of a 500 or a crash.
+
+    def _handle_scout_search(self, qs):
+        # Run the search in a CHILD process bound to the listings instance, NOT
+        # in-process. listings.search mutates the shared DOCRAG_DOCS_ROOT/
+        # DOCRAG_INDEX_DIR env vars for the duration of a search; because this is
+        # a ThreadingHTTPServer, an in-process search would repoint the env out
+        # from under a concurrent /api/chat (building-codes) request on another
+        # thread and silently query the wrong corpus. Isolating the search in a
+        # subprocess keeps THIS process's env untouched -- chat stays on
+        # building-codes no matter how many scout searches run in parallel. Any
+        # failure degrades to a clean {"results": [], "error": ...} JSON, never a
+        # 500 and never a broken /api/chat.
+        query = (qs.get("q") or [""])[0]
+        try:
+            top_k = int((qs.get("top_k") or ["20"])[0])
+        except (TypeError, ValueError):
+            top_k = 20
+        top_k = max(1, min(top_k, 100))
+
+        cmd = [sys.executable, "-m", "listings", "search", query, "--json",
+               "--top-k", str(top_k)]
+        filters = {}
+        for key, flag, caster in (
+            ("price_min", "--price-min", float), ("price_max", "--price-max", float),
+            ("beds_min", "--beds-min", float), ("baths_min", "--baths-min", float),
+        ):
+            raw = (qs.get(key) or [""])[0]
+            if raw:
+                try:
+                    val = caster(raw)
+                except ValueError:
+                    continue
+                cmd += [flag, str(val)]
+                filters[key] = val
+        ptype = (qs.get("type") or [""])[0]
+        if ptype:
+            cmd += ["--type", ptype]
+            filters["property_type"] = ptype
+        jurisdiction = (qs.get("jurisdiction") or [""])[0]
+        if jurisdiction:
+            cmd += ["--jurisdiction", jurisdiction]
+            filters["jurisdiction"] = jurisdiction
+
+        # Child env: inherit ours but DROP the docrag instance vars so the child
+        # binds cleanly to the listings instance via its own apply_docrag_env()
+        # (LISTINGS_ROOT/LISTINGS_INDEX_DIR carry through untouched). This also
+        # guarantees the child can never be confused by a stray DOCRAG_* set in
+        # the parent.
+        child_env = dict(os.environ)
+        child_env.pop("DOCRAG_DOCS_ROOT", None)
+        child_env.pop("DOCRAG_INDEX_DIR", None)
+
+        try:
+            proc = subprocess.run(cmd, capture_output=True, text=True,
+                                  encoding="utf-8", errors="replace",
+                                  timeout=60, cwd=_REPO_ROOT, env=child_env)
+        except subprocess.TimeoutExpired:
+            sys.stderr.write("[scout] search timed out (>60s)\n")
+            self._send_json({"results": [], "error": "scout search timed out"})
+            return
+        except Exception as e:  # noqa: BLE001
+            sys.stderr.write("[scout] search subprocess failed: %s\n%s\n"
+                             % (e, traceback.format_exc()))
+            self._send_json({"results": [], "error": str(e)})
+            return
+        if proc.returncode != 0:
+            sys.stderr.write("[scout] search exited %d: %s\n"
+                             % (proc.returncode, (proc.stderr or "").strip()[-500:]))
+            self._send_json({"results": [], "error": "scout search failed"})
+            return
+        try:
+            rows = json.loads(proc.stdout or "[]")
+            if not isinstance(rows, list):
+                raise ValueError("expected a JSON array")
+        except (ValueError, TypeError) as e:
+            sys.stderr.write("[scout] bad search JSON: %s\nstdout: %s\n"
+                             % (e, (proc.stdout or "")[:500]))
+            self._send_json({"results": [], "error": "bad search output"})
+            return
+        self._send_json({"results": rows, "query": query, "filters": filters})
+
+    def _handle_scout_stats(self, qs):
+        filters = {}
+        ptype = (qs.get("type") or [""])[0]
+        if ptype:
+            filters["property_type"] = ptype
+        jurisdiction = (qs.get("jurisdiction") or [""])[0]
+        if jurisdiction:
+            filters["jurisdiction"] = jurisdiction
+
+        try:
+            from listings import stats as listings_stats
+            from listings import store as listings_store
+        except Exception as e:  # noqa: BLE001
+            self._send_json({"error": "listings unavailable: %s" % e})
+            return
+        try:
+            conn = listings_store.connect()
+            listings_store.init_db(conn)
+            try:
+                result = listings_stats.compute_stats(conn, filters or None)
+            finally:
+                conn.close()
+        except Exception as e:  # noqa: BLE001
+            sys.stderr.write("[scout] stats failed: %s\n%s\n"
+                             % (e, traceback.format_exc()))
+            self._send_json({"error": str(e)})
+            return
+        self._send_json(result)
+
+    def _handle_scout_theses(self):
+        try:
+            from listings import store as listings_store
+        except Exception as e:  # noqa: BLE001
+            self._send_json({"theses": [], "hits": [], "error": "listings unavailable: %s" % e})
+            return
+        try:
+            conn = listings_store.connect()
+            listings_store.init_db(conn)
+            try:
+                theses = listings_store.list_theses(conn)
+                all_hits = []
+                for t in theses:
+                    hits = listings_store.list_thesis_hits(conn, t["id"])
+                    t["hits"] = hits
+                    all_hits.extend(hits)
+            finally:
+                conn.close()
+        except Exception as e:  # noqa: BLE001
+            sys.stderr.write("[scout] theses failed: %s\n%s\n"
+                             % (e, traceback.format_exc()))
+            self._send_json({"theses": [], "hits": [], "error": str(e)})
+            return
+        self._send_json({"theses": theses, "hits": all_hits})
 
 # --- lifecycle ---------------------------------------------------------------
 
