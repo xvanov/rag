@@ -110,5 +110,157 @@
     "method": "rest",
     "url": "https://cde.ucr.cjis.gov/ ; https://live-durhamnc.opendata.arcgis.com/ ; censusreporter.org",
     "notes": "authoritative: Census ACS (demographics), FBI Crime Data Explorer + Durham PD open data (crime). Aggregators bestneighborhood/areavibes/crimegrade/neighborhoodscout fetch fine (no bot wall) but are secondary/modeled."
+  },
+  {
+    "jurisdiction": "wake-county-nc",
+    "data_type": "parcels",
+    "method": "rest",
+    "name": "Wake Parcels (iMAPS)",
+    "url": "https://maps.wakegov.com/arcgis/rest/services/Property/Parcels/FeatureServer/0",
+    "notes": "query?where=PIN_NUM='<pin>'&outFields=*&f=json ; or where=SITE_ADDRESS LIKE '<addr>%'. Fields: PIN_NUM,REID,OWNER,SITE_ADDRESS,DEED_BOOK/PAGE/DATE/ACRES,LAND_VAL,BLDG_VAL,TOTAL_VALUE_ASSD,PLANNING_JURISDICTION (WC/RA/CA/...),LAND_CLASS_DECODE,TOTSALPRICE,SALE_DATE. REID joins tax portal; DEED_BOOK/PAGE joins ROD CRPI. Native SR 2264 -> pass outSR=4326."
+  },
+  {
+    "jurisdiction": "wake-county-nc",
+    "data_type": "flood",
+    "method": "rest",
+    "name": "FEMA NFHL Flood Hazard Zones (Wake)",
+    "url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28",
+    "notes": "layer 28 = Flood Hazard Zones. Fields FLD_ZONE (A/AE/X/...), ZONE_SUBTY (FLOODWAY/minimal), SFHA_TF, STATIC_BFE. Wake regulates off FEMA DFIRM; NFHL is canonical. Spatial-intersect."
+  },
+  {
+    "jurisdiction": "wake-county-nc",
+    "data_type": "address_points",
+    "method": "rest",
+    "name": "Wake Address Points (iMAPS)",
+    "url": "https://maps.wakegov.com/arcgis/rest/services/Property/Addresses/MapServer/0",
+    "notes": "PIN_NUM joins parcels; FULLADDR, POSTAL_CITY, X/Y. Updated nightly."
+  },
+  {
+    "jurisdiction": "wake-county-nc",
+    "data_type": "zoning",
+    "method": "rest",
+    "name": "Wake County Zoning (unincorporated)",
+    "url": "https://maps.wakegov.com/arcgis/rest/services/Planning/Zoning/FeatureServer/17",
+    "notes": "layer 17 = County zoning; field CLASS (district code), ZON_NUM, DATE_ZONED. Same FeatureServer has per-town layers: Apex14,Angier15,Cary16,FuquayVarina18,Garner19,HollySprings20,Knightdale21,Morrisville22,Rolesville24,WakeForest25,Wendell26,Zebulon27. Raleigh=separate server."
+  },
+  {
+    "jurisdiction": "wake-county-nc",
+    "data_type": "tax_card",
+    "method": "browser",
+    "name": "Wake Real Estate / Tax Portal",
+    "url": "https://services.wake.gov/realestate/",
+    "notes": "search by REID/PIN/address/owner. Tax deep-link: services.wake.gov/TaxPortal/Property/SearchByReid. Core assessment data already in REST parcels; portal for comps/appeals/tax-bill/sketch."
+  },
+  {
+    "jurisdiction": "wake-county-nc",
+    "data_type": "deeds",
+    "method": "scrape",
+    "name": "Wake Register of Deeds (CRPI)",
+    "url": "https://rodcrpi.wakegov.com/booksweb/genextsearch.aspx",
+    "notes": "Consolidated Real Property Index; search Book/Page (from parcel DEED_BOOK/PAGE), name, instrument. Back to 1785."
+  },
+  {
+    "jurisdiction": "wake-county-nc",
+    "data_type": "septic",
+    "method": "rest",
+    "name": "Wake Septic (iMAPS, INCOMPLETE) + Env Health",
+    "url": "https://maps.wakegov.com/arcgis/rest/services/Environmental/Septic/MapServer",
+    "notes": "layer 0 self-flagged INCOMPLETE -> do NOT rely on. Authoritative: Wake Env Services / Onsite Water Protection, septic+well permits & soil evals, 919-856-7434, wastewater@wake.gov. Soils: USDA SSURGO (no Wake REST)."
+  },
+  {
+    "jurisdiction": "raleigh-nc",
+    "data_type": "zoning",
+    "method": "rest",
+    "name": "Raleigh Zoning",
+    "url": "https://maps.raleighnc.gov/arcgis/rest/services/Planning/Zoning/MapServer/0",
+    "notes": "layer 0 = Raleigh Zoning. Fields ZONE_TYPE, ZONE_TYPE_DECODE, ZONING (full string), OVERLAY, HEIGHT, FRONTAGE."
+  },
+  {
+    "jurisdiction": "cary-nc",
+    "data_type": "zoning",
+    "method": "rest",
+    "name": "Cary Zoning (Wake FeatureServer layer 16)",
+    "url": "https://maps.wakegov.com/arcgis/rest/services/Planning/Zoning/FeatureServer/16",
+    "notes": "field CLASS."
+  },
+  {
+    "jurisdiction": "garner-nc",
+    "data_type": "zoning",
+    "method": "rest",
+    "name": "Garner Zoning (Wake FeatureServer layer 19)",
+    "url": "https://maps.wakegov.com/arcgis/rest/services/Planning/Zoning/FeatureServer/19",
+    "notes": "field CLASS."
+  },
+  {
+    "jurisdiction": "wake-forest-nc",
+    "data_type": "zoning",
+    "method": "rest",
+    "name": "Wake Forest Zoning (Wake FeatureServer layer 25)",
+    "url": "https://maps.wakegov.com/arcgis/rest/services/Planning/Zoning/FeatureServer/25",
+    "notes": "field CLASS."
+  },
+  {
+    "jurisdiction": "apex-nc",
+    "data_type": "zoning",
+    "method": "rest",
+    "name": "Apex Zoning (Wake FeatureServer layer 14)",
+    "url": "https://maps.wakegov.com/arcgis/rest/services/Planning/Zoning/FeatureServer/14",
+    "notes": "field CLASS."
+  },
+  {
+    "jurisdiction": "holly-springs-nc",
+    "data_type": "zoning",
+    "method": "rest",
+    "name": "Holly Springs Zoning (Wake FeatureServer layer 20)",
+    "url": "https://maps.wakegov.com/arcgis/rest/services/Planning/Zoning/FeatureServer/20",
+    "notes": "field CLASS."
+  },
+  {
+    "jurisdiction": "morrisville-nc",
+    "data_type": "zoning",
+    "method": "rest",
+    "name": "Morrisville Zoning (Wake FeatureServer layer 22)",
+    "url": "https://maps.wakegov.com/arcgis/rest/services/Planning/Zoning/FeatureServer/22",
+    "notes": "field CLASS."
+  },
+  {
+    "jurisdiction": "fuquay-varina-nc",
+    "data_type": "zoning",
+    "method": "rest",
+    "name": "Fuquay-Varina Zoning (Wake FeatureServer layer 18)",
+    "url": "https://maps.wakegov.com/arcgis/rest/services/Planning/Zoning/FeatureServer/18",
+    "notes": "field CLASS."
+  },
+  {
+    "jurisdiction": "knightdale-nc",
+    "data_type": "zoning",
+    "method": "rest",
+    "name": "Knightdale Zoning (Wake FeatureServer layer 21)",
+    "url": "https://maps.wakegov.com/arcgis/rest/services/Planning/Zoning/FeatureServer/21",
+    "notes": "field CLASS."
+  },
+  {
+    "jurisdiction": "wendell-nc",
+    "data_type": "zoning",
+    "method": "rest",
+    "name": "Wendell Zoning (Wake FeatureServer layer 26)",
+    "url": "https://maps.wakegov.com/arcgis/rest/services/Planning/Zoning/FeatureServer/26",
+    "notes": "field CLASS."
+  },
+  {
+    "jurisdiction": "zebulon-nc",
+    "data_type": "zoning",
+    "method": "rest",
+    "name": "Zebulon Zoning (Wake FeatureServer layer 27)",
+    "url": "https://maps.wakegov.com/arcgis/rest/services/Planning/Zoning/FeatureServer/27",
+    "notes": "field CLASS."
+  },
+  {
+    "jurisdiction": "rolesville-nc",
+    "data_type": "zoning",
+    "method": "rest",
+    "name": "Rolesville Zoning (Wake FeatureServer layer 24)",
+    "url": "https://maps.wakegov.com/arcgis/rest/services/Planning/Zoning/FeatureServer/24",
+    "notes": "field CLASS."
   }
 ]

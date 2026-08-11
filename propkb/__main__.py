@@ -81,9 +81,12 @@ def main(argv: list | None = None) -> int:
     for f in ("jurisdiction", "data_type", "name", "method", "url", "notes"):
         sa.add_argument("--" + f, default="")
 
-    # acquire: pull Durham property data (REST-first) into a property KB
+    # acquire: pull property data (REST-first) into a property KB. --location
+    # selects the jurisdiction (durham-nc default; wake-county-nc, raleigh-nc,
+    # cary-nc, garner-nc, wake-forest-nc, ... for Wake).
     a = sub.add_parser("acquire"); a.add_argument("--slug", required=True)
     a.add_argument("--pin", default=""); a.add_argument("--address", default="")
+    a.add_argument("--location", default="durham-nc")
 
     # mls: ingest an agent CSV export, or query a RESO Web API feed
     a = sub.add_parser("mls")
@@ -168,7 +171,8 @@ def main(argv: list | None = None) -> int:
         return 1
     if args.cmd == "acquire":
         from . import acquire
-        result = acquire.durham(args.slug, pin=args.pin or None, address=args.address or None)
+        result = acquire.acquire(args.slug, location=args.location,
+                                 pin=args.pin or None, address=args.address or None)
         print(_json_dumps(result))
         return 0
     if args.cmd == "mls":
