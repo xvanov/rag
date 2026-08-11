@@ -12,6 +12,16 @@ scraper/_ncosfm_cache/
 .index/
 corpora/
 
+# Scout listings data instance (typed listings.db + semantic corpus/index +
+# commute cache) -- local, regenerable, may hold scraped listing data. Never commit.
+listings_data/
+
+# Containerized runtime: ./data is the docker-compose bind mount holding the
+# .index + corpora of a migrated instance; bundles are the migrate tarballs.
+data/
+docrag-bundle*.tar.gz
+*.tar.gz
+
 # Python
 __pycache__/
 *.py[cod]
