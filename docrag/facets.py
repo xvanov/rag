@@ -29,6 +29,27 @@ import re
 # list. Unknown folders fall back to "other" and are treated as broadly
 # applicable (only the strict "model" location excludes them).
 
+# Exact-name local jurisdiction folders -> their own local tier. Checked FIRST so
+# multi-word names never collide by prefix (e.g. "wake-forest" must not be caught
+# by a "wake"-prefix rule, nor "wake-county"). NEW local jurisdiction folders MUST
+# be added here -- otherwise they fall to "other", which every *-nc location treats
+# as broadly applicable and would leak them across jurisdictions.
+_LOCAL_TIERS = {
+    "wake-county": "local-wake-county",
+    "raleigh": "local-raleigh",
+    "cary": "local-cary",
+    "garner": "local-garner",
+    "wake-forest": "local-wake-forest",
+    "apex": "local-apex",
+    "holly-springs": "local-holly-springs",
+    "morrisville": "local-morrisville",
+    "fuquay-varina": "local-fuquay-varina",
+    "knightdale": "local-knightdale",
+    "wendell": "local-wendell",
+    "zebulon": "local-zebulon",
+    "rolesville": "local-rolesville",
+}
+
 _TIER_RULES = (
     (lambda j: j == "model", "model"),
     (lambda j: j == "federal", "federal"),
@@ -36,9 +57,6 @@ _TIER_RULES = (
      or j.startswith("nc-") or j.startswith("nc_"), "state"),
     # Local tiers are jurisdiction-specific so each LOCATION stacks only its own
     # local layer (a Durham question must never see Alamance ordinances, etc.).
-    # NEW local jurisdiction folders MUST get an explicit rule here -- otherwise
-    # they fall to "other", which the durham-nc location treats as broadly
-    # applicable and would leak them into Durham answers.
     (lambda j: j == "durham" or j.startswith("durham"), "local-durham"),
     (lambda j: j == "alamance-towns", "local-alamance-towns"),
     (lambda j: j == "alamance" or j.startswith("alamance"), "local-alamance"),
@@ -49,6 +67,8 @@ _TIER_RULES = (
 
 def tier_of(jurisdiction: str) -> str:
     j = (jurisdiction or "").strip().lower()
+    if j in _LOCAL_TIERS:
+        return _LOCAL_TIERS[j]
     for pred, tier in _TIER_RULES:
         if pred(j):
             return tier
@@ -73,6 +93,47 @@ LOCATIONS = [
      "answer_location": "the smaller incorporated towns of Alamance County, "
                         "North Carolina (Haw River, Swepsonville, Green Level, "
                         "Village of Alamance)"},
+    # --- Wake County + municipalities -----------------------------------------
+    {"key": "wake-county-nc", "label": "Wake County, NC (unincorporated)",
+     "tiers": {"model", "federal", "state", "local-wake-county", "other"},
+     "answer_location": "unincorporated Wake County, North Carolina"},
+    {"key": "raleigh-nc", "label": "Raleigh, NC (Wake County)",
+     "tiers": {"model", "federal", "state", "local-raleigh", "other"},
+     "answer_location": "the City of Raleigh, North Carolina (Wake County)"},
+    {"key": "cary-nc", "label": "Cary, NC (Wake County)",
+     "tiers": {"model", "federal", "state", "local-cary", "other"},
+     "answer_location": "the Town of Cary, North Carolina (Wake County)"},
+    {"key": "garner-nc", "label": "Garner, NC (Wake County)",
+     "tiers": {"model", "federal", "state", "local-garner", "other"},
+     "answer_location": "the Town of Garner, North Carolina (Wake County)"},
+    {"key": "wake-forest-nc", "label": "Wake Forest, NC (Wake County)",
+     "tiers": {"model", "federal", "state", "local-wake-forest", "other"},
+     "answer_location": "the Town of Wake Forest, North Carolina (Wake County)"},
+    {"key": "apex-nc", "label": "Apex, NC (Wake County)",
+     "tiers": {"model", "federal", "state", "local-apex", "other"},
+     "answer_location": "the Town of Apex, North Carolina (Wake County)"},
+    {"key": "holly-springs-nc", "label": "Holly Springs, NC (Wake County)",
+     "tiers": {"model", "federal", "state", "local-holly-springs", "other"},
+     "answer_location": "the Town of Holly Springs, North Carolina (Wake County)"},
+    {"key": "morrisville-nc", "label": "Morrisville, NC (Wake County)",
+     "tiers": {"model", "federal", "state", "local-morrisville", "other"},
+     "answer_location": "the Town of Morrisville, North Carolina (Wake County)"},
+    {"key": "fuquay-varina-nc", "label": "Fuquay-Varina, NC (Wake County)",
+     "tiers": {"model", "federal", "state", "local-fuquay-varina", "other"},
+     "answer_location": "the Town of Fuquay-Varina, North Carolina (Wake County)"},
+    {"key": "knightdale-nc", "label": "Knightdale, NC (Wake County)",
+     "tiers": {"model", "federal", "state", "local-knightdale", "other"},
+     "answer_location": "the Town of Knightdale, North Carolina (Wake County)"},
+    {"key": "wendell-nc", "label": "Wendell, NC (Wake County)",
+     "tiers": {"model", "federal", "state", "local-wendell", "other"},
+     "answer_location": "the Town of Wendell, North Carolina (Wake County)"},
+    {"key": "zebulon-nc", "label": "Zebulon, NC (Wake County)",
+     "tiers": {"model", "federal", "state", "local-zebulon", "other"},
+     "answer_location": "the Town of Zebulon, North Carolina (Wake County)"},
+    {"key": "rolesville-nc", "label": "Rolesville, NC (Wake County)",
+     "tiers": {"model", "federal", "state", "local-rolesville", "other"},
+     "answer_location": "the Town of Rolesville, North Carolina (Wake County)"},
+
     {"key": "north-carolina", "label": "North Carolina (statewide)",
      "tiers": {"model", "federal", "state", "other"},
      "answer_location": "North Carolina"},
@@ -153,9 +214,10 @@ def facet_of(path: str, edition: str | None = None) -> dict:
     elif juris == "durham":
         family = "udo"
         year = _year_from(edition or "") or _year_from(p)
-    elif juris in ("alamance", "alamance-towns", "burlington", "graham"):
-        # Local Alamance-area jurisdictions: derive a stable family slug from the
-        # filename stem so each document groups under its own doc_key.
+    elif juris in ("alamance", "alamance-towns", "burlington", "graham") \
+            or juris in _LOCAL_TIERS:
+        # Local jurisdictions (Alamance-area + Wake): derive a stable family slug
+        # from the filename stem so each document groups under its own doc_key.
         base = segs[-1] if len(segs) > 1 else juris
         family = re.sub(r"[^a-z0-9]+", "-", os.path.splitext(base.lower())[0]).strip("-") \
             or juris
@@ -180,6 +242,13 @@ def doc_label(jurisdiction: str, family: str, edition: str | None = None) -> str
     _LOCAL_NAMES = {
         "alamance": "Alamance County", "alamance-towns": "Alamance County town",
         "burlington": "City of Burlington", "graham": "City of Graham",
+        "wake-county": "Wake County", "raleigh": "City of Raleigh",
+        "cary": "Town of Cary", "garner": "Town of Garner",
+        "wake-forest": "Town of Wake Forest", "apex": "Town of Apex",
+        "holly-springs": "Town of Holly Springs", "morrisville": "Town of Morrisville",
+        "fuquay-varina": "Town of Fuquay-Varina", "knightdale": "Town of Knightdale",
+        "wendell": "Town of Wendell", "zebulon": "Town of Zebulon",
+        "rolesville": "Town of Rolesville",
     }
     if jurisdiction in _LOCAL_NAMES:
         pretty = (family or "").replace("-", " ").strip().title()

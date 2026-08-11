@@ -17,15 +17,28 @@ You orchestrate; docrag supplies grounded local-law retrieval.
   - **Burlington** — Burlington UDO + procedures manual, historic overlay standards, stormwater, fees, permit guidance
   - **Graham** — Graham Development Ordinance + historic resources handbook, standard details, fees
   - **Alamance small towns** — Haw River, Swepsonville, Green Level, Village of Alamance zoning ordinances
+  - **Wake County** (unincorporated) — Wake County UDO + Stormwater Design Manual + Swift Creek / Falls / Neuse watershed materials
+  - **Raleigh** — Raleigh UDO · **Cary** — Cary Land Development Ordinance (LDO) · **Garner** — Garner UDO · **Wake Forest** — Wake Forest UDO
+  - **Other Wake towns** — Apex, Holly Springs, Morrisville, Fuquay-Varina (LDO), Knightdale, Wendell, Zebulon, Rolesville (LDO) *(zoning/parcel pull wired; full UDO/LDO text ingested per demand)*
 
-The shared model/state/federal layers stack under **every** location; the
+The shared model/state/federal/NCDOT layers stack under **every** location; the
 `location` selector picks which single local ordinance applies, so a Durham
-question never sees Alamance ordinances and vice versa.
+question never sees Alamance or Wake ordinances and vice versa. **Note (Wake):**
+zoning is **per-municipality** — pick the `location` matching the *governing*
+jurisdiction (a parcel's `PLANNING_JURISDICTION` from the Wake parcel pull:
+`WC`=wake-county-nc, `RA`=raleigh-nc, `CA`=cary-nc, etc.), not just the county.
 
 **`location` values:** `durham-nc` (default), `alamance-county-nc`,
-`burlington-nc`, `graham-nc`, `alamance-towns-nc`, `north-carolina` (statewide,
-no local layer), `model` (I-Codes only). Always pass the one matching the
-question's jurisdiction.
+`burlington-nc`, `graham-nc`, `alamance-towns-nc`, `wake-county-nc`, `raleigh-nc`,
+`cary-nc`, `garner-nc`, `wake-forest-nc`, `apex-nc`, `holly-springs-nc`,
+`morrisville-nc`, `fuquay-varina-nc`, `knightdale-nc`, `wendell-nc`, `zebulon-nc`,
+`rolesville-nc`, `north-carolina` (statewide, no local layer), `model` (I-Codes
+only). Always pass the one matching the question's jurisdiction.
+
+**propkb parcel pull (Wake + Durham):** `propkb acquire --slug <s> --location
+<loc> --address "<addr>"` (or `--pin`). Wake parcels/flood/address come from Wake
+iMAPS + FEMA NFHL; zoning from the per-town layer. Registry: `propkb sources
+query --jurisdiction wake-county-nc`.
 
 (`udo` is a Durham-only corpus; default to `building-codes`.)
 
