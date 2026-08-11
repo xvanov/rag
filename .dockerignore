@@ -1,0 +1,12 @@
+# Keep the build context tiny + secrets/data out of images.
+.venv/
+.index/
+corpora/
+data/
+.env
+*.tar.gz
+.git/
+__pycache__/
+*.pyc
+migrate/
+*.md

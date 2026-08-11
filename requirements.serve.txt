@@ -1,0 +1,14 @@
+# Serve-only deps: query + answer over a PREBUILT index, plus MCP/web servers.
+# Excludes the indexing/ML stack (docling, FlagEmbedding, transformers, torch,
+# PyMuPDF, PyPDF2, python-docx) -- ~2.5 GB that's only needed to BUILD an index.
+# Reranking degrades gracefully when FlagEmbedding/torch are absent (rerank.py),
+# and the MCP server forces DOCRAG_RERANK=0, so serving never touches torch.
+#
+# Use this for the slim Docker serve image. To index new documents on the box,
+# install the full requirements.txt instead (or use the `build` image target).
+openai>=1.40.0
+mcp>=1.2.0
+sqlite-vec>=0.1.6
+python-dotenv>=1.0.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0

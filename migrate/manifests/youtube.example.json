@@ -1,0 +1,9 @@
+{
+  "name": "docrag-youtube",
+  "repo_root": "C:\\repos\\PUT-YOUTUBE-REPO-HERE",
+  "index_dir": ".index",
+  "data_dirs": ["corpora"],
+  "include_files": [".env", "app.settings.json", ".mcp.json"],
+  "extra_dirs": [],
+  "_note": "TEMPLATE for the separate YouTube docrag instance. Set repo_root to that repo's absolute path. If its index/data dirs differ (e.g. it stores transcripts under data/ or a different index folder), edit index_dir/data_dirs to match. Then: python migrate/docrag_migrate.py export --manifest migrate/manifests/youtube.json --out /tmp/yt-bundle.tar.gz"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "docrag-building-codes",
+  "repo_root": null,
+  "index_dir": ".index",
+  "data_dirs": ["corpora"],
+  "include_files": [".env", "app.settings.json", ".mcp.json"],
+  "extra_dirs": [],
+  "_note": "repo_root null -> defaults to the repo this script ships in. The .index sweep grabs *.db (post-checkpoint) plus traces/ and feedback/ subdirs; *.db-wal/-shm/.pid are excluded automatically."
+}

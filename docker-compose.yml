@@ -1,0 +1,35 @@
+# docrag -- containerized runtime. Data lives in ./data (a bind mount), secrets
+# in .env. To stand up a migrated instance on a new Linux box:
+#
+#   1. git clone <repo>                         # code
+#   2. python migrate/docrag_migrate.py import \
+#        --bundle docrag-bundle.tar.gz --repo-root ./data-src
+#      then move the restored .index + corpora under ./data  (see migrate/README)
+#   3. cp /path/to/.env .env                    # Azure keys
+#   4. docker compose up -d                     # serve at http://localhost:8099
+#
+# DOCRAG_INDEX_DIR / DOCRAG_DOCS_ROOT inside the container point at /data, which
+# is this bind mount -- so the prebuilt index is read straight off the host.
+
+services:
+  docrag:
+    build:
+      context: .
+      target: serve            # swap to `build` to enable in-container indexing
+    image: docrag:serve
+    container_name: docrag
+    env_file: .env             # Azure OpenAI keys; never baked into the image
+    environment:
+      DOCRAG_RERANK: "0"       # CPU box: keep RRF-only, no torch
+    ports:
+      - "8099:8099"
+    volumes:
+      - ./data/.index:/data/.index       # SQLite index (read/write: WAL, feedback, traces)
+      - ./data/corpora:/data/corpora:ro  # source docs (read-only)
+    restart: unless-stopped
+
+# To run the stdio MCP server against this same data instead of the web UI:
+#   docker run --rm -i --env-file .env \
+#     -v "$PWD/data/.index:/data/.index" -v "$PWD/data/corpora:/data/corpora:ro" \
+#     docrag:serve python -m docrag.mcp_server
+# Point your MCP client's .mcp.json "command" at that `docker run -i ...` line.
