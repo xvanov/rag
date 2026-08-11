@@ -24,18 +24,21 @@ from propkb import email as pmail  # noqa: E402
 
 CLERMONT = "1621-clermont-rd-durham"
 PINE = "212-pine-dr-durham"
+STAR = "7412-star-dr-durham"   # "Star" is a substring of common words (startup/starting)
 
 _FACTS = {
     CLERMONT: 'property:\n  pin: "0728808242"\n  reid: "153775"\n'
               '  address: 1621 Clermont Rd, Durham, NC 27713\n',
     PINE: 'property:\n  pin: "0707680500"\n  reid: "143264"\n'
           '  address: 212 Pine Dr, Durham, NC 27713\n',
+    STAR: 'property:\n  pin: "0707589331"\n  reid: "143262"\n'
+          '  address: 7412 Star Dr, Durham, NC 27713\n',
 }
 
 
 @contextlib.contextmanager
 def _two_props():
-    """Two same-ZIP (27713) properties in an isolated temp PROPKB_ROOT."""
+    """Same-ZIP (27713) properties in an isolated temp PROPKB_ROOT."""
     prev = os.environ.get("PROPKB_ROOT")
     with tempfile.TemporaryDirectory() as tmp:
         os.environ["PROPKB_ROOT"] = tmp
@@ -95,6 +98,80 @@ def test_unrelated_email_files_nowhere():
     with _two_props():
         assert pmail.is_relevant(PINE, "Meeting notes", "Lunch in Raleigh.", "") is False
         assert pmail.is_relevant(CLERMONT, "Meeting notes", "Lunch in Raleigh.", "") is False
+
+
+# ---- token-boundary matching (the "Star"/"startup" misclassification) ----------
+
+def test_street_name_not_matched_as_substring_of_common_word():
+    """THE bug: a newsletter about an 'AI startup' / 'starting to ...' filed under
+    7412 STAR Dr because 'star' was substring-matched inside 'startup'/'starting'.
+    Matching is on whole tokens, so these must score 0 and file nowhere."""
+    with _two_props():
+        subj = "ChatGPT's newest most powerful launch incoming"
+        body = ("A european startup just revealed ... they're starting to touch "
+                "AGI. AI chip startup SambaNova ... ai start-up kaon.ai raises ...")
+        assert pmail._relevance_score(STAR, subj + " " + body) == 0
+        assert pmail.is_relevant(STAR, subj, body, "") is False
+
+
+def test_whole_token_street_name_still_matches():
+    """Guard against over-correction: a real 'Star Dr' reference must still file."""
+    with _two_props():
+        subj = "7412 Star Dr - soil evaluation"
+        body = "Regarding the lot at 7412 Star Dr, Durham NC 27713 (PIN 0707589331)."
+        assert pmail.is_relevant(STAR, subj, body, "") is True
+        assert pmail.is_relevant(PINE, subj, body, "") is False
+
+
+def test_number_not_matched_inside_longer_number_or_url():
+    """A ZIP/REID/PIN must match as a whole token, not as a digit run embedded in a
+    longer number, order id, or URL path."""
+    with _two_props():
+        # 27713 inside 1277130; 143262 (STAR reid) inside 91432620; PIN as substring
+        hay = ("order 1277130 tracking 91432620999 "
+               "https://x.com/p/0707589331000/checkout")
+        assert pmail._relevance_score(STAR, hay) == 0
+        assert pmail._relevance_score(PINE, hay) == 0
+
+
+def test_star_email_routes_to_star_not_pine():
+    with _two_props():
+        subj = "7412 Star Dr (REID 143262) access"
+        body = "About 7412 Star Dr, Durham NC 27713, REID 143262 ..."
+        assert pmail.is_relevant(STAR, subj, body, "") is True
+        assert pmail.is_relevant(PINE, subj, body, "") is False
+        assert pmail.is_relevant(CLERMONT, subj, body, "") is False
+
+
+# ---- self-notification loop guard (propkb must not ingest its own mail) --------
+
+def _msg(subject, body="", headers=None):
+    from email.message import EmailMessage
+    em = EmailMessage()
+    em["Subject"] = subject
+    for k, v in (headers or {}).items():
+        em[k] = v
+    em.set_content(body)
+    return em
+
+
+def test_notification_subject_is_autogen():
+    """THE loop: a '[propkb] New mail for 7412-star-dr-durham (2)' notice contains
+    the slug tokens (7412, star) and would file + spawn another notice forever."""
+    m = _msg("[propkb] New mail for 7412-star-dr-durham (2)",
+             "Filed 2 message(s): - 2026-07-08: ...")
+    assert pmail._is_propkb_autogen(m) is True
+
+
+def test_autogen_header_detected_regardless_of_subject():
+    m = _msg("7412 Star Dr soil results", headers={pmail.AUTOGEN_HEADER: "notification"})
+    assert pmail._is_propkb_autogen(m) is True
+
+
+def test_real_property_mail_is_not_autogen():
+    m = _msg("7412 Star Dr (REID 143262) access",
+             "About 7412 Star Dr, Durham NC 27713 ...")
+    assert pmail._is_propkb_autogen(m) is False
 
 
 def _main() -> int:
